@@ -1,8 +1,10 @@
 import { DEFAULT_LANG, GAME_CONFIG, type Lang } from '../domain/config.ts'
-import { archiveRaw, readJson, readRaw, removeKey, writeJson, type ReadResult } from './safeStorage.ts'
+import { archiveRaw, listNames, readJson, readRaw, removeKey, writeJson, type ReadResult } from './safeStorage.ts'
 import {
+  DailyProgressSchema,
   PracticeProgressSchema,
   SettingsSchema,
+  type DailyProgress,
   type PracticeProgress,
 } from './schemas.ts'
 
@@ -22,6 +24,22 @@ export function archivePractice(): void {
   const raw = readRaw(PRACTICE)
   if (raw !== null) archiveRaw(PRACTICE, raw)
   removeKey(PRACTICE)
+}
+
+const DAILY_PREFIX = 'daily:'
+const dailyName = (dateUtc: string) => `${DAILY_PREFIX}${dateUtc}`
+
+export function loadDaily(dateUtc: string): ReadResult<DailyProgress> {
+  return readJson(dailyName(dateUtc), DailyProgressSchema)
+}
+
+export function saveDaily(progress: DailyProgress): boolean {
+  return writeJson(dailyName(progress.dateUtc), progress)
+}
+
+/** Dates (YYYY-MM-DD) that have a stored daily record, oldest first. */
+export function listDailyDates(): string[] {
+  return listNames(DAILY_PREFIX).map((name) => name.slice(DAILY_PREFIX.length))
 }
 
 export function loadLang(): Lang {

@@ -9,6 +9,6 @@ All content is JSON under `content/` (one or more `*.json` files per folder, eac
 5. **Puzzle** — add to `content/puzzles/*.json` with `status: "draft"`: `revealOrder` of 3–5 elements from that crest version, `editorialNotes` explaining the order. A sub-element followed by its parent must add meaningful information. Do not reuse an element without new information.
 6. **Validate**: `npm run validate:content`. Fix every error.
 7. **Review and publish** (human): fidelity vs. source, mobile-size check, rights evidence; then set `reviewedBy`, `reviewedAt`, and `status: "published"`. Published puzzles are immutable — to change one, add a new `revision`.
-8. **Daily schedule** (milestone 4): explicit dated entries in `content/daily/*.json`, never computed from array positions.
+8. **Daily schedule**: explicit dated entries in `content/daily/*.json` (`id`, `dateUtc`, exactly 3 `puzzleRefs` {id, revision}, `contentVersion`, `scoringVersion`). Three published puzzles of three different clubs; avoid the same club on consecutive days (the validator warns). Once a day's entry has been released treat it as immutable. Never put fixture puzzles in it.
 
 Fixtures live in `content/fixtures/` (assets in `content/fixtures/assets/`, referenced as `fixtures/<file>.svg`) and use invented clubs only.

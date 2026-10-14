@@ -85,6 +85,24 @@ export function readRaw(name: string): string | null {
   }
 }
 
+/** Names (without namespace/version) of stored records whose name starts with `prefix`. */
+export function listNames(prefix: string): string[] {
+  const storage = getStorage()
+  if (!storage) return []
+  const start = storageKey(prefix)
+  const cut = storageKey('').length
+  try {
+    const names: string[] = []
+    for (let i = 0; i < storage.length; i++) {
+      const key = storage.key(i)
+      if (key && key.startsWith(start)) names.push(key.slice(cut))
+    }
+    return names.sort()
+  } catch {
+    return []
+  }
+}
+
 /** Removes every key under the badge-dna namespace (settings reset). */
 export function clearAllLocalData(): void {
   const storage = getStorage()

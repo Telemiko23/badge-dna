@@ -1,5 +1,7 @@
 import type { Club, RawContent } from './schemas.ts'
 import { buildRepository, type ContentRepository } from './repository.ts'
+import { nowMs } from '../clock.ts'
+import { gameDateUtc } from '../domain/dates.ts'
 import { buildSearchIndex, type SearchIndex } from '../domain/search.ts'
 
 function collect(modules: Record<string, unknown>): unknown[] {
@@ -44,8 +46,9 @@ export async function loadContent(): Promise<ContentBundle> {
   const real = buildRepository('real', realRawContent(), resolveRealAsset)
   let fixture: ContentRepository | null = null
   if (__INCLUDE_FIXTURES__) {
-    const { fixtureRaw, fixtureAssetUrls } = await import('./fixtures.ts')
-    fixture = buildRepository('fixture', fixtureRaw, (path) => fixtureAssetUrls[path] ?? '')
+    const { fixtureRaw, fixtureAssetUrls, fixtureDailySchedule } = await import('./fixtures.ts')
+    const daily = fixtureDailySchedule(gameDateUtc(nowMs()))
+    fixture = buildRepository('fixture', { ...fixtureRaw, daily }, (path) => fixtureAssetUrls[path] ?? '')
   }
   return { real, fixture }
 }

@@ -1,7 +1,7 @@
 import type { ContentRepository } from '../content/repository.ts'
 import { buildPracticeOrder, type PuzzleRef } from '../domain/practice.ts'
 import { GAME_CONFIG } from '../domain/config.ts'
-import { createRound, isFinal, mistakeCount, type RoundState } from '../domain/round.ts'
+import { createRound, isFinal, mistakeCount, type RoundMode, type RoundState } from '../domain/round.ts'
 import type { PracticeProgress, RoundResult } from '../storage/schemas.ts'
 
 export function newId(): string {
@@ -23,13 +23,14 @@ export function createRoundFor(
   repo: ContentRepository,
   ref: PuzzleRef,
   now: string,
+  mode: RoundMode = 'practice',
 ): RoundState | null {
   const playable = repo.getPlayablePuzzle(ref)
   if (!playable) return null
   return createRound({
     sessionId: session.sessionId,
     roundId: newId(),
-    mode: 'practice',
+    mode,
     puzzleId: playable.ref.id,
     puzzleRevision: playable.ref.revision,
     contentVersion: playable.contentVersion,

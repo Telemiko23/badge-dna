@@ -9,7 +9,7 @@
 | Rights / usage basis for any real crest | **not established** — availability to download is not permission |
 | Human review (fidelity, visual, reviewer sign-off) | none given; no puzzle has `reviewedBy` |
 | Synthetic test puzzles | 3 (fixtures: 3, 4 and 5 reveals) — dev only |
-| Daily schedule | none (needs ≥ 7 days of frozen schedule for the trial) |
+| Daily schedule | none for real content (needs ≥ 7 dated entries once puzzles are published); dev fixtures get a generated schedule |
 | Club names for the guess list | 33 clubs, he/en names + a few aliases — **unverified starter data**, owner should review |
 
 ## Candidates to evaluate (not approved; some may be dropped)

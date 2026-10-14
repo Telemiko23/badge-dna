@@ -33,5 +33,16 @@ Decisions made while building milestones 1–2. None change the core mechanic. "
 - In a development build with no published real puzzles the app falls back to fixtures with a visible banner and a "test puzzle" badge. If real published puzzles exist, fixtures are not used.
 - Fixture crests carry `rightsStatus: approved_for_project` because they are invented drawings made for this project; the validator's real-content publish gates do not apply to them, and a test asserts fixtures would *fail* those gates as real content.
 
+## Daily challenge (milestone 4)
+- Game date = UTC date (`src/domain/dates.ts`); the changeover is 00:00 UTC and local time is only used to *display* when the next one starts. Home re-evaluates every 30 s, so cards follow the rollover without a reload.
+- One stored record per game date (`badge-dna:v1:daily:YYYY-MM-DD`) holding a **frozen copy** of the schedule's puzzle refs, so later content changes never swap a puzzle mid-challenge. The schedule itself is explicit dated entries (`content/daily/*.json`), never computed from array positions; only the dev fixtures get a generated window.
+- `getValidDaily(date)` returns an entry only if it has exactly three published, loadable puzzles of three different clubs; otherwise the app says "not available yet" and never invents a day.
+- An unfinished earlier day can be completed (marked with its date, listed on Home); an earlier day that was never started cannot be started; the future cannot be played. A started challenge cannot be restarted.
+- Starting is an explicit button, so merely opening the screen doesn't start a round. If local storage is unavailable the daily challenge is disabled (practice still works), because progress would not be kept.
+- Single-writer lease per date in localStorage (15 s TTL, 5 s heartbeat, `storage` events). A second tab is read-only, follows the writer's saves, and can "move control" or inherit it when the lease expires. Reliability only, not anti-cheat.
+- Round reloaded mid-reveal: `restoreRound` clears `pendingReveal` (the preload promise is gone; nothing was charged).
+- Share text carries only date, counts, score and clue ratios (a test asserts no club names or puzzle ids). If copying fails, a selectable text box appears.
+- Dev-only `?now=<ISO time>` overrides the app clock (production builds ignore it), used to test the rollover.
+
 ## Not built yet (by design)
-Daily challenge, review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.
+Review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.

@@ -133,3 +133,26 @@ describe('repository', () => {
     expect(repo.getPlayablePuzzle({ id: 'fx-p-a', revision: 1 })?.totalReveals).toBe(3)
   })
 })
+
+describe('daily schedule validation', () => {
+  const withDaily = async () => {
+    const { fixtureDailySchedule } = await import('../src/content/fixtures.ts')
+    return { ...clone(fixtureRaw), daily: fixtureDailySchedule('2026-10-15') }
+  }
+  const issues = (raw: RawContent) => validateContent(raw, { kind: 'fixture', assetExists: fixtureAssetExists })
+
+  it('accepts a generated fixture schedule, warning only about consecutive-day repeats', async () => {
+    const found = issues(await withDaily())
+    expect(found.filter((i) => i.severity === 'error')).toEqual([])
+    expect(found.some((i) => i.code === 'daily-consecutive-club')).toBe(true)
+  })
+
+  it('rejects an impossible calendar date and two entries for one date', async () => {
+    const raw = await withDaily()
+    ;(raw.daily[0] as { dateUtc: string }).dateUtc = '2026-02-30'
+    ;(raw.daily[1] as { dateUtc: string; id: string }).dateUtc = (raw.daily[2] as { dateUtc: string }).dateUtc
+    const found = issues(raw).map((i) => i.code)
+    expect(found).toContain('bad-date')
+    expect(found).toContain('duplicate-date')
+  })
+})

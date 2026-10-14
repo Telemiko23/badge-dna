@@ -37,6 +37,8 @@ interface Props {
   isTestPuzzle: boolean
   nextLabel: string
   onNext: () => void
+  /** Another tab owns this round: show it, but allow no actions. */
+  readOnly?: boolean
 }
 
 function MistakePips({ used, max }: { used: number; max: number }) {
@@ -60,6 +62,7 @@ export function RoundView({
   isTestPuzzle,
   nextLabel,
   onNext,
+  readOnly = false,
 }: Props) {
   const { t, tn, lang } = useI18n()
   const roundRef = useRef(round)
@@ -88,6 +91,7 @@ export function RoundView({
   const apply = useCallback(
     (transition: (state: RoundState) => RoundState): RoundState => {
       const current = roundRef.current
+      if (readOnly) return current
       const next = transition(current)
       if (next !== current) {
         roundRef.current = next
@@ -95,7 +99,7 @@ export function RoundView({
       }
       return next
     },
-    [onRoundChange],
+    [onRoundChange, readOnly],
   )
 
   const base = { puzzleId: puzzle.ref.id, revision: puzzle.ref.revision, mode: round.mode }
@@ -132,6 +136,7 @@ export function RoundView({
   }
 
   function guess(clubId: string) {
+    if (readOnly) return
     const current = roundRef.current
     const { state, outcome } = submitGuess(current, {
       answerClubId: puzzle.clubId,
@@ -262,7 +267,7 @@ export function RoundView({
             <li>{t('result.revealed', { k: visibleCount, n: round.totalReveals })}</li>
             <li>{t('result.mistakes', { n: mistakes })}</li>
           </ul>
-          <button type="button" className="btn btn-primary" onClick={onNext}>
+          <button type="button" className="btn btn-primary" onClick={onNext} disabled={readOnly}>
             {nextLabel}
           </button>
         </section>
@@ -288,12 +293,12 @@ export function RoundView({
 
       {!finished && (
         <section className="actions" aria-label={t('guess.button')}>
-          <ClubSearch index={searchIndex} disabled={!canGuess(round)} onSubmit={guess} />
+          <ClubSearch index={searchIndex} disabled={readOnly || !canGuess(round)} onSubmit={guess} />
           {feedback && <p className="feedback">{feedback}</p>}
           <button
             type="button"
             className="btn btn-secondary btn-block"
-            disabled={!canReveal(round)}
+            disabled={readOnly || !canReveal(round)}
             onClick={reveal}
           >
             {round.pendingReveal
@@ -310,7 +315,7 @@ export function RoundView({
           <button
             type="button"
             className="btn btn-link"
-            disabled={round.status !== 'active'}
+            disabled={readOnly || round.status !== 'active'}
             onClick={() => setConfirmingGiveUp(true)}
           >
             {t('giveUp.button')}

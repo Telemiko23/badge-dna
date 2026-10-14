@@ -1,4 +1,5 @@
 import { GAME_CONFIG } from '../domain/config.ts'
+import { addDays, isValidDateUtc } from '../domain/dates.ts'
 import { parseRawContent, type ParsedContent, type RawContent } from './schemas.ts'
 
 export interface ValidationIssue {
@@ -157,6 +158,22 @@ export function validateContent(raw: RawContent, options: ValidateOptions): Vali
     }
     if (d.scoringVersion !== GAME_CONFIG.scoringVersion) {
       error('scoring-version', `daily ${d.id}: unsupported ${d.scoringVersion}`)
+    }
+  }
+
+  for (const d of content.daily) {
+    if (!isValidDateUtc(d.dateUtc)) error('bad-date', `daily ${d.id}: ${d.dateUtc} is not a calendar date`)
+  }
+  // Same club on consecutive days is discouraged (spec §11), so it is a warning.
+  const byDate = new Map(content.daily.map((d) => [d.dateUtc, d]))
+  for (const d of content.daily) {
+    if (!isValidDateUtc(d.dateUtc)) continue
+    const previous = byDate.get(addDays(d.dateUtc, -1))
+    if (!previous) continue
+    const clubsToday = new Set(dailyPuzzleClubs(d))
+    const repeated = dailyPuzzleClubs(previous).filter((c) => c && clubsToday.has(c))
+    if (repeated.length > 0) {
+      warn('daily-consecutive-club', `${previous.dateUtc} and ${d.dateUtc} share ${[...new Set(repeated)].join(', ')}`)
     }
   }
 

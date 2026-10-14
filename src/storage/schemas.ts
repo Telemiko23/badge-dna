@@ -53,6 +53,27 @@ export const PracticeProgressSchema = z.strictObject({
   activeRound: RoundStateSchema.nullable(),
 })
 
+/**
+ * One record per game date. `puzzleRefs` is a frozen copy of the schedule entry the
+ * player started with, so later content changes never swap a puzzle mid-challenge.
+ */
+export const DailyProgressSchema = z.strictObject({
+  schemaVersion: z.literal(GAME_CONFIG.storage.schemaVersion),
+  dailyId: z.string().min(1),
+  dateUtc: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  sessionId: z.string().min(1),
+  contentVersion: z.string().min(1),
+  scoringVersion: z.string().min(1),
+  contentSource: z.enum(['real', 'fixture']),
+  puzzleRefs: z.array(PuzzleRefSchema).length(GAME_CONFIG.dailyPuzzleCount),
+  /** 0..2 while playing; equals the number of puzzles once the challenge is complete. */
+  currentRoundIndex: z.number().int().min(0).max(GAME_CONFIG.dailyPuzzleCount),
+  results: z.array(RoundResultSchema).max(GAME_CONFIG.dailyPuzzleCount),
+  activeRound: RoundStateSchema.nullable(),
+  startedAt: z.string(),
+  completedAt: z.string().nullable(),
+})
+
 export const SettingsSchema = z.strictObject({
   schemaVersion: z.literal(GAME_CONFIG.storage.schemaVersion),
   lang: z.enum(['he', 'en']),
@@ -60,4 +81,5 @@ export const SettingsSchema = z.strictObject({
 
 export type RoundResult = z.infer<typeof RoundResultSchema>
 export type PracticeProgress = z.infer<typeof PracticeProgressSchema>
+export type DailyProgress = z.infer<typeof DailyProgressSchema>
 export type Settings = z.infer<typeof SettingsSchema>

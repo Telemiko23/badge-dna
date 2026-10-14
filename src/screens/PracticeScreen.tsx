@@ -2,7 +2,7 @@ import { useCallback, useRef, useState } from 'react'
 import { RoundView } from '../components/RoundView.tsx'
 import type { ActiveContent } from '../content/load.ts'
 import { useI18n } from '../i18n/I18nContext.ts'
-import type { RoundState } from '../domain/round.ts'
+import { restoreRound, type RoundState } from '../domain/round.ts'
 import { archivePractice, loadPractice, savePractice } from '../storage/stores.ts'
 import { getStorage } from '../storage/safeStorage.ts'
 import type { PracticeProgress } from '../storage/schemas.ts'
@@ -24,7 +24,10 @@ function initialise(content: ActiveContent): Init {
   const stored = loadPractice()
   const now = new Date().toISOString()
   if (stored.kind === 'ok') {
-    if (canRestore(stored.value, content.repo)) return { kind: 'ready', session: stored.value }
+    if (canRestore(stored.value, content.repo)) {
+      const { activeRound } = stored.value
+      return { kind: 'ready', session: { ...stored.value, activeRound: activeRound && restoreRound(activeRound) } }
+    }
     return { kind: 'restore-problem' }
   }
   if (stored.kind === 'corrupt') return { kind: 'restore-problem' }

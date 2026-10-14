@@ -128,6 +128,14 @@ export function retryLoading(state: RoundState): RoundState {
   return { ...state, status: 'loading', revealedCount: 0 }
 }
 
+/**
+ * A round read back from storage: an extra clue that was still loading when the page closed
+ * can never finish, so the pending flag is cleared (nothing was charged for it).
+ */
+export function restoreRound(state: RoundState): RoundState {
+  return state.pendingReveal ? { ...state, pendingReveal: false } : state
+}
+
 export function startReveal(state: RoundState): RoundState {
   if (!canReveal(state)) return state
   return { ...state, pendingReveal: true }
