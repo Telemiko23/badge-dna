@@ -1,0 +1,5 @@
+[
+  { "id": "fx-club-a", "displayName": { "he": "דרקוני הים", "en": "Sea Dragons FC" }, "aliases": ["Sea Dragons"], "countryCode": "XX", "active": true },
+  { "id": "fx-club-b", "displayName": { "he": "נשרי הרמה", "en": "Highland Eagles" }, "aliases": ["Eagles"], "countryCode": "XX", "active": true },
+  { "id": "fx-club-c", "displayName": { "he": "עצי האלון", "en": "Oak Rovers" }, "aliases": ["Oak"], "countryCode": "XX", "active": true }
+]

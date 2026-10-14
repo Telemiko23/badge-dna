@@ -1,0 +1,62 @@
+[
+  {
+    "id": "fx-p-a",
+    "revision": 1,
+    "clubId": "fx-club-a",
+    "crestVersionId": "fx-crest-a",
+    "revealOrder": [
+      "fx-e-a1",
+      "fx-e-a2",
+      "fx-e-a3"
+    ],
+    "status": "published",
+    "audience": "fixture",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Fixture, 3 reveals: pattern, tool, frame.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "fx-p-b",
+    "revision": 1,
+    "clubId": "fx-club-b",
+    "crestVersionId": "fx-crest-b",
+    "revealOrder": [
+      "fx-e-b1",
+      "fx-e-b2",
+      "fx-e-b3",
+      "fx-e-b4"
+    ],
+    "status": "published",
+    "audience": "fixture",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Fixture, 4 reveals; includes a white element to check card contrast.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "fx-p-c",
+    "revision": 1,
+    "clubId": "fx-club-c",
+    "crestVersionId": "fx-crest-c",
+    "revealOrder": [
+      "fx-e-c1",
+      "fx-e-c4",
+      "fx-e-c2",
+      "fx-e-c3",
+      "fx-e-c5"
+    ],
+    "status": "published",
+    "audience": "fixture",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Fixture, 5 reveals; leaf is a sub-element of the branch (revealed before it).",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  }
+]

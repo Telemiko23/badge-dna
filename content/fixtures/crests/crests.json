@@ -1,0 +1,47 @@
+[
+  {
+    "id": "fx-crest-a",
+    "clubId": "fx-club-a",
+    "variantLabel": "synthetic v1",
+    "validFrom": null,
+    "validTo": null,
+    "fullAssetPath": "fixtures/fx-a-full.svg",
+    "sourceUrl": "synthetic://badge-dna/fixtures",
+    "retrievedAt": "2026-10-15",
+    "sourceSha256": "n/a-synthetic",
+    "rightsStatus": "approved_for_project",
+    "rightsEvidence": "Synthetic artwork drawn for this project test fixtures; it depicts no real club.",
+    "attributionText": null,
+    "fidelityReviewed": true
+  },
+  {
+    "id": "fx-crest-b",
+    "clubId": "fx-club-b",
+    "variantLabel": "synthetic v1",
+    "validFrom": null,
+    "validTo": null,
+    "fullAssetPath": "fixtures/fx-b-full.svg",
+    "sourceUrl": "synthetic://badge-dna/fixtures",
+    "retrievedAt": "2026-10-15",
+    "sourceSha256": "n/a-synthetic",
+    "rightsStatus": "approved_for_project",
+    "rightsEvidence": "Synthetic artwork drawn for this project test fixtures; it depicts no real club.",
+    "attributionText": null,
+    "fidelityReviewed": true
+  },
+  {
+    "id": "fx-crest-c",
+    "clubId": "fx-club-c",
+    "variantLabel": "synthetic v1",
+    "validFrom": null,
+    "validTo": null,
+    "fullAssetPath": "fixtures/fx-c-full.svg",
+    "sourceUrl": "synthetic://badge-dna/fixtures",
+    "retrievedAt": "2026-10-15",
+    "sourceSha256": "n/a-synthetic",
+    "rightsStatus": "approved_for_project",
+    "rightsEvidence": "Synthetic artwork drawn for this project test fixtures; it depicts no real club.",
+    "attributionText": null,
+    "fidelityReviewed": true
+  }
+]

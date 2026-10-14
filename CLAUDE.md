@@ -1,0 +1,34 @@
+# Badge DNA — project rules
+
+Source of truth for product and build: `docs/Badge-DNA-Build-Spec.md` (v1.0, 2026-10-15, owner: Liran Telem).
+This file lists the approved rules a contributor must not break. It does not claim that any
+editor approval or usage rights have been given; none have (see `docs/content-status.md`).
+
+## Core mechanic (approved — do not change silently)
+- Clues are real, meaningful graphic **elements** of one defined version of a club crest (sub-elements such as a wheel or a leaf are allowed). No blur, pixelation, zoom or random crops.
+- Each reveal adds exactly one element on its own card. Earlier elements stay visible. Elements are never assembled into the crest during the round.
+- The full crest is shown only at the end of the round, in a separate answer area.
+- One fixed, approved reveal order per puzzle revision. No shuffling.
+- Club name is never a clue. Nothing in the DOM (text, `alt`, `title`, ids, asset names, debug output) may reveal the answer before the round ends. Asset paths use neutral ids.
+- Any change to this mechanic is a written proposal to the owner, not a quiet change.
+
+## Defaults (build defaults, not product decisions — keep them in `src/domain/config.ts`)
+- 3 mistakes end the round; reveal after a mistake is manual; no timer; no accounts; local progress only.
+- scoring-v1: `baseScore = round10(1000 - 700*(K-1)/(N-1))`, `success = max(100, base - 100*W)`; failed/gave-up = 0. One pure function is used for the live preview and the final score (`src/domain/scoring.ts`).
+- Hebrew first (RTL), English supported through `src/i18n`. UI strings live in the dictionaries only.
+- Guess is judged by `clubId` chosen from the search list; never by string comparison and never by AI.
+
+## Architecture
+`src/domain` pure rules (no React, no storage) · `src/content` schemas, validator, repository · `src/storage` safe localStorage + zod · `src/i18n` · `src/components`, `src/screens` UI · `content/` JSON · `public/assets/` neutral-id crest assets.
+
+## Content rules
+- Never invent crests, reviewers, rights evidence, difficulty ratings or player data. `rightsStatus`, `fidelityReviewed`, `visualReviewed`, `reviewedBy/At` are set by a human, never by a script or by AI.
+- Synthetic fixtures (`content/fixtures`) use invented clubs only, are excluded from production builds (`__INCLUDE_FIXTURES__`), and must never enter the published pool or a daily schedule.
+- Published puzzle revisions are immutable; change a puzzle by adding a new `revision`.
+- After editing `content/`, run `npm run validate:content`.
+
+## Commands
+`npm run dev` · `npm test` · `npm run typecheck` · `npm run lint` · `npm run build` · `npm run validate:content`
+
+## Do not
+Deploy, publish, add analytics/network calls, add third-party fonts/CDNs, or add features from spec §3.3 without an explicit owner decision.

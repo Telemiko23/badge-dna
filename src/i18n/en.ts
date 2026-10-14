@@ -1,0 +1,103 @@
+import type { MessageKey } from './he.ts'
+
+export const en: Record<MessageKey, string> = {
+  'app.name': 'Badge DNA',
+  'nav.home': 'Home',
+  'nav.back': 'Back',
+  'common.cancel': 'Cancel',
+  'common.close': 'Close',
+
+  'lang.label': 'Language',
+  'lang.he': 'עברית',
+  'lang.en': 'English',
+
+  'dev.banner': 'Development build · test puzzles only (invented clubs and crests)',
+  'dev.testPuzzle': 'Test puzzle',
+
+  'home.tagline': 'Name the club from the pieces of its badge',
+  'home.practice': 'Free practice',
+  'home.daily.title': 'Daily challenge',
+  'home.daily.unavailable': "Today's challenge isn't available yet",
+  'home.howTo': 'How to play',
+  'home.settings': 'Settings',
+
+  'content.empty.title': 'No puzzles available yet',
+  'content.empty.body': 'The engine is ready, but no approved puzzles for real clubs have been published yet.',
+  'content.error.title': "We couldn't load the content",
+
+  'practice.title': 'Free practice',
+  'practice.puzzleOf': 'Puzzle {n} of {total}',
+  'practice.exhausted.title': "You've finished every puzzle",
+  'practice.exhausted.body': "You've been through all the puzzles available in this round.",
+  'practice.newCycle': 'New round',
+  'practice.finish': 'Finish round',
+  'practice.summary': 'Attempts: {attempts} · Solved: {solved}',
+  'practice.restore.title': "Your progress can't be restored",
+  'practice.restore.body':
+    'The saved progress refers to a puzzle that is no longer available in this version. The original record is kept aside.',
+  'practice.restore.startNew': 'Start a new session',
+
+  'storage.unavailable': "Local storage isn't available. You can play, but progress won't be saved.",
+  'storage.saveFailed': 'Saving failed. Your progress may be lost.',
+
+  'round.possible': 'Possible score: {score}',
+  'round.mistakes': 'Mistakes: {n} of {max}',
+  'round.cluesTitle': 'Clues',
+  'round.loadFailed.title': "We couldn't load this puzzle",
+  'round.loadFailed.body': "This is a technical problem and didn't count as an attempt. You can try again.",
+  'round.retry': 'Try again',
+
+  'clue.label': 'Clue {n}',
+  'clue.alt': 'Element {n} of the badge',
+  'clue.loading': 'Loading…',
+  'clue.zoom': 'Enlarge',
+  'clue.zoomTitle': 'Clue {n}',
+
+  'guess.label': 'Which club is this?',
+  'guess.placeholder': 'Type a club name',
+  'guess.button': 'Guess',
+  'guess.suggestions': 'Club suggestions',
+  'guess.noResults': 'No clubs found',
+  'guess.pickHint': 'Pick a club from the list to guess.',
+  'guess.duplicate': "You already guessed that club. It doesn't count as a mistake.",
+  'guess.wrong.one': 'Wrong. One attempt left.',
+  'guess.wrong.other': 'Wrong. {n} attempts left.',
+  'guess.history': 'Previous guesses',
+  'guess.wrongMark': 'Wrong',
+
+  'reveal.button': 'Reveal another · score after reveal: {score}',
+  'reveal.loading': 'Loading clue…',
+  'reveal.allShown': 'All clues revealed',
+  'reveal.announce': 'Clue {n} revealed',
+  'reveal.failed': "The clue couldn't be loaded. No points were deducted. You can try again.",
+
+  'giveUp.button': 'Give up',
+  'giveUp.confirm': 'Reveal the answer and end the round?',
+  'giveUp.yes': 'Reveal and end',
+
+  'result.solved': 'Correct!',
+  'result.failed': 'Round over',
+  'result.gave_up': 'You gave up',
+  'result.answer': 'The club: {name}',
+  'result.score': 'Score: {score}',
+  'result.revealed': 'Elements revealed: {k} of {n}',
+  'result.mistakes': 'Mistakes: {n}',
+  'result.crestAlt': 'Full badge of {name}',
+  'result.crestFailed': "The full badge couldn't be loaded. Your score is saved.",
+  'result.crestTitle': 'The full badge',
+  'result.next': 'Next puzzle',
+
+  'howTo.title': 'How to play',
+  'howTo.1': 'Each puzzle shows one element from a football club badge. Every element appears on its own card.',
+  'howTo.2': 'You can guess, or reveal one more element. Elements already revealed stay visible.',
+  'howTo.3': 'Every reveal lowers the possible score. Every mistake lowers it too, and three mistakes end the round.',
+  'howTo.4': 'At the end the full badge is shown. There is no time limit.',
+
+  'settings.title': 'Settings',
+  'settings.reset': 'Reset local data',
+  'settings.resetHelp': 'Deletes the progress and settings saved in this browser. This cannot be undone.',
+  'settings.resetConfirm': 'Delete all progress saved on this device?',
+  'settings.resetYes': 'Delete',
+  'settings.resetDone': 'Local data was deleted.',
+  'settings.exportEvents': 'Export event log (development)',
+}
