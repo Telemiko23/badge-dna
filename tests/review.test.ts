@@ -1,11 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { EMPTY_REVIEW, ReviewFileSchema, puzzleKey, reviewCounts, type ReviewFile } from '../src/review/schema.ts'
+import { EMPTY_REVIEW, ReviewFileSchema, puzzleKey, puzzleSignature, reviewCounts, type ReviewFile } from '../src/review/schema.ts'
 
 const all = { crestMatchesSource: true, piecesFaithfulAndReadable: true, orderAcceptable: true }
 const decision = (d: 'approved' | 'changes' | 'rejected', confirmations = all) => ({
   decision: d,
   note: '',
   decidedAt: '2026-10-15T12:00:00.000Z',
+  signature: 'c|a,b,c',
   confirmations,
 })
 
@@ -40,5 +41,6 @@ describe('review decisions', () => {
     }
     expect(reviewCounts(file, ['a@1', 'b@1', 'c@1', 'd@1', 'e@1'])).toEqual({ approved: 1, changes: 1, rejected: 1, pending: 2 })
     expect(puzzleKey({ id: 'pz_1', revision: 3 })).toBe('pz_1@3')
+    expect(puzzleSignature({ crestVersionId: 'c_1', revealOrder: ['e_1', 'e_2'] })).toBe('c_1|e_1,e_2')
   })
 })

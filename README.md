@@ -18,6 +18,16 @@ With no approved real puzzles yet, the dev build plays **synthetic test puzzles*
 ## Reviewing the draft puzzles (development only)
 Run `npm run dev`, open Settings, then the puzzle review screen (or go to `#/review`). Enter the reviewer name, open a club, look at the crest and every piece in order, tick the three confirmations and approve, or mark the puzzle as needing changes or rejected. Decisions are saved to `content/reviews/review.json` by the dev server; the screen and the save endpoint do not exist in production builds.
 
+## Publishing approved puzzles (stage C)
+After approving puzzles in the review screen:
+
+```bash
+npm run promote -- --dry-run   # shows what would be published and validates it, writes nothing
+npm run promote                # copies the approved puzzles, their crests and pieces into the real content
+```
+
+It publishes only puzzles marked "approved" in `content/reviews/review.json` that are unchanged since the approval, copies their PNG files to `public/assets/` (these become part of the repository and of any deployed site), records the rights basis from `content/reviews/rights-basis.json`, and adds new dated daily challenges (14 by default; `--days=N`, `--no-daily`) after today and after the last released date. A published puzzle revision never changes; released daily dates are never edited.
+
 ## Scripts
 
 | Command | What it does |
@@ -28,6 +38,7 @@ Run `npm run dev`, open Settings, then the puzzle review screen (or go to `#/rev
 | `npm run validate:content` | Schema, reference, asset and publish-gate checks on `content/` and fixtures |
 | `npm run build` | Production build into `dist/` (no fixtures) |
 | `node scripts/import-package.ts <folder>` | Imports an owner-provided PNG package as draft candidate content |
+| `npm run promote` | Publishes the owner-approved puzzles (see above) |
 | `npm run build:dev` | Build with fixtures into `dist-dev/` for QA |
 
 ## Project layout

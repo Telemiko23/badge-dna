@@ -4,8 +4,11 @@ import type { ContentRepository } from '../content/repository.ts'
 import type { Puzzle } from '../content/schemas.ts'
 import { labelFor } from '../domain/search.ts'
 import { useI18n } from '../i18n/I18nContext.ts'
-import { puzzleKey, reviewCounts, type ReviewDecision, type ReviewFile } from '../review/schema.ts'
+import { ConfirmDialog } from '../components/ConfirmDialog.tsx'
+import { puzzleKey, puzzleSignature, reviewCounts, type ReviewDecision, type ReviewFile } from '../review/schema.ts'
 import { useReviewFile } from '../review/useReviewFile.ts'
+
+const timestamp = () => new Date().toISOString()
 
 type Filter = 'all' | 'pending' | 'approved' | 'changes' | 'rejected'
 const FILTERS: Filter[] = ['all', 'pending', 'approved', 'changes', 'rejected']
@@ -19,6 +22,8 @@ export default function ReviewScreen({ content }: { content: ActiveContent }) {
   const { t, lang } = useI18n()
   const { file, save, status } = useReviewFile()
   const [filter, setFilter] = useState<Filter>('all')
+  const [bulk, setBulk] = useState({ crestMatchesSource: false, piecesFaithfulAndReadable: false, orderAcceptable: false })
+  const [confirmingBulk, setConfirmingBulk] = useState(false)
   const repo = content.repo
 
   const puzzles = useMemo(() => repo.playablePuzzles(), [repo])
@@ -45,6 +50,20 @@ export default function ReviewScreen({ content }: { content: ActiveContent }) {
   const visible = (p: Puzzle) => {
     const d = file.puzzles[puzzleKey(p)]
     return filter === 'all' || (filter === 'pending' ? !d : d?.decision === filter)
+  }
+
+  const pendingShown = puzzles.filter((p) => visible(p) && !file.puzzles[puzzleKey(p)])
+  const bulkReady = bulk.crestMatchesSource && bulk.piecesFaithfulAndReadable && bulk.orderAcceptable && file.reviewer.trim().length > 0
+  const approveShown = () => {
+    setConfirmingBulk(false)
+    const decidedAt = timestamp()
+    const added = Object.fromEntries(
+      pendingShown.map((p) => [
+        puzzleKey(p),
+        { decision: 'approved' as const, note: '', decidedAt, signature: puzzleSignature(p), confirmations: bulk },
+      ]),
+    )
+    save({ ...file, puzzles: { ...file.puzzles, ...added } })
   }
 
   return (
@@ -80,6 +99,52 @@ export default function ReviewScreen({ content }: { content: ActiveContent }) {
             </option>
           ))}
         </select>
+      </div>
+
+      <div className="panel">
+        <h3>{t('review.bulk.title')}</h3>
+        <p className="muted">{t('review.bulk.help')}</p>
+        <fieldset className="review-confirm">
+          <label>
+            <input
+              type="checkbox"
+              checked={bulk.crestMatchesSource}
+              onChange={() => setBulk({ ...bulk, crestMatchesSource: !bulk.crestMatchesSource })}
+            />
+            {t('review.confirm.crest')}
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={bulk.piecesFaithfulAndReadable}
+              onChange={() => setBulk({ ...bulk, piecesFaithfulAndReadable: !bulk.piecesFaithfulAndReadable })}
+            />
+            {t('review.confirm.pieces')}
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={bulk.orderAcceptable}
+              onChange={() => setBulk({ ...bulk, orderAcceptable: !bulk.orderAcceptable })}
+            />
+            {t('review.confirm.order')}
+          </label>
+        </fieldset>
+        <button
+          type="button"
+          className="btn btn-primary"
+          disabled={!bulkReady || pendingShown.length === 0}
+          onClick={() => setConfirmingBulk(true)}
+        >
+          {t('review.bulk.button', { n: pendingShown.length })}
+        </button>
+        <ConfirmDialog
+          open={confirmingBulk}
+          title={t('review.bulk.confirm', { n: pendingShown.length, name: file.reviewer })}
+          confirmLabel={t('review.bulk.yes')}
+          onConfirm={approveShown}
+          onCancel={() => setConfirmingBulk(false)}
+        />
       </div>
 
       {byClub.map(({ clubId, label, list }) => {
@@ -160,7 +225,10 @@ function PuzzleCard({
   function decide(decision: ReviewDecision['decision']) {
     save({
       ...file,
-      puzzles: { ...file.puzzles, [key]: { decision, note, decidedAt: new Date().toISOString(), confirmations } },
+      puzzles: {
+        ...file.puzzles,
+        [key]: { decision, note, decidedAt: new Date().toISOString(), signature: puzzleSignature(puzzle), confirmations },
+      },
     })
   }
   function reset() {

@@ -67,5 +67,14 @@ Decisions made while building milestones 1–2. None change the core mechanic. "
 - Approving a puzzle is a human act: nobody (including the assistant) fills it in.
 - Draft notes are now written in Hebrew (from the piece labels in the package) so the screen doesn't mix languages.
 
+## Promotion tool (stage C, 2026-10-15)
+- `npm run promote` (`scripts/promote.ts`, planning in `scripts/promote-lib.ts`, unit-tested). Reads the owner's approvals from `content/reviews/review.json`; with no approvals it does nothing.
+- Approvals are bound to the puzzle's crest + reveal order (`signature`), so an approval is never applied to a puzzle that was changed or regenerated afterwards.
+- Copies approved puzzles, their crest and only the pieces they use. Review flags (reviewer, date, fidelity, visual) come from the owner's decision. Rights basis text comes from `content/reviews/rights-basis.json` (the owner's recorded decision): crest `rightsStatus: approved_for_project` with that text as evidence. No licence exists.
+- Published puzzle revisions are immutable (a changed order is refused: add a new revision). A withdrawn approval warns but never unpublishes.
+- Output goes to `promoted.json` files in `content/crests`, `elements`, `puzzles`, `daily`; assets to `public/assets` (tracked by git, deployed with the site). The result is validated with the real-content rules before anything is written.
+- Daily schedule: explicit dates only after today and after the last released date; three different clubs a day; clubs used longest ago go first so a club does not return on consecutive days when there are enough clubs.
+- Review screen: group approval (three confirmations + reviewer name + a confirmation dialog) for the pending puzzles currently shown.
+
 ## Not built yet (by design)
 Review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.

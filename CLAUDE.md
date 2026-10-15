@@ -34,6 +34,9 @@ editor approval or usage rights have been given; none have (see `docs/content-st
 ## Review decisions
 `content/reviews/review.json` holds the owner's approvals. It is written only through the development review screen (`#/review`), by the owner. Never create, edit or fill in approvals, reviewer names or confirmations on the owner's behalf.
 
+## Publishing
+`npm run promote` is the only way puzzles become published. It needs the owner's approvals and copies real crest files into `public/assets/`, which then ship with any deployment: run it with `--dry-run` first and never commit or push promoted files without the owner's go-ahead. Published puzzle revisions and released daily dates are never edited.
+
 ## Legal
 The footer link and the `#/legal` page (texts in `src/i18n`, settings in `src/legal.ts`) must stay on every build. They are a disclaimer, not a licence: they never change a crest's `rightsStatus` (see `docs/legal-notice.md`). Do not edit them to claim permissions that were not given.
 

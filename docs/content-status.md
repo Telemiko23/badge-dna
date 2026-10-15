@@ -4,6 +4,7 @@
 
 | Item | Status |
 | --- | --- |
+| Review decisions saved by the owner | **none yet** (`content/reviews/review.json` does not exist); `npm run promote` publishes nothing until approvals exist |
 | Real published puzzles | **0** (target for first release: 15; first playtest: 5) |
 | Draft puzzles of real crests (candidates) | **37** for the 20 Premier League 2026/27 clubs, from the owner's PNG-v2 package; assistant-written orders, unreviewed (see `png-v2-review.md`). Dev builds only |
 | Real crest assets in `public/assets/` | none (candidate PNGs live in `content/candidates/assets/`, git-ignored) |
