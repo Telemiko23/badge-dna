@@ -8,6 +8,7 @@ import { parseRoute, routeHash, type Route } from './routes.ts'
 import { DailyScreen } from './screens/DailyScreen.tsx'
 import { HomeScreen } from './screens/HomeScreen.tsx'
 import { HowToScreen } from './screens/HowToScreen.tsx'
+import { LegalScreen } from './screens/LegalScreen.tsx'
 import { PracticeScreen } from './screens/PracticeScreen.tsx'
 import { SettingsScreen } from './screens/SettingsScreen.tsx'
 import { logEvent } from './storage/eventLog.ts'
@@ -123,7 +124,13 @@ export default function App() {
         )}
         {route.name === 'how-to' && <HowToScreen />}
         {route.name === 'settings' && <SettingsScreen />}
+        {route.name === 'legal' && <LegalScreen />}
       </main>
+
+      <footer className="app-footer">
+        <p>{t('legal.footer')}</p>
+        <a href="#/legal">{t('legal.link')}</a>
+      </footer>
     </div>
   )
 }

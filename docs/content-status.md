@@ -7,6 +7,7 @@
 | Real published puzzles | **0** (target for first release: 15; first playtest: 5) |
 | Draft puzzles of real crests (candidates) | **37** for the 20 Premier League 2026/27 clubs, from the owner's PNG-v2 package; assistant-written orders, unreviewed (see `png-v2-review.md`). Dev builds only |
 | Real crest assets in `public/assets/` | none (candidate PNGs live in `content/candidates/assets/`, git-ignored) |
+| Legal notice in the app | yes (footer + `#/legal`, he/en); a disclaimer, not a licence — see `legal-notice.md`; contact address not set |
 | Rights / usage basis for any real crest | **not established** — the package names footylogos.com as the source; availability to download is not permission |
 | Human review (fidelity, visual, reviewer sign-off) | none given; no puzzle has `reviewedBy` |
 | Synthetic test puzzles | 3 (fixtures: 3, 4 and 5 reveals) — dev only |

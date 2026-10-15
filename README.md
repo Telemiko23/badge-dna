@@ -46,6 +46,7 @@ tests/         vitest suites
 - `docs/decisions.md` — implementation decisions and assumptions
 - `docs/content-status.md` — what content exists, what blocks real puzzles
 - `docs/content-guide.md` — how to add a puzzle
+- `docs/legal-notice.md` — the in-app legal notice and what it does not settle
 - `docs/png-v2-review.md` — review of the owner's PNG package and what it needs
 - `docs/roadmap.md` — what is done, next, and owner requests being designed
 - `docs/limitations.md` — known gaps

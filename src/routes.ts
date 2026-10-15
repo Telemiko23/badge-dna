@@ -3,9 +3,10 @@ export type Route =
   | { name: 'practice' }
   | { name: 'how-to' }
   | { name: 'settings' }
+  | { name: 'legal' }
   | { name: 'daily'; date: string }
 
-const SIMPLE = ['practice', 'how-to', 'settings'] as const
+const SIMPLE = ['practice', 'how-to', 'settings', 'legal'] as const
 
 export function parseRoute(hash: string): Route {
   const path = hash.replace(/^#\/?/, '')

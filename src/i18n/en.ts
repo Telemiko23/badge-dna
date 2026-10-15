@@ -133,6 +133,18 @@ export const en: Record<MessageKey, string> = {
   'status.failed': 'Failed',
   'status.gave_up': 'Gave up',
 
+  'legal.link': 'Legal notice',
+  'legal.footer': 'An independent fan game, not affiliated with any club or league. Names and crests belong to their owners.',
+  'legal.title': 'Legal notice',
+  'legal.independent':
+    'Badge DNA is an independent fan-made game. It is not affiliated with, endorsed, approved or sponsored by any football club, league or competition.',
+  'legal.trademarks':
+    'Club names, crests and logos are trademarks and protected works of their respective owners, who reserve all rights in them. They are shown in the game for identification purposes only.',
+  'legal.assets':
+    'Crests and their parts are shown as they are, with their colours unchanged. Showing them is not a statement of partnership or sponsorship.',
+  'legal.privacy': 'The game collects no personal data and sends nothing to any server. Your progress is stored only in your browser.',
+  'legal.takedown': 'Rights holders who want a crest removed or a reference corrected are welcome to contact us.',
+
   'howTo.title': 'How to play',
   'howTo.1': 'Each puzzle shows one element from a football club badge. Every element appears on its own card.',
   'howTo.2': 'You can guess, or reveal one more element. Elements already revealed stay visible.',

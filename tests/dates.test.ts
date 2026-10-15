@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { parseRoute, routeHash } from '../src/routes.ts'
 import { addDays, dayStartMs, gameDateUtc, isValidDateUtc, nextRolloverMs, timeLeft } from '../src/domain/dates.ts'
 
 describe('game date (UTC)', () => {
@@ -39,5 +40,17 @@ describe('game date (UTC)', () => {
   it('adds days across month and year ends', () => {
     expect(addDays('2026-12-31', 1)).toBe('2027-01-01')
     expect(addDays('2026-03-01', -1)).toBe('2026-02-28')
+  })
+})
+
+describe('routes', () => {
+  it('round-trips every route, including the legal notice and dated daily challenges', () => {
+    for (const hash of ['#/', '#/practice', '#/how-to', '#/settings', '#/legal', '#/daily/2026-10-15']) {
+      expect(routeHash(parseRoute(hash))).toBe(hash)
+    }
+  })
+
+  it('falls back to home for unknown or malformed routes', () => {
+    for (const hash of ['', '#/nope', '#/daily/15-10-2026', '#/daily/']) expect(parseRoute(hash)).toEqual({ name: 'home' })
   })
 })
