@@ -44,4 +44,4 @@ The footer link and the `#/legal` page (texts in `src/i18n`, settings in `src/le
 `logos/` holds owner-provided source images. It is git-ignored on purpose (usage rights undocumented): never commit or publish it. Extracted assets go to `public/assets/` with neutral ids only after human review.
 
 ## Do not
-Deploy, publish, add analytics/network calls, add third-party fonts/CDNs, or add features from spec §3.3 without an explicit owner decision.
+Push to master without the owner's go-ahead (every push to master deploys the site, see `docs/deploy.md`), add analytics/network calls, add third-party fonts/CDNs, or add features from spec §3.3 without an explicit owner decision.
