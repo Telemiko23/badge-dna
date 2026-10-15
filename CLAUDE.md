@@ -32,7 +32,7 @@ editor approval or usage rights have been given; none have (see `docs/content-st
 `npm run dev` · `npm test` · `npm run typecheck` · `npm run lint` · `npm run build` · `npm run validate:content`
 
 ## Review decisions
-`content/reviews/review.json` holds the owner's approvals. It is written only through the development review screen (`#/review`), by the owner. Never create, edit or fill in approvals, reviewer names or confirmations on the owner's behalf.
+`content/reviews/review.json` holds the owner's approvals. It is normally written through the development review screen (`#/review`), by the owner. Never create, edit or fill in approvals, reviewer names or confirmations on your own initiative. The only exception is an explicit written instruction from the owner; then every decision must carry a note saying how it was given (as in the 2026-10-15 blanket approval).
 
 ## Publishing
 `npm run promote` is the only way puzzles become published. It needs the owner's approvals and copies real crest files into `public/assets/`, which then ship with any deployment: run it with `--dry-run` first and never commit or push promoted files without the owner's go-ahead. Published puzzle revisions and released daily dates are never edited.

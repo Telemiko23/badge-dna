@@ -16,7 +16,7 @@ npm run dev        # http://localhost:5173
 With no approved real puzzles yet, the dev build plays **synthetic test puzzles** (invented clubs, invented crests) behind a "development build" banner. Production builds (`npm run build`) contain no fixtures; with no published real puzzles they show "no puzzles available yet".
 
 ## Reviewing the draft puzzles (development only)
-Run `npm run dev`, open Settings, then the puzzle review screen (or go to `#/review`). Enter the reviewer name, open a club, look at the crest and every piece in order, tick the three confirmations and approve, or mark the puzzle as needing changes or rejected. Decisions are saved to `content/reviews/review.json` by the dev server; the screen and the save endpoint do not exist in production builds.
+Run `npm run dev` and open `http://localhost:5173/?content=candidate#/review` (once puzzles are published the app shows the real content by default, and `?content=candidate` switches to the drafts). Enter the reviewer name, open a club, look at the crest and every piece in order, tick the three confirmations and approve, or mark the puzzle as needing changes or rejected. Decisions are saved to `content/reviews/review.json` by the dev server; the screen and the save endpoint do not exist in production builds.
 
 ## Publishing approved puzzles (stage C)
 After approving puzzles in the review screen:

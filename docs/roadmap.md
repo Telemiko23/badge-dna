@@ -9,7 +9,7 @@ Status as of 2026-10-15. "Owner" = Liran Telem. Items marked **(owner request)**
 - **UI refresh (owner request)**: dark theme, press/hover feedback on every button, language dropdown, controls that keep their physical position when the language flips.
 
 ## Next
-0. **Stage C (promotion tool) is built** (`npm run promote`); it has not published anything yet because no approvals exist. Stage D (deployment workflow) is next.
+0. **Stage C is done:** the owner approved all 38 drafts in writing and they were published (20 clubs). **Stage D (deployment workflow for GitHub Pages) is next.**
 0. **Stage B (review screen) is built.** The owner reviews the drafts at `#/review` in the dev build. Next: stage C, a promotion tool that turns approved puzzles into published content (assets into the public folder, rights evidence, daily schedule).
 1. **Real content pipeline (M3)** — the PNG-v2 package for 20 Premier League clubs is imported as drafts (`docs/png-v2-review.md`). Remaining: owner review of pieces and orders, rights decision, publish gate, real daily schedule.
 2. **M5** — Playwright end-to-end tests, visual QA at 360/390/768/1440 and 200% zoom, accessibility pass, asset security pass.

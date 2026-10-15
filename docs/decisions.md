@@ -76,5 +76,11 @@ Decisions made while building milestones 1–2. None change the core mechanic. "
 - Daily schedule: explicit dates only after today and after the last released date; three different clubs a day; clubs used longest ago go first so a club does not return on consecutive days when there are enough clubs.
 - Review screen: group approval (three confirmations + reviewer name + a confirmation dialog) for the pending puzzles currently shown.
 
+## Blanket approval and first publication (2026-10-15)
+- The owner approved all 38 drafts in one written message and asked to proceed. Decisions were recorded in `content/reviews/review.json` by a script from that instruction (reviewer "Liran Telem", all three confirmations true, note on each decision stating how it was given). CLAUDE.md now allows this only for an explicit written owner instruction.
+- `npm run promote` published them: 38 puzzles, 20 crests, 109 pieces, 129 PNG files in `public/assets/`, 14 daily dates from 2026-10-16. Validation: 0 errors, 0 warnings.
+- With published puzzles present the app runs in **real** mode in every build (no banners, no draft badge). The drafts are still reachable in development with `?content=candidate` (needed by the review screen).
+- Verified in a production build served locally: no banner or draft badge, real crests load, the review screen and its endpoint are absent, and the dev clock override is ignored.
+
 ## Not built yet (by design)
 Review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.

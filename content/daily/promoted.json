@@ -1,0 +1,282 @@
+[
+  {
+    "id": "d_2026-10-16",
+    "dateUtc": "2026-10-16",
+    "puzzleRefs": [
+      {
+        "id": "pz_c36ff29f",
+        "revision": 1
+      },
+      {
+        "id": "pz_420d7b11",
+        "revision": 1
+      },
+      {
+        "id": "pz_69070a1b",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-17",
+    "dateUtc": "2026-10-17",
+    "puzzleRefs": [
+      {
+        "id": "pz_a5743b14",
+        "revision": 1
+      },
+      {
+        "id": "pz_00b03556",
+        "revision": 1
+      },
+      {
+        "id": "pz_0c4c843c",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-18",
+    "dateUtc": "2026-10-18",
+    "puzzleRefs": [
+      {
+        "id": "pz_a087f30d",
+        "revision": 1
+      },
+      {
+        "id": "pz_10def154",
+        "revision": 1
+      },
+      {
+        "id": "pz_a4739aed",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-19",
+    "dateUtc": "2026-10-19",
+    "puzzleRefs": [
+      {
+        "id": "pz_3cedd976",
+        "revision": 1
+      },
+      {
+        "id": "pz_4584a1a6",
+        "revision": 1
+      },
+      {
+        "id": "pz_b74b2862",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-20",
+    "dateUtc": "2026-10-20",
+    "puzzleRefs": [
+      {
+        "id": "pz_22e3e1d6",
+        "revision": 1
+      },
+      {
+        "id": "pz_5e770d19",
+        "revision": 1
+      },
+      {
+        "id": "pz_28b55f78",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-21",
+    "dateUtc": "2026-10-21",
+    "puzzleRefs": [
+      {
+        "id": "pz_011a29f7",
+        "revision": 1
+      },
+      {
+        "id": "pz_225dd7bc",
+        "revision": 1
+      },
+      {
+        "id": "pz_7563b32d",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-22",
+    "dateUtc": "2026-10-22",
+    "puzzleRefs": [
+      {
+        "id": "pz_1126101a",
+        "revision": 1
+      },
+      {
+        "id": "pz_415373ea",
+        "revision": 1
+      },
+      {
+        "id": "pz_74581f8c",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-23",
+    "dateUtc": "2026-10-23",
+    "puzzleRefs": [
+      {
+        "id": "pz_c36ff29f",
+        "revision": 1
+      },
+      {
+        "id": "pz_cb6821c2",
+        "revision": 1
+      },
+      {
+        "id": "pz_d2530349",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-24",
+    "dateUtc": "2026-10-24",
+    "puzzleRefs": [
+      {
+        "id": "pz_8c4c6287",
+        "revision": 1
+      },
+      {
+        "id": "pz_d9306e2d",
+        "revision": 1
+      },
+      {
+        "id": "pz_2de45fd0",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-25",
+    "dateUtc": "2026-10-25",
+    "puzzleRefs": [
+      {
+        "id": "pz_e483b220",
+        "revision": 1
+      },
+      {
+        "id": "pz_a702e9fb",
+        "revision": 1
+      },
+      {
+        "id": "pz_efa553b2",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-26",
+    "dateUtc": "2026-10-26",
+    "puzzleRefs": [
+      {
+        "id": "pz_f3194705",
+        "revision": 1
+      },
+      {
+        "id": "pz_fe851ce3",
+        "revision": 1
+      },
+      {
+        "id": "pz_4a2cb833",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-27",
+    "dateUtc": "2026-10-27",
+    "puzzleRefs": [
+      {
+        "id": "pz_e2812e35",
+        "revision": 1
+      },
+      {
+        "id": "pz_627db0ba",
+        "revision": 1
+      },
+      {
+        "id": "pz_417b4578",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-28",
+    "dateUtc": "2026-10-28",
+    "puzzleRefs": [
+      {
+        "id": "pz_ce6ddb3d",
+        "revision": 1
+      },
+      {
+        "id": "pz_7563b32d",
+        "revision": 1
+      },
+      {
+        "id": "pz_94540025",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "d_2026-10-29",
+    "dateUtc": "2026-10-29",
+    "puzzleRefs": [
+      {
+        "id": "pz_69070a1b",
+        "revision": 1
+      },
+      {
+        "id": "pz_2e6b435d",
+        "revision": 1
+      },
+      {
+        "id": "pz_c36ff29f",
+        "revision": 1
+      }
+    ],
+    "contentVersion": "dev-0",
+    "scoringVersion": "scoring-v1"
+  }
+]

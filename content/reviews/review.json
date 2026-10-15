@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Liran Telem",
+  "puzzles": {
+    "pz_d2530349@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_55ed1290|e_2224a56b,e_babd8ff5,e_eaa9b925,e_d1b0b5f3",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_00b03556@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_55ed1290|e_e6212d54,e_eaa9b925,e_d1b0b5f3,e_babd8ff5,e_2224a56b",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_5e770d19@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_63b88ea5|e_9356c6fb,e_0081acce,e_f3340daa,e_65568bac",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_e2812e35@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_63b88ea5|e_0081acce,e_c96f7070,e_9356c6fb,e_285beef7,e_65568bac",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_fe851ce3@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_a2bcf0e0|e_723e1d49,e_194bcd62,e_90aea8fb",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_3cedd976@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_a2bcf0e0|e_90aea8fb,e_3e347c95,e_194bcd62",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_28b55f78@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_3b1a9fd4|e_4491b047,e_8600077c,e_d72d9d4d,e_d9a91f4a,e_dc82520e",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_627db0ba@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_3b1a9fd4|e_d9a91f4a,e_4491b047,e_d72d9d4d,e_dc82520e",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_10def154@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_62162a41|e_7897a178,e_7a76aee1,e_f60e741e,e_ba608fec",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_2de45fd0@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_62162a41|e_103551a1,e_f973873a,e_ba608fec,e_7a76aee1,e_f60e741e",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_a702e9fb@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_47b0f1fc|e_2543060f,e_6e889daf,e_402fc66c,e_7c46b356,e_2855c0fb",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_a087f30d@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_47b0f1fc|e_66c77c24,e_402fc66c,e_2543060f,e_7c46b356",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_415373ea@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_a084e769|e_6149ee94,e_81103166,e_bff9add7,e_c225e403,e_961fc04d",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_94540025@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_a084e769|e_c225e403,e_bff9add7,e_961fc04d,e_81103166",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_011a29f7@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_a05c6c6a|e_275240d6,e_f4f11460,e_98baa36a,e_45879ad8",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_417b4578@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_a05c6c6a|e_98baa36a,e_0ed96e00,e_cb5223a6,e_45879ad8",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_1126101a@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_c4e3d556|e_a91d36c4,e_a50795a2,e_8acd977c,e_1b92aa36",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_2e6b435d@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_c4e3d556|e_dfea4278,e_c1080f1b,e_8acd977c,e_a50795a2",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_a5743b14@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_729ef146|e_4f0fcd99,e_16b4aa29,e_457dbc9a,e_e5cab300",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_d9306e2d@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_729ef146|e_e5cab300,e_9635ade1,e_16b4aa29,e_457dbc9a",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_420d7b11@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_323616b2|e_905a2d34,e_cea920d1,e_a3ed1d2e,e_37f838a2",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_cb6821c2@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_323616b2|e_70a1399a,e_37f838a2,e_e963b0f9,e_cea920d1,e_a3ed1d2e",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_7563b32d@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_21fe995f|e_b387b0cc,e_e76695fb,e_332a4216,e_f5798cc5",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_4584a1a6@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_31293a4b|e_fe22fbb2,e_f40f1b7a,e_be4c4594,e_73a9f4c6",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_efa553b2@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_31293a4b|e_2f4c134c,e_fe22fbb2,e_4755c3f2,e_be4c4594",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_e483b220@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_3fb63f35|e_0c446857,e_ce442bc7,e_84cf4dad,e_03078e92,e_b10a09d4",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_a4739aed@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_3fb63f35|e_b10a09d4,e_03078e92,e_0c446857,e_76191a56",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_c36ff29f@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_b6b25921|e_0c797696,e_b2e3b505,e_5c4befff,e_c3ba8b7f",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_ce6ddb3d@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_01fac884|e_c7552dae,e_2ef48ed6,e_49a8d8e7,e_ebf4002d",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_225dd7bc@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_01fac884|e_d03380bb,e_49a8d8e7,e_2ef48ed6,e_c7552dae,e_ebf4002d",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_74581f8c@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_314080f1|e_99cd549e,e_3894e9a8,e_93bff5b5,e_23649f35,e_8fe00677",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_69070a1b@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_314080f1|e_23649f35,e_a860a8fa,e_93bff5b5,e_8fe00677",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_b74b2862@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_738b2751|e_b0826499,e_8be0f8e6,e_b470cbea,e_46ef4d2a,e_e9229ca6",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_f3194705@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_738b2751|e_1d484a59,e_7ecd0db6,e_e9229ca6,e_8be0f8e6",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_4a2cb833@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_5d5fbdad|e_2be252de,e_a524b361,e_f396f1fd,e_5e9ef192",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_22e3e1d6@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_5d5fbdad|e_f4f7fd1a,e_8c53b74c,e_f396f1fd,e_a524b361,e_2be252de",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_0c4c843c@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_511afb01|e_27b7fa43,e_7ea32ab4,e_4aa547ba,e_3be2c92b",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    },
+    "pz_8c4c6287@1": {
+      "decision": "approved",
+      "note": "אושר בכתב על ידי הבעלים בצ׳אט ב-15.10.2026 באישור כולל לכל החידות, בלי בדיקה של כל חידה בנפרד במסך הבדיקה. ניתן לתקן בהמשך.",
+      "decidedAt": "2026-10-15T12:21:51.946Z",
+      "signature": "c_511afb01|e_f40cce08,e_3be2c92b,e_27b7fa43,e_7ea32ab4,e_4aa547ba",
+      "confirmations": {
+        "crestMatchesSource": true,
+        "piecesFaithfulAndReadable": true,
+        "orderAcceptable": true
+      }
+    }
+  }
+}

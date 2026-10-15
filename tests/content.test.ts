@@ -19,14 +19,31 @@ describe('shipped content', () => {
     expect(codes(fixtureRaw)).toEqual([])
   })
 
-  it('real content is valid (currently: club names only, no puzzles)', () => {
+  it('real content is valid and every published puzzle passed the publish gates', () => {
     const real = realRawContent()
     const issues = validateContent(real, {
       kind: 'real',
       assetExists: (p) => existsSync(join(import.meta.dirname, '..', 'public', p)),
     })
     expect(issues.filter((i) => i.severity === 'error')).toEqual([])
-    expect(real.puzzles).toEqual([])
+
+    const puzzles = real.puzzles as { status: string; reviewedBy: string | null; reviewedAt: string | null }[]
+    for (const puzzle of puzzles) {
+      expect(puzzle.status).toBe('published')
+      expect(puzzle.reviewedBy).toBeTruthy()
+      expect(puzzle.reviewedAt).toBeTruthy()
+    }
+    for (const crest of real.crests as { rightsStatus: string; rightsEvidence: string | null }[]) {
+      expect(crest.rightsStatus).toBe('approved_for_project')
+      expect(crest.rightsEvidence).toBeTruthy()
+    }
+  })
+
+  it('real content ships neutral file names and no fixture or draft data', () => {
+    const real = realRawContent()
+    for (const e of real.elements as { assetPath: string }[]) expect(e.assetPath).toMatch(/^assets\/e_[0-9a-f]{8}\.png$/)
+    for (const c of real.crests as { fullAssetPath: string }[]) expect(c.fullAssetPath).toMatch(/^assets\/c_[0-9a-f]{8}\.png$/)
+    expect(JSON.stringify(real)).not.toMatch(/fixtures\/|candidates\/|fx-/)
   })
 
   it('fixture puzzles can never pass the publish gate of real content', () => {

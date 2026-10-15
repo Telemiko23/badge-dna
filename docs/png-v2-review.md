@@ -22,6 +22,9 @@ Package: `Badge-DNA-PNG-v2` — 20 Premier League 2026/27 clubs, 20 full logos, 
 3. **Pieces cut at the canvas edge** (Liverpool torso, Tottenham body) are intentional, to make the clues harder. Nothing to fix.
 4. **Tiny, scattered pieces:** still open; see below.
 
+## Approval and publication (2026-10-15)
+The owner approved **all 38 draft puzzles at once, in writing in chat** ("I approve everything; we can fix things later"), without going through them one by one in the review screen. That is recorded as 38 "approved" decisions by "Liran Telem" with a note on each saying how it was given, and `npm run promote` then published them. They were never play-tested and the reveal orders are the assistant's drafts, so expect to adjust: some open on a thin outline, which says little. To change a puzzle, edit it in the drafts, then publish a **new revision** (a published revision never changes).
+
 ## Tiny pieces: decided (2026-10-15)
 Some pieces are made of small parts far apart, so on a phone card they shrink to specks (picture sent in chat). Left out of the drafts: Manchester City year, Brentford year, Chelsea roses, Chelsea footballs, Manchester United ornament group, Manchester United curled scrolls. Judged readable and kept: Manchester United footballs, Everton laurels, Crystal Palace 1905.
 Owner decision: re-pack them. `scripts/repack.ts` finds the separate parts of each of the six pieces and places them next to each other (a row or a column, whichever fits a phone card better), keeping their reading order. It only MOVES original pixels (nothing is redrawn, recoloured, rotated or resized; a unit test checks the pixel values are identical). This knowingly departs from the package rule that spacing inside a unit stays as in the original; each re-packed piece is flagged in its `sourceMapping.repacked`. The six are back in the drafts (Manchester City year, Brentford year, Chelsea roses and footballs, Manchester United ornaments and scrolls).
