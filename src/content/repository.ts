@@ -10,7 +10,8 @@ import {
   type RawContent,
 } from './schemas.ts'
 
-export type ContentKind = 'real' | 'fixture'
+/** real = published puzzles; candidate = real crests still in draft (dev builds only); fixture = invented test data. */
+export type ContentKind = 'real' | 'candidate' | 'fixture'
 
 export class ContentError extends Error {
   details: string[]
@@ -26,6 +27,7 @@ export interface PlayableElement {
   url: string
   width: number
   height: number
+  tone: 'light' | 'mid' | 'dark'
 }
 
 /** Everything the round UI needs. The answer club id lives here, never in the DOM. */
@@ -44,6 +46,8 @@ export interface ContentRepository {
   contentVersion: string
   clubs: readonly Club[]
   publishedPuzzles(): Puzzle[]
+  /** What the game may offer: published puzzles, plus drafts in a candidate (dev) repository. */
+  playablePuzzles(): Puzzle[]
   dailyChallenges(): DailyChallenge[]
   /**
    * The scheduled challenge for a game date, only if it is playable: exactly three
@@ -81,6 +85,8 @@ function createRepository(
   const crests = new Map<string, CrestVersion>(content.crests.map((c) => [c.id, c]))
   const elements = new Map<string, Element>(content.elements.map((e) => [e.id, e]))
   const puzzles = new Map(content.puzzles.map((p) => [`${p.id}@${p.revision}`, p]))
+  const isPlayable = (p: Puzzle | undefined) =>
+    p !== undefined && (p.status === 'published' || (kind === 'candidate' && p.status === 'draft'))
 
   function getPlayable(ref: PuzzleRef): PlayablePuzzle | null {
     const puzzle = puzzles.get(`${ref.id}@${ref.revision}`)
@@ -95,6 +101,7 @@ function createRepository(
         url: resolveAsset(element.assetPath),
         width: element.pixelWidth,
         height: element.pixelHeight,
+        tone: element.tileTone ?? 'mid',
       })
     }
     return {
@@ -113,6 +120,7 @@ function createRepository(
     contentVersion: content.contentVersion,
     clubs: content.clubs,
     publishedPuzzles: () => content.puzzles.filter((p) => p.status === 'published'),
+    playablePuzzles: () => content.puzzles.filter((p) => isPlayable(p)),
     dailyChallenges: () => content.daily,
     getValidDaily(dateUtc) {
       const entry = content.daily.find((d) => d.dateUtc === dateUtc)
@@ -120,7 +128,7 @@ function createRepository(
       const puzzlesOfDay = entry.puzzleRefs.map((ref) => puzzles.get(`${ref.id}@${ref.revision}`))
       const playable = entry.puzzleRefs.every((ref, i) => {
         const puzzle = puzzlesOfDay[i]
-        return puzzle?.status === 'published' && getPlayable(ref) !== null
+        return isPlayable(puzzle) && getPlayable(ref) !== null
       })
       const clubIds = new Set(puzzlesOfDay.map((p) => p?.clubId))
       return playable && clubIds.size === entry.puzzleRefs.length ? entry : null

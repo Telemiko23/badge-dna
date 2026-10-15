@@ -15,7 +15,7 @@ export function randomSeed(): number {
 }
 
 function candidates(repo: ContentRepository) {
-  return repo.publishedPuzzles().map((p) => ({
+  return repo.playablePuzzles().map((p) => ({
     id: p.id,
     revision: p.revision,
     clubId: p.clubId,

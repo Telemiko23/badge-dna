@@ -60,9 +60,9 @@ export default function App() {
 
   return (
     <div className="app">
-      {state.kind === 'ready' && state.content.mode === 'fixture' && (
+      {state.kind === 'ready' && (state.content.mode === 'fixture' || state.content.mode === 'candidate') && (
         <p className="dev-banner" role="note">
-          {t('dev.banner')}
+          {state.content.mode === 'fixture' ? t('dev.banner') : t('dev.bannerCandidate')}
         </p>
       )}
       {/* Fixed physical layout (see .app-header): nothing here moves when the language flips direction. */}

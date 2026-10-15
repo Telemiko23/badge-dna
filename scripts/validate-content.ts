@@ -53,6 +53,19 @@ function report(label: string, content: RawContent, kind: 'real' | 'fixture', as
 }
 
 report('real', load(join(root, 'content')), 'real', (p) => join(root, 'public', p))
+
+// Candidates: real crests still in draft. They use the real club list; any published candidate puzzle
+// must pass the same rights/review gates as real content (so none can slip through unreviewed).
+const candidateAssets = join(root, 'content', 'candidates', 'assets')
+if (existsSync(join(root, 'content', 'candidates', 'puzzles'))) {
+  if (!existsSync(candidateAssets)) {
+    console.log('candidates: assets folder not present on this machine (git-ignored); file checks skipped')
+  }
+  const candidates = { ...load(join(root, 'content', 'candidates')), clubs: load(join(root, 'content')).clubs }
+  report('candidates', candidates, 'real', (p) =>
+    existsSync(candidateAssets) ? join(candidateAssets, p.replace('candidates/', '')) : join(root, 'package.json'),
+  )
+}
 report('fixtures', load(join(root, 'content', 'fixtures')), 'fixture', (p) =>
   join(root, 'content', 'fixtures', 'assets', p.replace(/^fixtures\//, '')),
 )

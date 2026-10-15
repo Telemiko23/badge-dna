@@ -127,6 +127,9 @@ export function validateContent(raw: RawContent, options: ValidateOptions): Vali
       if (element.crestVersionId !== puzzle.crestVersionId) {
         error('crest-mismatch', `${label}: element ${id} comes from a different crest version`)
       }
+      if (element.autoSelectable === false) {
+        error('element-not-selectable', `${label}: element ${id} is flagged as incomplete in its source and cannot be a clue`)
+      }
       if (paths.has(element.assetPath)) {
         error('reveal-duplicate', `${label}: two reveals use the same asset`)
       }

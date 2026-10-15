@@ -14,7 +14,7 @@ interface Props {
 
 export function HomeScreen({ content, go }: Props) {
   const { t } = useI18n()
-  const hasPuzzles = content.repo.publishedPuzzles().length > 0
+  const hasPuzzles = content.repo.playablePuzzles().length > 0
   // Re-evaluated every 30 s so the cards follow the 00:00 UTC rollover without a reload.
   const now = useNow(30_000)
   const minute = Math.floor(now / 60_000)

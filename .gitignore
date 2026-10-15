@@ -27,3 +27,6 @@ qa/
 
 # Raw owner-provided logo dump: origin/usage rights are not documented, so it is not published
 /logos/
+
+# Candidate crest assets (real crests, rights undocumented): local only
+/content/candidates/assets/

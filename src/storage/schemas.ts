@@ -45,7 +45,7 @@ export const PracticeProgressSchema = z.strictObject({
   schemaVersion: z.literal(GAME_CONFIG.storage.schemaVersion),
   sessionId: z.string().min(1),
   seed: z.number().int(),
-  contentSource: z.enum(['real', 'fixture']),
+  contentSource: z.enum(['real', 'candidate', 'fixture']),
   order: z.array(PuzzleRefSchema),
   position: z.number().int().min(0),
   /** Cumulative over the browser session, across pool cycles. */
@@ -64,7 +64,7 @@ export const DailyProgressSchema = z.strictObject({
   sessionId: z.string().min(1),
   contentVersion: z.string().min(1),
   scoringVersion: z.string().min(1),
-  contentSource: z.enum(['real', 'fixture']),
+  contentSource: z.enum(['real', 'candidate', 'fixture']),
   puzzleRefs: z.array(PuzzleRefSchema).length(GAME_CONFIG.dailyPuzzleCount),
   /** 0..2 while playing; equals the number of puzzles once the challenge is complete. */
   currentRoundIndex: z.number().int().min(0).max(GAME_CONFIG.dailyPuzzleCount),

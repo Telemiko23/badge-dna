@@ -238,7 +238,7 @@ export function DailyScreen({ content, date, onHome, onPractice }: Props) {
         onRoundChange={onRoundChange}
         searchIndex={searchIndex}
         heading={t('daily.puzzleOf', { n: progress.currentRoundIndex + 1, total: progress.puzzleRefs.length })}
-        isTestPuzzle={repo.kind === 'fixture'}
+        badge={repo.kind === 'fixture' ? t('dev.testPuzzle') : repo.kind === 'candidate' ? t('dev.draftPuzzle') : null}
         nextLabel={isLast ? t('daily.toSummary') : t('result.next')}
         onNext={() => commit(advanceDaily(progress, repo, nowIso()))}
         readOnly={!writer}

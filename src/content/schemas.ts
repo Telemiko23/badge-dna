@@ -49,6 +49,10 @@ export const ElementSchema = z.strictObject({
   visualReviewed: z.boolean(),
   extractionMethod: z.enum(['vector', 'raster_mask', 'manual']),
   sourceMapping: z.record(z.string(), z.unknown()).optional(),
+  /** Backdrop tone for the clue tile: light artwork sits on a dark tile, dark artwork on a light one. */
+  tileTone: z.enum(['light', 'mid', 'dark']).optional(),
+  /** false = the source flagged this piece as incomplete; it must not be used as a clue until fixed. */
+  autoSelectable: z.boolean().optional(),
 })
 
 export const PuzzleStatus = z.enum(['draft', 'review', 'published', 'retired'])

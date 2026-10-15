@@ -179,7 +179,7 @@ function PracticeSession({
         onRoundChange={onRoundChange}
         searchIndex={searchIndex}
         heading={t('practice.puzzleOf', { n: session.position + 1, total: session.order.length })}
-        isTestPuzzle={repo.kind === 'fixture'}
+        badge={repo.kind === 'fixture' ? t('dev.testPuzzle') : repo.kind === 'candidate' ? t('dev.draftPuzzle') : null}
         nextLabel={isLast ? t('practice.finish') : t('result.next')}
         onNext={() => commit(advance(session, repo, new Date().toISOString()))}
       />

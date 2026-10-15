@@ -34,7 +34,8 @@ interface Props {
   searchIndex: SearchIndex
   /** Heading above the round, e.g. "Puzzle 2 of 3". */
   heading: string
-  isTestPuzzle: boolean
+  /** Marks non-production puzzles (e.g. "test puzzle", "unapproved draft"); null for published ones. */
+  badge: string | null
   nextLabel: string
   onNext: () => void
   /** Another tab owns this round: show it, but allow no actions. */
@@ -59,7 +60,7 @@ export function RoundView({
   onRoundChange,
   searchIndex,
   heading,
-  isTestPuzzle,
+  badge,
   nextLabel,
   onNext,
   readOnly = false,
@@ -220,7 +221,7 @@ export function RoundView({
     <section className="round" aria-labelledby="round-heading">
       <div className="round-head">
         <h2 id="round-heading">{heading}</h2>
-        {isTestPuzzle && <span className="badge">{t('dev.testPuzzle')}</span>}
+        {badge && <span className="badge">{badge}</span>}
       </div>
 
       <div className="stats">
@@ -287,6 +288,7 @@ export function RoundView({
               key={element.id}
               number={i + 1}
               element={element}
+              tone={element.tone}
               onLoad={i === 0 ? onFirstLoaded : undefined}
               onError={i === 0 ? onFirstError : undefined}
               onZoom={setZoomed}
@@ -364,7 +366,12 @@ export function RoundView({
         onClick={() => setZoomed(null)}
       >
         {zoomed !== null && puzzle.elements[zoomed - 1] && (
-          <img src={puzzle.elements[zoomed - 1].url} alt={t('clue.alt', { n: zoomed })} className="zoom-img" />
+          <img
+            src={puzzle.elements[zoomed - 1].url}
+            alt={t('clue.alt', { n: zoomed })}
+            className="zoom-img"
+            data-tone={puzzle.elements[zoomed - 1].tone}
+          />
         )}
         <button type="button" className="btn btn-secondary" onClick={() => setZoomed(null)}>
           {t('common.close')}

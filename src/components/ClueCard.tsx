@@ -5,6 +5,7 @@ import { useI18n } from '../i18n/I18nContext.ts'
 interface Props {
   number: number
   element: PlayableElement
+  tone?: 'light' | 'mid' | 'dark'
   onLoad?: () => void
   onError?: () => void
   onZoom?: (number: number) => void
@@ -14,7 +15,7 @@ interface Props {
  * One revealed element. Shows the clue number and the image only; the alt text is
  * deliberately neutral so nothing reveals the club to assistive technology.
  */
-export function ClueCard({ number, element, onLoad, onError, onZoom }: Props) {
+export function ClueCard({ number, element, tone = 'mid', onLoad, onError, onZoom }: Props) {
   const { t } = useI18n()
   const [loaded, setLoaded] = useState(false)
   return (
@@ -23,6 +24,7 @@ export function ClueCard({ number, element, onLoad, onError, onZoom }: Props) {
       <button
         type="button"
         className="clue-media"
+        data-tone={tone}
         onClick={() => onZoom?.(number)}
         disabled={!loaded}
         aria-label={`${t('clue.zoom')} · ${t('clue.label', { n: number })}`}

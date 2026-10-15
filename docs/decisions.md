@@ -52,5 +52,13 @@ Decisions made while building milestones 1–2. None change the core mechanic. "
 - **Variants:** see roadmap C. This relaxes the original "one fixed order per club" wording; each variant is still one fixed, reviewed order.
 - **Logos folder:** `logos/` is git-ignored; the Premier League 2026/27 list was verified against a news article (3 promoted: Coventry City, Ipswich Town, Hull City; 3 relegated: West Ham, Burnley, Wolves) and should be confirmed against the league's site.
 
+## PNG-v2 package import (2026-10-15)
+- New content kind **candidate**: real crests that are still drafts. Playable only in dev builds, only when the local asset files exist; production builds exclude the module and files (checked in `dist/`). Priority in dev: published real > candidates > invented fixtures; `?content=real|candidate|fixture` forces one.
+- Candidate assets are **git-ignored** (rights undocumented); their JSON metadata and provenance are tracked.
+- Elements gained optional `tileTone` (backdrop tone for the clue tile; artwork unchanged) and `autoSelectable` (false = source flagged the piece as incomplete; the validator forbids using it).
+- The owner's `EXTRACTION-RULES.md` is treated as superseding spec §4.2 (completing background under removed text) and §4.4 (single original letters as clues) for this package. See `png-v2-review.md`.
+- Reveal orders for the 37 drafts were written by the assistant and are marked as such in `editorialNotes`.
+- Dev daily schedule for any pool without a hand-made one: `devDailySchedule` (explicit dated entries, three clubs a day, deterministic).
+
 ## Not built yet (by design)
 Review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.

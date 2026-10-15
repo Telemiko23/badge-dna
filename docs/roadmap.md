@@ -9,7 +9,7 @@ Status as of 2026-10-15. "Owner" = Liran Telem. Items marked **(owner request)**
 - **UI refresh (owner request)**: dark theme, press/hover feedback on every button, language dropdown, controls that keep their physical position when the language flips.
 
 ## Next
-1. **Real content pipeline (M3)** — blocked on source quality and rights. See "Logo intake" below.
+1. **Real content pipeline (M3)** — the PNG-v2 package for 20 Premier League clubs is imported as drafts (`docs/png-v2-review.md`). Remaining: owner review of pieces and orders, rights decision, publish gate, real daily schedule.
 2. **M5** — Playwright end-to-end tests, visual QA at 360/390/768/1440 and 200% zoom, accessibility pass, asset security pass.
 
 ## Owner requests, designed but not built
@@ -35,7 +35,7 @@ Not possible in the current local-only architecture (spec §16.1: answers live i
 ### D. Logo intake at scale (hundreds–thousands)
 - Raw files live in `logos/` (git-ignored: origin and usage rights are not documented, so they are not published). 632 PNGs today.
 - Needed: a script that indexes the folder (name → club id, size, SHA-256), flags duplicates and age-group/reserve variants (`*_U21`, national teams), and maps clubs to competitions. Club display names (Hebrew/English) and aliases must be reviewed by the owner.
-- **Quality gate:** the current files are **150×150 px** (some 78–180 px wide) raster PNGs. See "Element extraction" below.
+- **Quality gate:** the first logo dump was **150×150 px**, too small to split. The owner's PNG-v2 package solved this for 20 clubs (1024×1024). Importer: `scripts/import-package.ts`.
 
 ### E. Element extraction workbench (dev tool)
 Dev-only screen/CLI: load a crest, show its structure, select parts, export each as its own element file with `parentElementId` for natural sub-elements, record `sourceMapping`, and compare against the source. Human review flags (`fidelityReviewed`, `visualReviewed`) are set by the owner, never automatically.

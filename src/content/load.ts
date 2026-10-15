@@ -2,6 +2,7 @@ import type { Club, RawContent } from './schemas.ts'
 import { buildRepository, type ContentRepository } from './repository.ts'
 import { nowMs } from '../clock.ts'
 import { gameDateUtc } from '../domain/dates.ts'
+import { devDailySchedule } from './devSchedule.ts'
 import { buildSearchIndex, type SearchIndex } from '../domain/search.ts'
 
 function collect(modules: Record<string, unknown>): unknown[] {
@@ -41,23 +42,51 @@ function resolveRealAsset(assetPath: string): string {
 
 export interface ContentBundle {
   real: ContentRepository
+  /** Real crests still in draft; development builds only, and only when the local assets exist. */
+  candidate: ContentRepository | null
   fixture: ContentRepository | null
+  /** Dev-only `?content=real|candidate|fixture` override. */
+  forced: ActiveContent['mode'] | null
 }
 
 export async function loadContent(): Promise<ContentBundle> {
   const real = buildRepository('real', realRawContent(), resolveRealAsset)
   let fixture: ContentRepository | null = null
+  let candidate: ContentRepository | null = null
+  let forced: ContentBundle['forced'] = null
   if (__INCLUDE_FIXTURES__) {
+    const today = gameDateUtc(nowMs())
     const { fixtureRaw, fixtureAssetUrls, fixtureDailySchedule } = await import('./fixtures.ts')
-    const daily = fixtureDailySchedule(gameDateUtc(nowMs()))
-    fixture = buildRepository('fixture', { ...fixtureRaw, daily }, (path) => fixtureAssetUrls[path] ?? '')
+    fixture = buildRepository(
+      'fixture',
+      { ...fixtureRaw, daily: fixtureDailySchedule(today) },
+      (path) => fixtureAssetUrls[path] ?? '',
+    )
+
+    const { candidateRaw, candidateAssetUrls } = await import('./candidates.ts')
+    if (Object.keys(candidateAssetUrls).length > 0 && candidateRaw.puzzles.length > 0) {
+      const base = realRawContent()
+      const puzzles = candidateRaw.puzzles as { id: string; revision: number; clubId: string }[]
+      const raw: RawContent = {
+        ...candidateRaw,
+        clubs: base.clubs,
+        daily: devDailySchedule(puzzles, today, candidateRaw.contentVersion),
+        competitions: [],
+      }
+      candidate = buildRepository('candidate', raw, (path) => candidateAssetUrls[path] ?? '')
+    }
+    const wanted = new URLSearchParams(window.location.search).get('content')
+    forced = wanted === 'real' || wanted === 'candidate' || wanted === 'fixture' ? wanted : null
   }
-  return { real, fixture }
+  return { real, candidate, fixture, forced }
 }
 
 export interface ActiveContent {
-  /** `real`: published real puzzles. `fixture`: dev-only synthetic puzzles. `empty`: nothing playable. */
-  mode: 'real' | 'fixture' | 'empty'
+  /**
+   * `real`: published real puzzles. `candidate`: dev-only drafts of real crests awaiting review.
+   * `fixture`: dev-only invented puzzles. `empty`: nothing playable.
+   */
+  mode: 'real' | 'candidate' | 'fixture' | 'empty'
   repo: ContentRepository
   /** Clubs offered by the guess search (real clubs, plus fixture clubs in fixture mode). */
   searchClubs: Club[]
@@ -66,13 +95,13 @@ export interface ActiveContent {
 
 export function selectActiveContent(bundle: ContentBundle): ActiveContent {
   const hasReal = bundle.real.publishedPuzzles().length > 0
-  const useFixture = !hasReal && bundle.fixture !== null && bundle.fixture.publishedPuzzles().length > 0
-  const repo = useFixture ? bundle.fixture! : bundle.real
-  const searchClubs = useFixture ? [...bundle.real.clubs, ...bundle.fixture!.clubs] : [...bundle.real.clubs]
-  return {
-    mode: hasReal ? 'real' : useFixture ? 'fixture' : 'empty',
-    repo,
-    searchClubs,
-    searchIndex: buildSearchIndex(searchClubs),
-  }
+  const hasCandidate = bundle.candidate !== null && bundle.candidate.playablePuzzles().length > 0
+  const hasFixture = bundle.fixture !== null && bundle.fixture.publishedPuzzles().length > 0
+  // Order: published real puzzles, then (dev only) real-crest drafts, then invented fixtures.
+  const automatic = hasReal ? 'real' : hasCandidate ? 'candidate' : hasFixture ? 'fixture' : 'empty'
+  const available = { real: hasReal, candidate: hasCandidate, fixture: hasFixture, empty: true }
+  const mode = bundle.forced && available[bundle.forced] ? bundle.forced : automatic
+  const repo = mode === 'candidate' ? bundle.candidate! : mode === 'fixture' ? bundle.fixture! : bundle.real
+  const searchClubs = mode === 'fixture' ? [...bundle.real.clubs, ...bundle.fixture!.clubs] : [...bundle.real.clubs]
+  return { mode, repo, searchClubs, searchIndex: buildSearchIndex(searchClubs) }
 }

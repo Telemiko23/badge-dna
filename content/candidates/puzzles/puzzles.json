@@ -1,0 +1,749 @@
+[
+  {
+    "id": "pz_d2530349",
+    "revision": 1,
+    "clubId": "arsenal",
+    "crestVersionId": "c_55ed1290",
+    "revealOrder": [
+      "e_2224a56b",
+      "e_babd8ff5",
+      "e_eaa9b925",
+      "e_d1b0b5f3"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the blue bands.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_00b03556",
+    "revision": 1,
+    "clubId": "arsenal",
+    "crestVersionId": "c_55ed1290",
+    "revealOrder": [
+      "e_e6212d54",
+      "e_eaa9b925",
+      "e_d1b0b5f3",
+      "e_babd8ff5",
+      "e_2224a56b"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the white bands.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_5e770d19",
+    "revision": 1,
+    "clubId": "manchester-city",
+    "crestVersionId": "c_63b88ea5",
+    "revealOrder": [
+      "e_9356c6fb",
+      "e_0081acce",
+      "e_f3340daa",
+      "e_65568bac"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the diagonal bands.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_e2812e35",
+    "revision": 1,
+    "clubId": "manchester-city",
+    "crestVersionId": "c_63b88ea5",
+    "revealOrder": [
+      "e_0081acce",
+      "e_c96f7070",
+      "e_9356c6fb",
+      "e_65568bac"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the rose.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_fe851ce3",
+    "revision": 1,
+    "clubId": "brighton",
+    "crestVersionId": "c_a2bcf0e0",
+    "revealOrder": [
+      "e_723e1d49",
+      "e_194bcd62",
+      "e_90aea8fb",
+      "e_a15bbeaa"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the white ring.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_3cedd976",
+    "revision": 1,
+    "clubId": "brighton",
+    "crestVersionId": "c_a2bcf0e0",
+    "revealOrder": [
+      "e_90aea8fb",
+      "e_a15bbeaa",
+      "e_3e347c95",
+      "e_194bcd62"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the blue disc.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_28b55f78",
+    "revision": 1,
+    "clubId": "everton",
+    "crestVersionId": "c_3b1a9fd4",
+    "revealOrder": [
+      "e_4491b047",
+      "e_d72d9d4d",
+      "e_d9a91f4a",
+      "e_dc82520e"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_627db0ba",
+    "revision": 1,
+    "clubId": "everton",
+    "crestVersionId": "c_3b1a9fd4",
+    "revealOrder": [
+      "e_d9a91f4a",
+      "e_4491b047",
+      "e_37062080",
+      "e_dc82520e"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the tower.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_10def154",
+    "revision": 1,
+    "clubId": "brentford",
+    "crestVersionId": "c_62162a41",
+    "revealOrder": [
+      "e_7897a178",
+      "e_7a76aee1",
+      "e_f60e741e",
+      "e_ba608fec"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the wings.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_2de45fd0",
+    "revision": 1,
+    "clubId": "brentford",
+    "crestVersionId": "c_62162a41",
+    "revealOrder": [
+      "e_103551a1",
+      "e_ba608fec",
+      "e_7a76aee1",
+      "e_f60e741e"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the outline.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_a702e9fb",
+    "revision": 1,
+    "clubId": "chelsea",
+    "crestVersionId": "c_47b0f1fc",
+    "revealOrder": [
+      "e_2543060f",
+      "e_402fc66c",
+      "e_7c46b356",
+      "e_2855c0fb"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the staff.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_a087f30d",
+    "revision": 1,
+    "clubId": "chelsea",
+    "crestVersionId": "c_47b0f1fc",
+    "revealOrder": [
+      "e_402fc66c",
+      "e_2543060f",
+      "e_7c46b356",
+      "e_5cf8d231"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the blue ring.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_415373ea",
+    "revision": 1,
+    "clubId": "leeds-united",
+    "crestVersionId": "c_a084e769",
+    "revealOrder": [
+      "e_6149ee94",
+      "e_81103166",
+      "e_bff9add7",
+      "e_c225e403",
+      "e_961fc04d"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the chevrons.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_94540025",
+    "revision": 1,
+    "clubId": "leeds-united",
+    "crestVersionId": "c_a084e769",
+    "revealOrder": [
+      "e_c225e403",
+      "e_bff9add7",
+      "e_961fc04d",
+      "e_81103166"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the football.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_011a29f7",
+    "revision": 1,
+    "clubId": "hull-city",
+    "crestVersionId": "c_a05c6c6a",
+    "revealOrder": [
+      "e_275240d6",
+      "e_f4f11460",
+      "e_98baa36a",
+      "e_45879ad8"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the ear.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_417b4578",
+    "revision": 1,
+    "clubId": "hull-city",
+    "crestVersionId": "c_a05c6c6a",
+    "revealOrder": [
+      "e_98baa36a",
+      "e_0ed96e00",
+      "e_cb5223a6",
+      "e_45879ad8"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the muzzle.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_1126101a",
+    "revision": 1,
+    "clubId": "liverpool",
+    "crestVersionId": "c_c4e3d556",
+    "revealOrder": [
+      "e_a91d36c4",
+      "e_a50795a2",
+      "e_8acd977c",
+      "e_1b92aa36"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the leg.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_2e6b435d",
+    "revision": 1,
+    "clubId": "liverpool",
+    "crestVersionId": "c_c4e3d556",
+    "revealOrder": [
+      "e_dfea4278",
+      "e_c1080f1b",
+      "e_8acd977c",
+      "e_a50795a2"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the torso (check: it touches the canvas edge).",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_a5743b14",
+    "revision": 1,
+    "clubId": "ipswich-town",
+    "crestVersionId": "c_729ef146",
+    "revealOrder": [
+      "e_4f0fcd99",
+      "e_16b4aa29",
+      "e_457dbc9a",
+      "e_e5cab300",
+      "e_993930e3"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the waves.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_d9306e2d",
+    "revision": 1,
+    "clubId": "ipswich-town",
+    "crestVersionId": "c_729ef146",
+    "revealOrder": [
+      "e_e5cab300",
+      "e_9635ade1",
+      "e_457dbc9a",
+      "e_993930e3"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the football.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_420d7b11",
+    "revision": 1,
+    "clubId": "manchester-united",
+    "crestVersionId": "c_323616b2",
+    "revealOrder": [
+      "e_cea920d1",
+      "e_a3ed1d2e",
+      "e_37f838a2"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. only three clean pieces remain after exclusions.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_7563b32d",
+    "revision": 1,
+    "clubId": "nottingham-forest",
+    "crestVersionId": "c_21fe995f",
+    "revealOrder": [
+      "e_b387b0cc",
+      "e_e76695fb",
+      "e_332a4216",
+      "e_f5798cc5"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the stars.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_4584a1a6",
+    "revision": 1,
+    "clubId": "aston-villa",
+    "crestVersionId": "c_31293a4b",
+    "revealOrder": [
+      "e_fe22fbb2",
+      "e_f40f1b7a",
+      "e_be4c4594",
+      "e_73a9f4c6"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the star.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_efa553b2",
+    "revision": 1,
+    "clubId": "aston-villa",
+    "crestVersionId": "c_31293a4b",
+    "revealOrder": [
+      "e_2f4c134c",
+      "e_fe22fbb2",
+      "e_4755c3f2",
+      "e_be4c4594"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the claret frame.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_e483b220",
+    "revision": 1,
+    "clubId": "bournemouth",
+    "crestVersionId": "c_3fb63f35",
+    "revealOrder": [
+      "e_0c446857",
+      "e_ce442bc7",
+      "e_84cf4dad",
+      "e_03078e92",
+      "e_b10a09d4"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the stripes.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_a4739aed",
+    "revision": 1,
+    "clubId": "bournemouth",
+    "crestVersionId": "c_3fb63f35",
+    "revealOrder": [
+      "e_b10a09d4",
+      "e_03078e92",
+      "e_0c446857",
+      "e_76191a56"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the football.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_c36ff29f",
+    "revision": 1,
+    "clubId": "fulham",
+    "crestVersionId": "c_b6b25921",
+    "revealOrder": [
+      "e_0c797696",
+      "e_b2e3b505",
+      "e_5c4befff",
+      "e_c3ba8b7f"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the black panels.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_ce6ddb3d",
+    "revision": 1,
+    "clubId": "tottenham",
+    "crestVersionId": "c_01fac884",
+    "revealOrder": [
+      "e_c7552dae",
+      "e_2ef48ed6",
+      "e_49a8d8e7",
+      "e_ebf4002d"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the tail.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_225dd7bc",
+    "revision": 1,
+    "clubId": "tottenham",
+    "crestVersionId": "c_01fac884",
+    "revealOrder": [
+      "e_d03380bb",
+      "e_49a8d8e7",
+      "e_2ef48ed6",
+      "e_c7552dae",
+      "e_ebf4002d"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the lower half of the ball.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_74581f8c",
+    "revision": 1,
+    "clubId": "crystal-palace",
+    "crestVersionId": "c_314080f1",
+    "revealOrder": [
+      "e_99cd549e",
+      "e_93bff5b5",
+      "e_23649f35",
+      "e_8fe00677"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_69070a1b",
+    "revision": 1,
+    "clubId": "crystal-palace",
+    "crestVersionId": "c_314080f1",
+    "revealOrder": [
+      "e_23649f35",
+      "e_a860a8fa",
+      "e_93bff5b5",
+      "e_8fe00677"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the palace.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_b74b2862",
+    "revision": 1,
+    "clubId": "newcastle-united",
+    "crestVersionId": "c_738b2751",
+    "revealOrder": [
+      "e_b0826499",
+      "e_8be0f8e6",
+      "e_b470cbea",
+      "e_46ef4d2a",
+      "e_e9229ca6"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_f3194705",
+    "revision": 1,
+    "clubId": "newcastle-united",
+    "crestVersionId": "c_738b2751",
+    "revealOrder": [
+      "e_1d484a59",
+      "e_7ecd0db6",
+      "e_e9229ca6",
+      "e_8be0f8e6"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the right seahorse.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_4a2cb833",
+    "revision": 1,
+    "clubId": "sunderland",
+    "crestVersionId": "c_5d5fbdad",
+    "revealOrder": [
+      "e_2be252de",
+      "e_a524b361",
+      "e_f396f1fd",
+      "e_5e9ef192"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_22e3e1d6",
+    "revision": 1,
+    "clubId": "sunderland",
+    "crestVersionId": "c_5d5fbdad",
+    "revealOrder": [
+      "e_f4f7fd1a",
+      "e_8c53b74c",
+      "e_f396f1fd",
+      "e_a524b361",
+      "e_2be252de"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the right lion.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_0c4c843c",
+    "revision": 1,
+    "clubId": "coventry-city",
+    "crestVersionId": "c_511afb01",
+    "revealOrder": [
+      "e_27b7fa43",
+      "e_7ea32ab4",
+      "e_4aa547ba",
+      "e_3be2c92b"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the lower banner.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_8c4c6287",
+    "revision": 1,
+    "clubId": "coventry-city",
+    "crestVersionId": "c_511afb01",
+    "revealOrder": [
+      "e_f40cce08",
+      "e_3be2c92b",
+      "e_27b7fa43",
+      "e_7ea32ab4",
+      "e_4aa547ba"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the upper banner.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  }
+]

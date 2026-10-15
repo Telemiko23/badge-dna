@@ -12,7 +12,9 @@ export const en: Record<MessageKey, string> = {
   'lang.en': 'English',
 
   'dev.banner': 'Development build · test puzzles only (invented clubs and crests)',
+  'dev.bannerCandidate': 'Development build · drafts of real crests, not yet reviewed or approved',
   'dev.testPuzzle': 'Test puzzle',
+  'dev.draftPuzzle': 'Unapproved draft',
 
   'home.tagline': 'Name the club from the pieces of its badge',
   'home.sub': 'One piece at a time. The fewer reveals, the more points.',
