@@ -134,7 +134,6 @@ export const en: Record<MessageKey, string> = {
   'status.gave_up': 'Gave up',
 
   'legal.link': 'Legal notice',
-  'legal.footer': 'An independent fan game, not affiliated with any club or league. Names and crests belong to their owners.',
   'legal.title': 'Legal notice',
   'legal.independent':
     'Badge DNA is an independent fan-made game. It is not affiliated with, endorsed, approved or sponsored by any football club, league or competition.',

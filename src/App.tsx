@@ -128,7 +128,6 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <p>{t('legal.footer')}</p>
         <a href="#/legal">{t('legal.link')}</a>
       </footer>
     </div>

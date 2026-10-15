@@ -31,7 +31,7 @@ editor approval or usage rights have been given; none have (see `docs/content-st
 `npm run dev` · `npm test` · `npm run typecheck` · `npm run lint` · `npm run build` · `npm run validate:content`
 
 ## Legal
-The footer line and the `#/legal` page (texts in `src/i18n`, settings in `src/legal.ts`) must stay on every build. They are a disclaimer, not a licence: they never change a crest's `rightsStatus` (see `docs/legal-notice.md`). Do not edit them to claim permissions that were not given.
+The footer link and the `#/legal` page (texts in `src/i18n`, settings in `src/legal.ts`) must stay on every build. They are a disclaimer, not a licence: they never change a crest's `rightsStatus` (see `docs/legal-notice.md`). Do not edit them to claim permissions that were not given.
 
 ## Raw material
 `logos/` holds owner-provided source images. It is git-ignored on purpose (usage rights undocumented): never commit or publish it. Extracted assets go to `public/assets/` with neutral ids only after human review.

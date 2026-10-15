@@ -3,7 +3,7 @@
 I am an AI assistant, not a lawyer; this is a working note for the owner, not legal advice.
 
 ## What the game shows now
-- A short line in the footer of every screen (Hebrew/English) and a full **Legal notice** page (`#/legal`):
+- A small **Legal notice** link in the footer of every screen (Hebrew/English; no visible sentence) leading to a full page (`#/legal`):
   - independent fan game, not affiliated with, endorsed or sponsored by any club, league or competition;
   - club names, crests and logos are the trademarks / protected works of their owners and are shown for identification only;
   - crests and parts are shown as they are, colours unchanged, with no claim of partnership;
