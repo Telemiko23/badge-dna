@@ -15,7 +15,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "babd8ff5472242f61e4794cd12556531e4c2d14a8d96d648dc865d06c4fd2744",
-      "packageObjectId": "arsenal-01-gold-frame"
+      "packageObjectId": "arsenal-01-gold-frame",
+      "labelHe": "מסגרת הזהב"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -36,7 +37,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "2224a56bbac41c6f4edaaa43188f8320e2ff343d3452c334418c34d3b0030402",
-      "packageObjectId": "arsenal-02-blue-bands"
+      "packageObjectId": "arsenal-02-blue-bands",
+      "labelHe": "זוג הפסים הכחולים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -57,7 +59,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "e6212d547352c3c5a0642aa3deed0de151f5d947a865564186ff75f2724bb0d0",
-      "packageObjectId": "arsenal-03-white-bands"
+      "packageObjectId": "arsenal-03-white-bands",
+      "labelHe": "זוג הפסים הלבנים"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -78,7 +81,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "b2f5405ed1359a0c483202c126ec8a6b46afdc89486b6f23a5619e2f028d107b",
-      "packageObjectId": "arsenal-04-cannon"
+      "packageObjectId": "arsenal-04-cannon",
+      "labelHe": "התותח ללא הגלגל"
     },
     "tileTone": "mid",
     "autoSelectable": false
@@ -99,7 +103,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "eaa9b9250ff23d1c5935f2294c6dba4cc9753d7cfec9c9d09ea49d85fe4ae018",
-      "packageObjectId": "arsenal-05-wheel"
+      "packageObjectId": "arsenal-05-wheel",
+      "labelHe": "הגלגל השלם"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -120,7 +125,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "d1b0b5f39481941410b6f8f342020b0c877ce7885760929b35709c8954bce7ea",
-      "packageObjectId": "arsenal-06-letter-e"
+      "packageObjectId": "arsenal-06-letter-e",
+      "labelHe": "האות e"
     },
     "tileTone": "dark",
     "letter": "E",
@@ -142,7 +148,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f3340daad9d50c7214adb92268bda18370a1713d296711efda64c3c61b3991d6",
-      "packageObjectId": "manchester_city-01-outer-ring"
+      "packageObjectId": "manchester_city-01-outer-ring",
+      "labelHe": "הטבעת החיצונית"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -163,7 +170,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "c96f7070a8c8224eeea64bd46ecd2ad44d49b26327df41abd3846513c6d116ce",
-      "packageObjectId": "manchester_city-02-inner-ring"
+      "packageObjectId": "manchester_city-02-inner-ring",
+      "labelHe": "הטבעת הלבנה הרחבה והגבול הפנימי"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -184,7 +192,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "65568bac4aae5ca4a2799af69a5eb86cf6daf10368d75eabd8895841e233bca1",
-      "packageObjectId": "manchester_city-03-ship"
+      "packageObjectId": "manchester_city-03-ship",
+      "labelHe": "הספינה"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -205,7 +214,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "0081acce4f698175348fd937ceeaf0a0a93576b47c8b426197fd000d153f7c7f",
-      "packageObjectId": "manchester_city-04-rose"
+      "packageObjectId": "manchester_city-04-rose",
+      "labelHe": "השושנה"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -226,7 +236,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "9356c6fb3ff082bc8d04eee7b116ce87832ab1d99cab4dffe2a020bc2bb69e9f",
-      "packageObjectId": "manchester_city-05-diagonal-bands"
+      "packageObjectId": "manchester_city-05-diagonal-bands",
+      "labelHe": "קבוצת הפסים האלכסוניים"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -237,8 +248,8 @@
     "semanticType": "typography",
     "internalLabel": "year",
     "assetPath": "candidates/e_285beef7.png",
-    "pixelWidth": 936,
-    "pixelHeight": 60,
+    "pixelWidth": 101,
+    "pixelHeight": 131,
     "parentElementId": null,
     "containsText": true,
     "fidelityReviewed": false,
@@ -247,7 +258,13 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "285beef725c830d465f13adccaefe59623372532572265202e6724c90112b11d",
-      "packageObjectId": "manchester_city-06-year"
+      "packageObjectId": "manchester_city-06-year",
+      "labelHe": "שנת ההקמה",
+      "repacked": {
+        "parts": 2,
+        "layout": "column",
+        "note": "parts moved closer, pixels untouched (owner decision 2026-10-15)"
+      }
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -268,7 +285,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "3e347c9597ad6367936cc8dcd5476a67e0b18d5387ddcf5d0a36343c8dd641cd",
-      "packageObjectId": "brighton-01-ring"
+      "packageObjectId": "brighton-01-ring",
+      "labelHe": "המסגרת העגולה הכחולה"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -289,7 +307,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "194bcd62d167810d4411f73f3d2f3cdd83e061e965e4aa782281d8b811fec8b0",
-      "packageObjectId": "brighton-02-seagull"
+      "packageObjectId": "brighton-02-seagull",
+      "labelHe": "השחף"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -310,7 +329,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "a15bbeaa959b14e2152d5b976e9527ae7735230fa6e66d6103edfaa20f9b1a0f",
-      "packageObjectId": "brighton-03-letter-b"
+      "packageObjectId": "brighton-03-letter-b",
+      "labelHe": "האות B"
     },
     "tileTone": "mid",
     "letter": "B",
@@ -332,7 +352,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "723e1d49f3c84265148b8e3f060482f7ab606fe3e0a11b87f0dab43283799a63",
-      "packageObjectId": "brighton-04-white-ring"
+      "packageObjectId": "brighton-04-white-ring",
+      "labelHe": "הטבעת הלבנה ללא כיתוב"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -353,7 +374,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "90aea8fb5cfe5ce10847a885d7aa855c4ff3ddb041564527917b11516b7ef3b1",
-      "packageObjectId": "brighton-05-blue-disc"
+      "packageObjectId": "brighton-05-blue-disc",
+      "labelHe": "העיגול הכחול ללא השחף"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -374,7 +396,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "d9a91f4a1dbe7489ed9186285a749fa1c268a5e81c54607d1eaa9f38889c3577",
-      "packageObjectId": "everton-01-tower"
+      "packageObjectId": "everton-01-tower",
+      "labelHe": "המגדל"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -395,7 +418,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8600077c122959cccfe743d56bb28e981a34fcb208feb3d7a8ac7240c940eb48",
-      "packageObjectId": "everton-02-laurels"
+      "packageObjectId": "everton-02-laurels",
+      "labelHe": "זוג זרי הדפנה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -416,7 +440,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "dc82520e9b49e81c48842cdb301e8a165f4de577ee209fb1220749783bad807b",
-      "packageObjectId": "everton-03-year"
+      "packageObjectId": "everton-03-year",
+      "labelHe": "שנת ההקמה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -437,7 +462,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "37062080dafa4ce5b5478b0a9c0b4b9bd6807943ec3a1975c9860042cefa153b",
-      "packageObjectId": "everton-04-letter-e"
+      "packageObjectId": "everton-04-letter-e",
+      "labelHe": "האות E"
     },
     "tileTone": "dark",
     "letter": "E",
@@ -459,7 +485,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "d72d9d4d4347ce1acf4bf231fb6f0bb6fa48948b160a667b515fb7341b10566c",
-      "packageObjectId": "everton-05-shield-outline"
+      "packageObjectId": "everton-05-shield-outline",
+      "labelHe": "קווי מסגרת המגן"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -480,7 +507,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "4491b04759fe2426da6f61c9e46c8fb6cc06447863fd930924adb289f9eb73a3",
-      "packageObjectId": "everton-06-banner"
+      "packageObjectId": "everton-06-banner",
+      "labelHe": "הכרזה התחתונה ללא טקסט"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -501,7 +529,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "103551a111c63764e085369fb706f2c98f04fbf3a4059f5d601a952e797a3735",
-      "packageObjectId": "brentford-01-outer-outline"
+      "packageObjectId": "brentford-01-outer-outline",
+      "labelHe": "קו המסגרת החיצוני"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -522,7 +551,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7a76aee1018f43e763c86cfb02f3b051f412ee999adaa1783e065140664f8b1a",
-      "packageObjectId": "brentford-02-red-and-black-ring"
+      "packageObjectId": "brentford-02-red-and-black-ring",
+      "labelHe": "הטבעת האדומה והמסגרת השחורה הפנימית"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -543,7 +573,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7897a178871ff665fca3556ce43fe9c4fcb5c191344b1d58c970d0d72a78b2d9",
-      "packageObjectId": "brentford-03-bee-wings-and-limbs"
+      "packageObjectId": "brentford-03-bee-wings-and-limbs",
+      "labelHe": "הכנפיים והגפיים של הדבורה"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -554,8 +585,8 @@
     "semanticType": "typography",
     "internalLabel": "year",
     "assetPath": "candidates/e_f973873a.png",
-    "pixelWidth": 936,
-    "pixelHeight": 62,
+    "pixelWidth": 95,
+    "pixelHeight": 134,
     "parentElementId": null,
     "containsText": true,
     "fidelityReviewed": false,
@@ -564,7 +595,13 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f973873a643839f6c59eff2739db1470548cfa1fa0d6cbac1a5276b77d671873",
-      "packageObjectId": "brentford-04-year"
+      "packageObjectId": "brentford-04-year",
+      "labelHe": "שנת ההקמה",
+      "repacked": {
+        "parts": 2,
+        "layout": "column",
+        "note": "parts moved closer, pixels untouched (owner decision 2026-10-15)"
+      }
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -585,7 +622,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f60e741e6c5b1d90ad9ff8bb52c585ad566fe61937f056246c12a3c68f30bb1b",
-      "packageObjectId": "brentford-05-letter-t"
+      "packageObjectId": "brentford-05-letter-t",
+      "labelHe": "האות T"
     },
     "tileTone": "dark",
     "letter": "T",
@@ -607,7 +645,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "ba608fec986d56552030d3e45eed9286318744e51d1e5630974414a143d2325c",
-      "packageObjectId": "brentford-06-bee-body"
+      "packageObjectId": "brentford-06-bee-body",
+      "labelHe": "מרכז הדבורה מהמחושים עד העוקץ"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -628,7 +667,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "5cf8d231ef4f67acceac26474dbe28243a9180bc853d19b5248c68378dcbba42",
-      "packageObjectId": "chelsea-01-gold-ring"
+      "packageObjectId": "chelsea-01-gold-ring",
+      "labelHe": "הטבעת הזהובה"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -649,7 +689,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7c46b3565d66dccdb8a3b0ff7200fd275cf8e25353934ad620858e46da2c8482",
-      "packageObjectId": "chelsea-02-lion"
+      "packageObjectId": "chelsea-02-lion",
+      "labelHe": "האריה ללא המטה"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -660,8 +701,8 @@
     "semanticType": "plant",
     "internalLabel": "roses",
     "assetPath": "candidates/e_6e889daf.png",
-    "pixelWidth": 936,
-    "pixelHeight": 102,
+    "pixelWidth": 106,
+    "pixelHeight": 218,
     "parentElementId": null,
     "containsText": false,
     "fidelityReviewed": false,
@@ -670,7 +711,13 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "6e889daf09c0aef802663ada4b00f1903a6893bd626412075f6031512f44600b",
-      "packageObjectId": "chelsea-03-roses"
+      "packageObjectId": "chelsea-03-roses",
+      "labelHe": "זוג השושנים",
+      "repacked": {
+        "parts": 2,
+        "layout": "column",
+        "note": "parts moved closer, pixels untouched (owner decision 2026-10-15)"
+      }
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -681,7 +728,7 @@
     "semanticType": "ball",
     "internalLabel": "footballs",
     "assetPath": "candidates/e_66c77c24.png",
-    "pixelWidth": 936,
+    "pixelWidth": 198,
     "pixelHeight": 94,
     "parentElementId": null,
     "containsText": false,
@@ -691,7 +738,13 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "66c77c24315a453232081c3da226eddc0b338806f6b92a75ac02386c557dfe11",
-      "packageObjectId": "chelsea-04-footballs"
+      "packageObjectId": "chelsea-04-footballs",
+      "labelHe": "זוג הכדורים",
+      "repacked": {
+        "parts": 2,
+        "layout": "row",
+        "note": "parts moved closer, pixels untouched (owner decision 2026-10-15)"
+      }
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -712,7 +765,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "2855c0fb7a81420caac6687b22c1b20dede6279da8c374599d4c1f52ff5bcea5",
-      "packageObjectId": "chelsea-05-letter-e"
+      "packageObjectId": "chelsea-05-letter-e",
+      "labelHe": "האות E"
     },
     "tileTone": "dark",
     "letter": "E",
@@ -734,7 +788,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "2543060f0a3d5683dff599ae06a7db41b9b7c642d9c9cea82f7808b3c081143a",
-      "packageObjectId": "chelsea-06-staff"
+      "packageObjectId": "chelsea-06-staff",
+      "labelHe": "המטה ללא האריה"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -755,7 +810,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "402fc66cb2f482e4df147a80eeeb9df49305b0fb594aa66753be77f72751bba7",
-      "packageObjectId": "chelsea-07-blue-ring"
+      "packageObjectId": "chelsea-07-blue-ring",
+      "labelHe": "הטבעת הכחולה ללא כיתוב"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -776,7 +832,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "bff9add7049b10fc1fe5aa7d3c2a14d793c41e845b5ac9bd6387e384affbaf35",
-      "packageObjectId": "leeds-01-shield-border"
+      "packageObjectId": "leeds-01-shield-border",
+      "labelHe": "מסגרת המגן הכחולה"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -797,7 +854,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8110316657b592237efbfe98305038c701172bb8910fc33eb378c069a2d2107a",
-      "packageObjectId": "leeds-02-rose"
+      "packageObjectId": "leeds-02-rose",
+      "labelHe": "השושנה ללא הכדור"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -818,7 +876,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "6149ee94b9886c65d7ae1099904550ac0b75ca08b48a2eadc7641234a7a28c84",
-      "packageObjectId": "leeds-03-chevron-pairs"
+      "packageObjectId": "leeds-03-chevron-pairs",
+      "labelHe": "קבוצת הפסים האלכסוניים"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -839,7 +898,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "961fc04d25f4c443f80f46b0cb43f9d83c7693406353d2565e2cd2d4175edac8",
-      "packageObjectId": "leeds-04-letter-f"
+      "packageObjectId": "leeds-04-letter-f",
+      "labelHe": "האות F"
     },
     "tileTone": "mid",
     "letter": "F",
@@ -861,7 +921,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "c225e403ccd3172f6f4f2c2ad64ae7732d01919852a41cee61bf521b5a8930e4",
-      "packageObjectId": "leeds-05-football"
+      "packageObjectId": "leeds-05-football",
+      "labelHe": "הכדור מתוך השושנה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -882,7 +943,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "cb5223a6050551a91fce280dbc9459264fdb87190d69f1f90e8ffb1692b1918c",
-      "packageObjectId": "hull_city-01-white-outline"
+      "packageObjectId": "hull_city-01-white-outline",
+      "labelHe": "המסגרת הלבנה החיצונית"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -903,7 +965,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "275240d6ba156eb918e4ffdb73c0a0682577424f5f3e9b6715a839a352805008",
-      "packageObjectId": "hull_city-02-tiger-ear"
+      "packageObjectId": "hull_city-02-tiger-ear",
+      "labelHe": "האוזן"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -924,7 +987,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "0ed96e002955bf776c6cddea256967e20e2f1b1cbc123f5222bbac2d15da41cd",
-      "packageObjectId": "hull_city-03-year"
+      "packageObjectId": "hull_city-03-year",
+      "labelHe": "שנת ההקמה בשחור על רקע שקוף"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -945,7 +1009,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "e6d75de835f32f069be851458694d268e52db2f48f00c0a6384e4e932a5bc502",
-      "packageObjectId": "hull_city-04-letter-c"
+      "packageObjectId": "hull_city-04-letter-c",
+      "labelHe": "האות C"
     },
     "tileTone": "dark",
     "letter": "C",
@@ -967,7 +1032,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f4f11460350c4021717a73a23cc61c32bbf83aa24605878ea675b3574dd7b776",
-      "packageObjectId": "hull_city-05-black-frame"
+      "packageObjectId": "hull_city-05-black-frame",
+      "labelHe": "המסגרת השחורה ללא טקסט"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -988,7 +1054,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "98baa36a5c29e528dc5f202301422ae939e9fc4ddd1d7257aa632e8c804614db",
-      "packageObjectId": "hull_city-06-tiger-muzzle"
+      "packageObjectId": "hull_city-06-tiger-muzzle",
+      "labelHe": "הפה והאף"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1009,7 +1076,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "45879ad8749425d5694e75511cc7bb9a4a6cf96615b03622cfd7a1492deb5022",
-      "packageObjectId": "hull_city-07-tiger-head"
+      "packageObjectId": "hull_city-07-tiger-head",
+      "labelHe": "יתר ראש הטיגריס"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1030,7 +1098,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "c1080f1bbd808420c8dfb80c34bf99020a0c825b83364cdc9a4b089ce5a01b55",
-      "packageObjectId": "liverpool-01-branch"
+      "packageObjectId": "liverpool-01-branch",
+      "labelHe": "הענף ללא חלק מן הראש"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1051,7 +1120,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "a50795a2d454abe4f4d642b08f587a9830c9be77678d230b2846163f0e3a8240",
-      "packageObjectId": "liverpool-02-wings"
+      "packageObjectId": "liverpool-02-wings",
+      "labelHe": "הכנפיים ללא חלק מן הראש"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1072,7 +1142,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8acd977c4a34a6d75bf63c5ecda8f539216581c520e9bba0d26d721f2678281b",
-      "packageObjectId": "liverpool-03-head"
+      "packageObjectId": "liverpool-03-head",
+      "labelHe": "הראש ללא הענף והכנפיים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1093,7 +1164,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "a91d36c45703d69c5e62a15749e6d2a9bdd41f97130ee137893af0ed49509ec2",
-      "packageObjectId": "liverpool-04-leg"
+      "packageObjectId": "liverpool-04-leg",
+      "labelHe": "רגל אחת"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1114,7 +1186,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "dfea4278fc51a0e7de7df759f1359b067ad9ba4f28ce1ff233b612e4ec601c09",
-      "packageObjectId": "liverpool-05-torso"
+      "packageObjectId": "liverpool-05-torso",
+      "labelHe": "הגוף המרכזי ללא הרגליים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1135,7 +1208,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "1b92aa362c795fabd2fe92017fcdcd56257daa5c2ce1bab2e7aef7bacd94100e",
-      "packageObjectId": "liverpool-06-letter-f"
+      "packageObjectId": "liverpool-06-letter-f",
+      "labelHe": "האות F"
     },
     "tileTone": "light",
     "letter": "F",
@@ -1157,7 +1231,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "9635ade160dbe5250ac1b547ba2fbc63f8fa741a9d4bfc022b2a18f4d2c92927",
-      "packageObjectId": "ipswich-01-red-outline"
+      "packageObjectId": "ipswich-01-red-outline",
+      "labelHe": "מסגרת המגן האדומה"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1178,7 +1253,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "457dbc9ac03edcbb72f94fb343e09568d14b2c5e4b4beb03886cf77631187121",
-      "packageObjectId": "ipswich-02-horse"
+      "packageObjectId": "ipswich-02-horse",
+      "labelHe": "הסוס ללא הכדור"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1199,7 +1275,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "e5cab30034eaf824b18fd2e1acb894f67cd84b1595019b783199eb9ce2fd9a6c",
-      "packageObjectId": "ipswich-03-football"
+      "packageObjectId": "ipswich-03-football",
+      "labelHe": "הכדור"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1220,7 +1297,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "4f0fcd999a7cbce426c7ea970831e1e7a33d8bc7819fdc9d446babe47876d165",
-      "packageObjectId": "ipswich-04-waves"
+      "packageObjectId": "ipswich-04-waves",
+      "labelHe": "קבוצת הגלים"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1241,7 +1319,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "993930e393e8e0c0162f571771092231bb62c5a317bb5eb39e38afd254ecf6d7",
-      "packageObjectId": "ipswich-05-letter-i"
+      "packageObjectId": "ipswich-05-letter-i",
+      "labelHe": "האות I"
     },
     "tileTone": "dark",
     "letter": "I",
@@ -1263,7 +1342,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "16b4aa29933276539cf3b9a3a9f13e696601590fc664a9cfd554a449f5d9f0e9",
-      "packageObjectId": "ipswich-06-blue-fields"
+      "packageObjectId": "ipswich-06-blue-fields",
+      "labelHe": "קבוצת חמשת השדות הכחולים"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1284,7 +1364,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "905a2d346bcb3664b15f1b65c61ab9bade8596131b92f40b18689b03abfbe813",
-      "packageObjectId": "manchester_united-01-footballs"
+      "packageObjectId": "manchester_united-01-footballs",
+      "labelHe": "זוג הכדורים"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1305,7 +1386,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "cea920d1fb3206f297d44ba5d173c304cfbc28611a10f28bb388b055dd880614",
-      "packageObjectId": "manchester_united-02-ship"
+      "packageObjectId": "manchester_united-02-ship",
+      "labelHe": "הספינה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1326,7 +1408,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "37f838a26bd0e0e35177b54cabe379ba955326462906df6ae411e3524740d2fa",
-      "packageObjectId": "manchester_united-03-devil"
+      "packageObjectId": "manchester_united-03-devil",
+      "labelHe": "השד והקלשון כיחידה גרפית אחת"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1338,7 +1421,7 @@
     "internalLabel": "ornament-group",
     "assetPath": "candidates/e_70a1399a.png",
     "pixelWidth": 300,
-    "pixelHeight": 936,
+    "pixelHeight": 181,
     "parentElementId": null,
     "containsText": false,
     "fidelityReviewed": false,
@@ -1347,7 +1430,13 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "70a1399aea6ea36b2710d276a9b1a452177eaccf88f7cbbd8a2158d6e76bdfdf",
-      "packageObjectId": "manchester_united-04-ornament-group"
+      "packageObjectId": "manchester_united-04-ornament-group",
+      "labelHe": "קבוצת העיטורים העליונים והתחתונים",
+      "repacked": {
+        "parts": 2,
+        "layout": "column",
+        "note": "parts moved closer, pixels untouched (owner decision 2026-10-15)"
+      }
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1358,7 +1447,7 @@
     "semanticType": "ribbon",
     "internalLabel": "curled-scrolls",
     "assetPath": "candidates/e_e963b0f9.png",
-    "pixelWidth": 936,
+    "pixelWidth": 242,
     "pixelHeight": 134,
     "parentElementId": null,
     "containsText": false,
@@ -1368,7 +1457,13 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "e963b0f90628194af54dc675c99725b42e47f6e9077a99bd156eac718c655d5e",
-      "packageObjectId": "manchester_united-05-curled-scrolls"
+      "packageObjectId": "manchester_united-05-curled-scrolls",
+      "labelHe": "זוג קצות המגילות המתגלגלים",
+      "repacked": {
+        "parts": 2,
+        "layout": "row",
+        "note": "parts moved closer, pixels untouched (owner decision 2026-10-15)"
+      }
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1389,7 +1484,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "a3ed1d2e25072e3776e3ef92a014c3e439816c2d9ccfab05acba84c98910779f",
-      "packageObjectId": "manchester_united-06-letter-n"
+      "packageObjectId": "manchester_united-06-letter-n",
+      "labelHe": "האות N"
     },
     "tileTone": "dark",
     "letter": "N",
@@ -1411,7 +1507,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "b387b0cc3a6e23af7d2068b61135f4075a2b17f34336ac97af4368de6c1f4d7a",
-      "packageObjectId": "nottingham_forest-01-stars"
+      "packageObjectId": "nottingham_forest-01-stars",
+      "labelHe": "זוג הכוכבים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1432,7 +1529,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "332a4216dbca8c423cfcfe3a17ebc6921b25797ba4925fcd5648d6181d1327e3",
-      "packageObjectId": "nottingham_forest-02-tree-crown"
+      "packageObjectId": "nottingham_forest-02-tree-crown",
+      "labelHe": "רעמת העלים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1453,7 +1551,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "e76695fbfb89882c66990551ae98d952b86248b9198f997074216be4c7fce7ae",
-      "packageObjectId": "nottingham_forest-03-trunk-and-waves"
+      "packageObjectId": "nottingham_forest-03-trunk-and-waves",
+      "labelHe": "הגבעול והגלים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1474,7 +1573,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f5798cc5411adf1c254ec6f32c57d33104e9e37a34765f7522de7e77082765fe",
-      "packageObjectId": "nottingham_forest-04-letter-r"
+      "packageObjectId": "nottingham_forest-04-letter-r",
+      "labelHe": "האות R"
     },
     "tileTone": "light",
     "letter": "R",
@@ -1496,7 +1596,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "4755c3f29f0d99f1954ecb478690dad1f22bf90c0a28a4eef7f552bf253cd1a0",
-      "packageObjectId": "aston_villa-01-white-outline"
+      "packageObjectId": "aston_villa-01-white-outline",
+      "labelHe": "קו המסגרת הלבן"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1517,7 +1618,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "2f4c134ca6b5341190af1b656854ff3c2deacf1c47d845cfc3f969bb696bf1c0",
-      "packageObjectId": "aston_villa-02-claret-frame"
+      "packageObjectId": "aston_villa-02-claret-frame",
+      "labelHe": "מסגרת הבורדו"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1538,7 +1640,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "fe22fbb2299087be7817d2764bc39afca93e585ae79b48daf5b08cb49a916191",
-      "packageObjectId": "aston_villa-03-star"
+      "packageObjectId": "aston_villa-03-star",
+      "labelHe": "הכוכב"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1559,7 +1662,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "be4c4594aa360155b8944a840931b51631066104c9bbf9d31af10566317f2cd7",
-      "packageObjectId": "aston_villa-04-lion"
+      "packageObjectId": "aston_villa-04-lion",
+      "labelHe": "האריה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1580,7 +1684,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "73a9f4c6b6842b356febf1c3753c35911698b635ce83d9a6ee1a743577cdfb38",
-      "packageObjectId": "aston_villa-05-letter-f"
+      "packageObjectId": "aston_villa-05-letter-f",
+      "labelHe": "האות F"
     },
     "tileTone": "light",
     "letter": "F",
@@ -1602,7 +1707,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f40f1b7ad9499ddc2e38ad8ca8f71bfc022a24c74ab8d1c6fdce6447a0247fa9",
-      "packageObjectId": "aston_villa-06-blue-field"
+      "packageObjectId": "aston_villa-06-blue-field",
+      "labelHe": "הרקע הכחול הפנימי"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1623,7 +1729,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "b10a09d4324bc94aa198fed87360e69f42f59a045533b3d5c9c20d1f3bd960bb",
-      "packageObjectId": "bournemouth-01-football"
+      "packageObjectId": "bournemouth-01-football",
+      "labelHe": "הכדור"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1644,7 +1751,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "ce442bc74a6681386a5cca16547cdd0960146c0b1593064f9ad6d9d4179da492",
-      "packageObjectId": "bournemouth-02-motion-lines"
+      "packageObjectId": "bournemouth-02-motion-lines",
+      "labelHe": "קווי התנועה ללא הראש"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1665,7 +1773,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "0c446857a6cf31e3886a6bf2d39ae75cdb2de61444a2724fc299da39e69ee8e6",
-      "packageObjectId": "bournemouth-03-red-stripes"
+      "packageObjectId": "bournemouth-03-red-stripes",
+      "labelHe": "זוג הפסים האדומים"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1686,7 +1795,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "76191a56455543531f40633f35bab87e633aa918cceb276a577d920bd51bb636",
-      "packageObjectId": "bournemouth-04-letter-n"
+      "packageObjectId": "bournemouth-04-letter-n",
+      "labelHe": "האות N"
     },
     "tileTone": "dark",
     "letter": "N",
@@ -1708,7 +1818,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "03078e92dbf343758a0c182efc236666a783f83f4c7acf6e6934dd84644a5333",
-      "packageObjectId": "bournemouth-05-player-head"
+      "packageObjectId": "bournemouth-05-player-head",
+      "labelHe": "צללית הראש ללא קווי התנועה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1729,7 +1840,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "84cf4dadb750b59988948d38b6309744c920a1ec5b0a9d56b6c6c983cf1ab297",
-      "packageObjectId": "bournemouth-06-black-frame"
+      "packageObjectId": "bournemouth-06-black-frame",
+      "labelHe": "המסגרת השחורה ללא כיתוב"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1750,7 +1862,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "5c4befffe37418ba5991aa5a2d6c69fd4096882723124ee0b67880652eb7549c",
-      "packageObjectId": "fulham-01-white-outline"
+      "packageObjectId": "fulham-01-white-outline",
+      "labelHe": "המסגרת הלבנה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1771,7 +1884,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "0c7976967f71b3de2684869c88b30dfaa8665d29b3f0049ca9619c9f6c1365bb",
-      "packageObjectId": "fulham-02-black-panels"
+      "packageObjectId": "fulham-02-black-panels",
+      "labelHe": "זוג הדפנות השחורות"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1792,7 +1906,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "c3ba8b7f3a4abf2b8ea5dc88940064b6a2a4ae56f6804f83cbd38868784a05fc",
-      "packageObjectId": "fulham-03-letter-c"
+      "packageObjectId": "fulham-03-letter-c",
+      "labelHe": "האות C"
     },
     "tileTone": "light",
     "letter": "C",
@@ -1814,7 +1929,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "b2e3b505e13c4f24cf2ab53e13ddd9ff428d1b0eb426ad2ce1e1da5a71322509",
-      "packageObjectId": "fulham-04-white-field"
+      "packageObjectId": "fulham-04-white-field",
+      "labelHe": "השדה הלבן הפנימי ללא המונוגרמה"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -1835,7 +1951,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "49a8d8e7de38bb467b21ab37a1523621f79da110abf1db5a1582b337fdc8024a",
-      "packageObjectId": "tottenham-01-head"
+      "packageObjectId": "tottenham-01-head",
+      "labelHe": "ראש התרנגול"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1856,7 +1973,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "c7552daee0faceb43b195ffbd093d9c3d41d31a32f543170894f9a92f58f1683",
-      "packageObjectId": "tottenham-02-tail"
+      "packageObjectId": "tottenham-02-tail",
+      "labelHe": "זנב התרנגול"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1877,7 +1995,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "ebf4002da4f31d1e3d5a0f920a732ea6a8abf7a1fca279c88d5e30bd631096a3",
-      "packageObjectId": "tottenham-03-body"
+      "packageObjectId": "tottenham-03-body",
+      "labelHe": "יתר גוף התרנגול ללא חלק מהכדור"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1898,7 +2017,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "2ef48ed6777400bda17692e5b72cb0a5c475277f1713194ea0578cfd677c161c",
-      "packageObjectId": "tottenham-04-ball-upper"
+      "packageObjectId": "tottenham-04-ball-upper",
+      "labelHe": "החצי העליון של הכדור"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1919,7 +2039,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "d03380bb8cdc5abb590dc52bca75e8a3c60b82d1c31600fd020b485823cdf6e6",
-      "packageObjectId": "tottenham-05-ball-lower"
+      "packageObjectId": "tottenham-05-ball-lower",
+      "labelHe": "החצי התחתון של הכדור"
     },
     "tileTone": "light",
     "autoSelectable": true
@@ -1940,7 +2061,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8fe00677ecf1005f29eb603e161ea42a8ac4d69d3144452b64588c1b5c5fa8a9",
-      "packageObjectId": "crystal_palace-01-eagle"
+      "packageObjectId": "crystal_palace-01-eagle",
+      "labelHe": "העיט"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1961,7 +2083,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "93bff5b5072cccf20a908d5df23eaa6bf51946e2e260fe1eb16500b61b15b7c6",
-      "packageObjectId": "crystal_palace-02-football"
+      "packageObjectId": "crystal_palace-02-football",
+      "labelHe": "הכדור"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -1982,7 +2105,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "23649f35449a01e72a66870f04b22dd37afd958764e57dda9d790f349043a1ff",
-      "packageObjectId": "crystal_palace-03-palace"
+      "packageObjectId": "crystal_palace-03-palace",
+      "labelHe": "מבנה הארמון כיחידה אחת"
     },
     "tileTone": "dark",
     "autoSelectable": true
@@ -2003,7 +2127,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "3894e9a8f77a55734d6040c17a471212fec11003ad52a17037113e4813db4d56",
-      "packageObjectId": "crystal_palace-04-year"
+      "packageObjectId": "crystal_palace-04-year",
+      "labelHe": "השנה המופיעה בסמל"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2024,7 +2149,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "a860a8fa54984b39235581775ccd63bc02ef4cb4a0536951bee157a193f50d72",
-      "packageObjectId": "crystal_palace-05-letter-a"
+      "packageObjectId": "crystal_palace-05-letter-a",
+      "labelHe": "האות A"
     },
     "tileTone": "dark",
     "letter": "A",
@@ -2046,7 +2172,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "99cd549e6522a01ae926fddca2f490d214b47ef770db4818cf7f0e8be55cb041",
-      "packageObjectId": "crystal_palace-06-banner"
+      "packageObjectId": "crystal_palace-06-banner",
+      "labelHe": "הכרזה התחתונה ללא טקסט"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2067,7 +2194,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "46ef4d2a4a9ce627bc68a4072d9ee2f1165f33d6aa6aefca66ba479d0e78156e",
-      "packageObjectId": "newcastle-01-seahorse-left"
+      "packageObjectId": "newcastle-01-seahorse-left",
+      "labelHe": "סוסון הים השמאלי"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2088,7 +2216,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "e9229ca66c8c6432ad12bf26ab5e02fae9e31456999dceb636d04e390194c0af",
-      "packageObjectId": "newcastle-02-striped-shield"
+      "packageObjectId": "newcastle-02-striped-shield",
+      "labelHe": "המגן המפוספס והעיטור הזהוב"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2109,7 +2238,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "b470cbea05724b963367600656b8bfc5e3b946299e0ec5f41612a60b45768ad8",
-      "packageObjectId": "newcastle-03-upper-tower"
+      "packageObjectId": "newcastle-03-upper-tower",
+      "labelHe": "המגדל שמתחת לאריה העליון"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2130,7 +2260,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8be0f8e6442468e399169f521af9209fc91530df9d1fb049df318e98170d1d8e",
-      "packageObjectId": "newcastle-04-flag"
+      "packageObjectId": "newcastle-04-flag",
+      "labelHe": "הדגל"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2151,7 +2282,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "de811c3b2892abb79578dabaea1d5c3e41dd15dc17e26686aa39e134814f7e81",
-      "packageObjectId": "newcastle-05-lion-crest"
+      "packageObjectId": "newcastle-05-lion-crest",
+      "labelHe": "האריה שבקישוט העליון"
     },
     "tileTone": "mid",
     "autoSelectable": false
@@ -2172,7 +2304,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7ecd0db6d73c549171810fdbdf1534c300f2f4b725c93424486f3cb22d8636fa",
-      "packageObjectId": "newcastle-06-letter-e"
+      "packageObjectId": "newcastle-06-letter-e",
+      "labelHe": "האות E"
     },
     "tileTone": "light",
     "letter": "E",
@@ -2194,7 +2327,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "1d484a596248417be2704f14139c01ed2d09c27ff205ee77ca4ff7c00071308a",
-      "packageObjectId": "newcastle-07-seahorse-right"
+      "packageObjectId": "newcastle-07-seahorse-right",
+      "labelHe": "סוסון הים הימני"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2215,7 +2349,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "b08264998ccb7327df48dd441d16be0b17c34a119762b85b03bf1bdd052c741b",
-      "packageObjectId": "newcastle-08-banner"
+      "packageObjectId": "newcastle-08-banner",
+      "labelHe": "הכרזה התחתונה ללא טקסט"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2236,7 +2371,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "5e9ef192d4708d40ce7e19770f803f9465f3ab482652c58ad402d24fcec07991",
-      "packageObjectId": "sunderland-01-lion-left"
+      "packageObjectId": "sunderland-01-lion-left",
+      "labelHe": "האריה השמאלי"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2257,7 +2393,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f396f1fd22366119bc6bf58f68117073b2039fc0c3789555e1a805a16ca6e981",
-      "packageObjectId": "sunderland-02-temple"
+      "packageObjectId": "sunderland-02-temple",
+      "labelHe": "המבנה הקלאסי"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2278,7 +2415,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "a524b36175c2159bb0191010c12aa8a617d70d2f8b37df95373732b3eb6e181c",
-      "packageObjectId": "sunderland-03-bridge"
+      "packageObjectId": "sunderland-03-bridge",
+      "labelHe": "הגשר"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2299,7 +2437,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7a6308fab0ca0668bf06c56a2a290395022a2574e2b29d38b76f57e577d609f0",
-      "packageObjectId": "sunderland-04-striped-shield"
+      "packageObjectId": "sunderland-04-striped-shield",
+      "labelHe": "שטחי המגן האדומים והלבנים"
     },
     "tileTone": "mid",
     "autoSelectable": false
@@ -2320,7 +2459,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7d4236129367c4c5064773161ca2941141200ac885fa901f045e6b13f5b7cec5",
-      "packageObjectId": "sunderland-05-upper-monument"
+      "packageObjectId": "sunderland-05-upper-monument",
+      "labelHe": "העיטור האדריכלי העליון"
     },
     "tileTone": "mid",
     "autoSelectable": false
@@ -2341,7 +2481,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8c53b74c57e5f8c7ba3b00645e4111988b0c920c4d9c60c0f4770c6f1a8d5a33",
-      "packageObjectId": "sunderland-06-letter-a"
+      "packageObjectId": "sunderland-06-letter-a",
+      "labelHe": "האות A"
     },
     "tileTone": "dark",
     "letter": "A",
@@ -2363,7 +2504,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f4f7fd1ab6aeeb1d20d60876d53957de98eaf0990009fa8c28e80fb5280380d6",
-      "packageObjectId": "sunderland-07-lion-right"
+      "packageObjectId": "sunderland-07-lion-right",
+      "labelHe": "האריה הימני"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2384,7 +2526,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "2be252debac2c18d9ad837b1e976eccf50010c5df963aad8c013d65f588b434c",
-      "packageObjectId": "sunderland-08-banner"
+      "packageObjectId": "sunderland-08-banner",
+      "labelHe": "הכרזה התחתונה ללא טקסט"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2405,7 +2548,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "c4691ea06e891b177ef1e871cb4b221d500347c04bccc7fcb920b3c335941780",
-      "packageObjectId": "coventry-01-castle"
+      "packageObjectId": "coventry-01-castle",
+      "labelHe": "הטירה"
     },
     "tileTone": "mid",
     "autoSelectable": false
@@ -2426,7 +2570,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "db887ec8a97f7d2ae3afeb9c7c8045f55f9b5c785294426cd51ae27f3665a891",
-      "packageObjectId": "coventry-02-elephant"
+      "packageObjectId": "coventry-02-elephant",
+      "labelHe": "הפיל והסמל שעל גבו"
     },
     "tileTone": "light",
     "autoSelectable": false
@@ -2447,7 +2592,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "8b888109d42c6d638583d8f7921399931ddcde31da61aab108bf79b69b350a77",
-      "packageObjectId": "coventry-03-football"
+      "packageObjectId": "coventry-03-football",
+      "labelHe": "הכדור"
     },
     "tileTone": "mid",
     "autoSelectable": false
@@ -2468,7 +2614,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "7ea32ab458e405e7678ac75456eab7a6e4e9dbd5408f417cc3d619c4980bb452",
-      "packageObjectId": "coventry-04-bird-left"
+      "packageObjectId": "coventry-04-bird-left",
+      "labelHe": "הציפור השמאלית"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2489,7 +2636,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "4aa547bac421afe24c83bae21b57bc62b8b78de5a024452be06409d5a68d404c",
-      "packageObjectId": "coventry-05-letter-e"
+      "packageObjectId": "coventry-05-letter-e",
+      "labelHe": "האות E"
     },
     "tileTone": "light",
     "letter": "E",
@@ -2511,7 +2659,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "3be2c92b0e274d5d3e1383dab8bac94cdc508a63ab0242c0499c3d8d78cf72c7",
-      "packageObjectId": "coventry-06-bird-right"
+      "packageObjectId": "coventry-06-bird-right",
+      "labelHe": "הציפור הימנית"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2532,7 +2681,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "f40cce0829561831ca7b7550d2e3ccc19b91ba0a55d80f01a2f3377d69806fb9",
-      "packageObjectId": "coventry-07-banner-upper"
+      "packageObjectId": "coventry-07-banner-upper",
+      "labelHe": "הכרזה העליונה ללא טקסט"
     },
     "tileTone": "mid",
     "autoSelectable": true
@@ -2553,7 +2703,8 @@
     "sourceMapping": {
       "package": "PNG-v2",
       "packageSha256": "27b7fa43802ea489c896826601f8fa3e2f01f77180b158450274acc97488ea57",
-      "packageObjectId": "coventry-08-banner-lower"
+      "packageObjectId": "coventry-08-banner-lower",
+      "labelHe": "הכרזה התחתונה ללא טקסט"
     },
     "tileTone": "mid",
     "autoSelectable": true

@@ -14,7 +14,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the blue bands.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הפסים הכחולים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -35,7 +35,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the white bands.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הפסים הלבנים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -55,7 +55,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the diagonal bands.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: קבוצת הפסים האלכסוניים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -69,13 +69,14 @@
       "e_0081acce",
       "e_c96f7070",
       "e_9356c6fb",
+      "e_285beef7",
       "e_65568bac"
     ],
     "status": "draft",
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the rose.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: השושנה.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -94,7 +95,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the white ring.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הטבעת הלבנה ללא כיתוב.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -113,7 +114,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the blue disc.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: העיגול הכחול ללא השחף.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -134,7 +135,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכרזה התחתונה ללא טקסט.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -154,7 +155,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the tower.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: המגדל.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -174,7 +175,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the wings.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכנפיים והגפיים של הדבורה.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -186,6 +187,7 @@
     "crestVersionId": "c_62162a41",
     "revealOrder": [
       "e_103551a1",
+      "e_f973873a",
       "e_ba608fec",
       "e_7a76aee1",
       "e_f60e741e"
@@ -194,7 +196,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the outline.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: קו המסגרת החיצוני.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -206,6 +208,7 @@
     "crestVersionId": "c_47b0f1fc",
     "revealOrder": [
       "e_2543060f",
+      "e_6e889daf",
       "e_402fc66c",
       "e_7c46b356",
       "e_2855c0fb"
@@ -214,7 +217,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the staff.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: המטה ללא האריה.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -225,16 +228,16 @@
     "clubId": "chelsea",
     "crestVersionId": "c_47b0f1fc",
     "revealOrder": [
+      "e_66c77c24",
       "e_402fc66c",
       "e_2543060f",
-      "e_7c46b356",
-      "e_5cf8d231"
+      "e_7c46b356"
     ],
     "status": "draft",
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the blue ring.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הכדורים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -255,7 +258,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the chevrons.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: קבוצת הפסים האלכסוניים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -275,7 +278,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the football.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכדור מתוך השושנה.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -295,7 +298,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the ear.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: האוזן.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -315,7 +318,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the muzzle.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הפה והאף.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -335,7 +338,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the leg.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: רגל אחת.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -355,7 +358,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the torso (check: it touches the canvas edge).",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הגוף המרכזי ללא הרגליים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -375,7 +378,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the waves.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: קבוצת הגלים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -395,7 +398,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the football.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכדור.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -415,7 +418,28 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the two footballs (small but readable).",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הכדורים.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
+    "id": "pz_cb6821c2",
+    "revision": 1,
+    "clubId": "manchester-united",
+    "crestVersionId": "c_323616b2",
+    "revealOrder": [
+      "e_70a1399a",
+      "e_37f838a2",
+      "e_e963b0f9",
+      "e_cea920d1",
+      "e_a3ed1d2e"
+    ],
+    "status": "draft",
+    "audience": "premier-league-2026-27-draft",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: קבוצת העיטורים העליונים והתחתונים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -435,7 +459,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the stars.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הכוכבים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -455,7 +479,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the star.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכוכב.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -475,7 +499,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the claret frame.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: מסגרת הבורדו.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -496,7 +520,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the stripes.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הפסים האדומים.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -516,7 +540,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the football.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכדור.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -536,7 +560,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the black panels.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זוג הדפנות השחורות.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -556,7 +580,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the tail.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: זנב התרנגול.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -577,7 +601,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the lower half of the ball.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: החצי התחתון של הכדור.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -598,7 +622,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכרזה התחתונה ללא טקסט.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -618,7 +642,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the palace.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: מבנה הארמון כיחידה אחת.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -639,7 +663,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכרזה התחתונה ללא טקסט.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -659,7 +683,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the right seahorse.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: סוסון הים הימני.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -679,7 +703,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the banner.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכרזה התחתונה ללא טקסט.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -700,7 +724,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the right lion.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: האריה הימני.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -720,7 +744,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the lower banner.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכרזה התחתונה ללא טקסט.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -741,7 +765,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the upper banner.",
+    "editorialNotes": "טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: הכרזה העליונה ללא טקסט.",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"

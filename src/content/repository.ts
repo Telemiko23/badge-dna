@@ -56,6 +56,10 @@ export interface ContentRepository {
    */
   getValidDaily(dateUtc: string): DailyChallenge | null
   getClub(id: string): Club | undefined
+  /** Development tools only (review screen): piece metadata, and the URL of any asset path. */
+  getElement(id: string): Element | undefined
+  elementsOfCrest(crestVersionId: string): Element[]
+  assetUrl(assetPath: string): string
   getPuzzle(ref: PuzzleRef): Puzzle | undefined
   /** Null when the referenced puzzle revision or one of its pieces is missing. */
   getPlayablePuzzle(ref: PuzzleRef): PlayablePuzzle | null
@@ -134,6 +138,9 @@ function createRepository(
       return playable && clubIds.size === entry.puzzleRefs.length ? entry : null
     },
     getClub: (id) => clubs.get(id),
+    getElement: (id) => elements.get(id),
+    elementsOfCrest: (crestVersionId) => content.elements.filter((e) => e.crestVersionId === crestVersionId),
+    assetUrl: resolveAsset,
     getPuzzle: (ref) => puzzles.get(`${ref.id}@${ref.revision}`),
     getPlayablePuzzle: getPlayable,
   }

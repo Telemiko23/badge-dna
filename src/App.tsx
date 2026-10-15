@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { IconHome, LogoMark } from './components/icons.tsx'
 import { LanguageSwitch } from './components/LanguageSwitch.tsx'
 import { loadContent, selectActiveContent, type ActiveContent } from './content/load.ts'
@@ -12,6 +12,9 @@ import { LegalScreen } from './screens/LegalScreen.tsx'
 import { PracticeScreen } from './screens/PracticeScreen.tsx'
 import { SettingsScreen } from './screens/SettingsScreen.tsx'
 import { logEvent } from './storage/eventLog.ts'
+
+// Development-only screen: replaced by `null` (and its chunk dropped) in production builds.
+const ReviewScreen = import.meta.env.DEV ? lazy(() => import('./screens/ReviewScreen.tsx')) : null
 
 function useRoute(): [Route, (route: Route) => void] {
   const [route, setRoute] = useState<Route>(() => parseRoute(window.location.hash))
@@ -111,6 +114,11 @@ export default function App() {
           <>
             {route.name === 'home' && <HomeScreen content={state.content} go={go} />}
             {route.name === 'practice' && <PracticeScreen content={state.content} onHome={home} />}
+            {ReviewScreen && route.name === 'review' && (
+              <Suspense fallback={null}>
+                <ReviewScreen content={state.content} />
+              </Suspense>
+            )}
             {route.name === 'daily' && (
               <DailyScreen
                 key={route.date}

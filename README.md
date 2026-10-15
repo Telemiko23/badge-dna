@@ -15,6 +15,9 @@ npm run dev        # http://localhost:5173
 
 With no approved real puzzles yet, the dev build plays **synthetic test puzzles** (invented clubs, invented crests) behind a "development build" banner. Production builds (`npm run build`) contain no fixtures; with no published real puzzles they show "no puzzles available yet".
 
+## Reviewing the draft puzzles (development only)
+Run `npm run dev`, open Settings, then the puzzle review screen (or go to `#/review`). Enter the reviewer name, open a club, look at the crest and every piece in order, tick the three confirmations and approve, or mark the puzzle as needing changes or rejected. Decisions are saved to `content/reviews/review.json` by the dev server; the screen and the save endpoint do not exist in production builds.
+
 ## Scripts
 
 | Command | What it does |
@@ -24,6 +27,7 @@ With no approved real puzzles yet, the dev build plays **synthetic test puzzles*
 | `npm run lint` | oxlint |
 | `npm run validate:content` | Schema, reference, asset and publish-gate checks on `content/` and fixtures |
 | `npm run build` | Production build into `dist/` (no fixtures) |
+| `node scripts/import-package.ts <folder>` | Imports an owner-provided PNG package as draft candidate content |
 | `npm run build:dev` | Build with fixtures into `dist-dev/` for QA |
 
 ## Project layout

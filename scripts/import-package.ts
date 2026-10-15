@@ -16,7 +16,8 @@ import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import pngjs from 'pngjs'
-import { DRAFTS, EXCLUDED } from './candidate-sequences.ts'
+import { DRAFTS, EXCLUDED, REPACK } from './candidate-sequences.ts'
+import { repack } from './repack.ts'
 
 const { PNG } = pngjs
 const root = resolve(import.meta.dirname, '..')
@@ -152,22 +153,32 @@ for (const club of manifest.clubs) {
   provenance.push({ kind: 'crest', id: crestId, clubId, packageFile: `${club.folder}/${club.logo}`, sha256: sha256(logoBuf), sourceUrl: club.sourceUrl })
 
   const byGroup = new Map<string, string>() // semantic group -> element id
+  const labelHeByGroup = new Map<string, string>()
   for (const o of club.objects) {
     const buf = readFileSync(join(dir, o.png))
     if (sha256(buf) !== o.sha256) throw new Error(`${o.id}: file does not match its manifest hash`)
     const full = PNG.sync.read(buf)
-    const cropped = trim(full)
+    const name = groupName(o)
+    const packing = REPACK[`${club.id}:${name}`]
+    const packed = packing ? repack(full, packing) : null
+    const cropped = packed ? packed.png : trim(full)
     const elementId = unique(`e_${o.sha256.slice(0, 8)}`)
     writeFileSync(join(assetsDir, `${elementId}.png`), PNG.sync.write(cropped))
-    byGroup.set(groupName(o), elementId)
-    const name = groupName(o)
+    byGroup.set(name, elementId)
+    labelHeByGroup.set(name, o.labelHe)
     elements.push({
       id: elementId, crestVersionId: crestId, semanticType: semanticType(name), internalLabel: name,
       assetPath: `candidates/${elementId}.png`, pixelWidth: cropped.width, pixelHeight: cropped.height,
       parentElementId: null,
       containsText: o.singleLetter || /year/.test(name),
       fidelityReviewed: false, visualReviewed: false, extractionMethod: 'manual',
-      sourceMapping: { package: manifest.version, packageSha256: o.sha256, packageObjectId: o.id },
+      sourceMapping: {
+        package: manifest.version,
+        packageSha256: o.sha256,
+        packageObjectId: o.id,
+        labelHe: o.labelHe,
+        ...(packed ? { repacked: { parts: packed.parts.length, layout: packed.layout, note: 'parts moved closer, pixels untouched (owner decision 2026-10-15)' } } : {}),
+      },
       tileTone: toneOf(cropped),
       ...(o.singleLetter ? { letter: letterOf(name) } : {}),
       autoSelectable: o.eligibleForAutomaticSelection,
@@ -193,7 +204,7 @@ for (const club of manifest.clubs) {
       id: unique(`pz_${sha8(`${clubId}:${v.key}`)}`), revision: 1, clubId, crestVersionId: crestId,
       revealOrder: ids, status: 'draft', audience: 'premier-league-2026-27-draft',
       familiarity: 'uncalibrated', difficultyStatus: 'uncalibrated',
-      editorialNotes: `Assistant-written draft order, unreviewed, untested. ${v.note}.`,
+      editorialNotes: `טיוטת סדר שנכתבה על ידי העוזר, לא נבדקה ולא נוסתה עם שחקנים. נפתחת ב: ${labelHeByGroup.get(v.order[0])}.`,
       reviewedBy: null, reviewedAt: null, scoringVersion: 'scoring-v1',
     })
   }

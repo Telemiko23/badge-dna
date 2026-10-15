@@ -31,6 +31,9 @@ editor approval or usage rights have been given; none have (see `docs/content-st
 ## Commands
 `npm run dev` · `npm test` · `npm run typecheck` · `npm run lint` · `npm run build` · `npm run validate:content`
 
+## Review decisions
+`content/reviews/review.json` holds the owner's approvals. It is written only through the development review screen (`#/review`), by the owner. Never create, edit or fill in approvals, reviewer names or confirmations on the owner's behalf.
+
 ## Legal
 The footer link and the `#/legal` page (texts in `src/i18n`, settings in `src/legal.ts`) must stay on every build. They are a disclaimer, not a licence: they never change a crest's `rightsStatus` (see `docs/legal-notice.md`). Do not edit them to claim permissions that were not given.
 

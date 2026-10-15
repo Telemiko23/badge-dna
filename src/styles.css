@@ -963,3 +963,160 @@ a {
 .legal p {
   line-height: 1.7;
 }
+
+/* ---------- Review screen (development only) ---------- */
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-summary {
+  font-weight: 700;
+}
+
+.review-club > summary {
+  cursor: pointer;
+  font-size: 1.125rem;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-library {
+  margin-block: 8px;
+}
+
+.review-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--surface);
+}
+
+.review-card[data-decision='approved'] {
+  border-color: var(--accent);
+}
+
+.review-card[data-decision='changes'] {
+  border-color: var(--gold);
+}
+
+.review-card[data-decision='rejected'] {
+  border-color: var(--danger);
+}
+
+.review-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-status {
+  font-weight: 800;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--surface-3);
+}
+
+.review-status.is-approved {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.review-status.is-changes {
+  background: var(--gold);
+  color: #2a1d00;
+}
+
+.review-status.is-rejected {
+  background: var(--danger);
+  color: var(--on-danger);
+}
+
+.review-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-crest {
+  margin: 0;
+  max-width: 160px;
+}
+
+.review-seq {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: 8px;
+}
+
+.review-tile {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.review-tile figcaption,
+.review-crest figcaption {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.review-media {
+  display: grid;
+  place-items: center;
+  height: 110px;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(145deg, var(--media-from), var(--media-to));
+}
+
+.review-media[data-tone='dark'] {
+  background: linear-gradient(145deg, #202a4d, #0d1328);
+}
+
+.review-media[data-tone='light'] {
+  background: linear-gradient(145deg, #f1f4fc, #d5dcf0);
+}
+
+.review-media img {
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.review-confirm {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-confirm label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+
+.review-confirm input[type='checkbox'] {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--accent);
+}
+
+.review-note {
+  resize: vertical;
+}

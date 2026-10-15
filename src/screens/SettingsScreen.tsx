@@ -39,6 +39,10 @@ export function SettingsScreen() {
 
       {import.meta.env.DEV && (
         <>
+          <h3 className="section-title">{t('review.title')}</h3>
+          <a className="btn btn-secondary" href="#/review">
+            {t('settings.reviewLink')}
+          </a>
           <h3 className="section-title">{t('settings.exportEvents')}</h3>
           <button type="button" className="btn btn-secondary" onClick={downloadEvents}>
             {t('settings.exportEvents')}

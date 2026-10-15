@@ -60,5 +60,12 @@ Decisions made while building milestones 1–2. None change the core mechanic. "
 - Reveal orders for the 37 drafts were written by the assistant and are marked as such in `editorialNotes`.
 - Dev daily schedule for any pool without a hand-made one: `devDailySchedule` (explicit dated entries, three clubs a day, deterministic).
 
+## Review screen (stage B, 2026-10-15)
+- Dev-only (`import.meta.env.DEV`; verified absent from `dist/`), route `#/review`, available when the candidate drafts are loaded.
+- Decisions go to `content/reviews/review.json` through a dev-server-only endpoint (`scripts/review-plugin.ts`): one fixed file, body validated with the same zod schema, requests from other origins refused, saves sent one at a time in order.
+- An approval needs three explicit confirmations (crest matches the source; every piece faithful and readable at phone size; order acceptable) and a reviewer name; the schema rejects anything else. "Needs changes" and "rejected" need neither.
+- Approving a puzzle is a human act: nobody (including the assistant) fills it in.
+- Draft notes are now written in Hebrew (from the piece labels in the package) so the screen doesn't mix languages.
+
 ## Not built yet (by design)
 Review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.
