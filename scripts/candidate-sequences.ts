@@ -17,15 +17,15 @@ export interface DraftVariant {
 
 /** Pieces left out of every draft, with the reason. They stay in the library for the owner to decide. */
 export const EXCLUDED: Record<string, string> = {
+  'brighton:letter-b': "the letter is the first letter of the club's name (owner rule, 2026-10-15)",
+  'everton:letter-e': "the letter is the first letter of the club's name (owner rule, 2026-10-15)",
+  'ipswich:letter-i': "the letter is the first letter of the club's name (owner rule, 2026-10-15)",
   'manchester_city:year': 'two tiny numbers far apart: unreadable when fitted to a card',
   'brentford:year': 'two tiny numbers far apart: unreadable when fitted to a card',
   'chelsea:roses': 'a few tiny dots spread over a wide area',
   'chelsea:footballs': 'a few tiny dots spread over a wide area',
-  'manchester_united:footballs': 'two small balls far apart',
   'manchester_united:ornament-group': 'mostly tiny specks',
   'manchester_united:curled-scrolls': 'two tiny fragments',
-  'everton:laurels': 'two small sprigs far apart',
-  'crystal_palace:year': 'four small numerals with wide gaps',
 }
 
 export const DRAFTS: Record<string, DraftVariant[]> = {
@@ -38,12 +38,12 @@ export const DRAFTS: Record<string, DraftVariant[]> = {
     { key: 'b', order: ['rose', 'inner-ring', 'diagonal-bands', 'ship'], note: 'opens on the rose' },
   ],
   brighton: [
-    { key: 'a', order: ['white-ring', 'seagull', 'blue-disc', 'letter-b'], note: 'opens on the white ring' },
-    { key: 'b', order: ['blue-disc', 'letter-b', 'ring', 'seagull'], note: 'opens on the blue disc' },
+    { key: 'a', order: ['white-ring', 'seagull', 'blue-disc'], note: 'opens on the white ring' },
+    { key: 'b', order: ['blue-disc', 'ring', 'seagull'], note: 'opens on the blue disc' },
   ],
   everton: [
-    { key: 'a', order: ['banner', 'shield-outline', 'tower', 'year'], note: 'opens on the banner' },
-    { key: 'b', order: ['tower', 'banner', 'letter-e', 'year'], note: 'opens on the tower' },
+    { key: 'a', order: ['banner', 'laurels', 'shield-outline', 'tower', 'year'], note: 'opens on the banner' },
+    { key: 'b', order: ['tower', 'banner', 'shield-outline', 'year'], note: 'opens on the tower' },
   ],
   brentford: [
     { key: 'a', order: ['bee-wings-and-limbs', 'red-and-black-ring', 'letter-t', 'bee-body'], note: 'opens on the wings' },
@@ -66,11 +66,11 @@ export const DRAFTS: Record<string, DraftVariant[]> = {
     { key: 'b', order: ['torso', 'branch', 'head', 'wings'], note: 'opens on the torso (check: it touches the canvas edge)' },
   ],
   ipswich: [
-    { key: 'a', order: ['waves', 'blue-fields', 'horse', 'football', 'letter-i'], note: 'opens on the waves' },
-    { key: 'b', order: ['football', 'red-outline', 'horse', 'letter-i'], note: 'opens on the football' },
+    { key: 'a', order: ['waves', 'blue-fields', 'horse', 'football'], note: 'opens on the waves' },
+    { key: 'b', order: ['football', 'red-outline', 'blue-fields', 'horse'], note: 'opens on the football' },
   ],
   manchester_united: [
-    { key: 'a', order: ['ship', 'letter-n', 'devil'], note: 'only three clean pieces remain after exclusions' },
+    { key: 'a', order: ['footballs', 'ship', 'letter-n', 'devil'], note: 'opens on the two footballs (small but readable)' },
   ],
   nottingham_forest: [
     { key: 'a', order: ['stars', 'trunk-and-waves', 'tree-crown', 'letter-r'], note: 'opens on the stars' },
@@ -91,7 +91,7 @@ export const DRAFTS: Record<string, DraftVariant[]> = {
     { key: 'b', order: ['ball-lower', 'head', 'ball-upper', 'tail', 'body'], note: 'opens on the lower half of the ball' },
   ],
   crystal_palace: [
-    { key: 'a', order: ['banner', 'football', 'palace', 'eagle'], note: 'opens on the banner' },
+    { key: 'a', order: ['banner', 'year', 'football', 'palace', 'eagle'], note: 'opens on the banner' },
     { key: 'b', order: ['palace', 'letter-a', 'football', 'eagle'], note: 'opens on the palace' },
   ],
   newcastle: [

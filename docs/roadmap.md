@@ -43,7 +43,7 @@ Dev-only screen/CLI: load a crest, show its structure, select parts, export each
 - **Raster-only sources** need manual masks and are limited by resolution.
 
 ## Decisions needed from the owner
-1. Are vector (SVG) or high-resolution (≥ 600 px) crest sources available, and what is the usage basis for them?
+1. ~~Usage basis~~ decided 2026-10-15 (fan quiz, identification only, disclaimer; see `legal-notice.md`). Still open: tiny scattered pieces (`png-v2-review.md`), replacement letters for Brighton, Everton and Ipswich, and whether more clubs' pieces will arrive in the same format.
 2. Unlock rule for league progression (A).
 3. 1-vs-1: live or asynchronous, and is a backend acceptable (B)?
 4. Review of the Hebrew club names/aliases in `content/clubs/clubs.json`.

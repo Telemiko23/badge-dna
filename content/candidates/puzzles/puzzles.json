@@ -88,8 +88,7 @@
     "revealOrder": [
       "e_723e1d49",
       "e_194bcd62",
-      "e_90aea8fb",
-      "e_a15bbeaa"
+      "e_90aea8fb"
     ],
     "status": "draft",
     "audience": "premier-league-2026-27-draft",
@@ -107,7 +106,6 @@
     "crestVersionId": "c_a2bcf0e0",
     "revealOrder": [
       "e_90aea8fb",
-      "e_a15bbeaa",
       "e_3e347c95",
       "e_194bcd62"
     ],
@@ -127,6 +125,7 @@
     "crestVersionId": "c_3b1a9fd4",
     "revealOrder": [
       "e_4491b047",
+      "e_8600077c",
       "e_d72d9d4d",
       "e_d9a91f4a",
       "e_dc82520e"
@@ -148,7 +147,7 @@
     "revealOrder": [
       "e_d9a91f4a",
       "e_4491b047",
-      "e_37062080",
+      "e_d72d9d4d",
       "e_dc82520e"
     ],
     "status": "draft",
@@ -370,8 +369,7 @@
       "e_4f0fcd99",
       "e_16b4aa29",
       "e_457dbc9a",
-      "e_e5cab300",
-      "e_993930e3"
+      "e_e5cab300"
     ],
     "status": "draft",
     "audience": "premier-league-2026-27-draft",
@@ -390,8 +388,8 @@
     "revealOrder": [
       "e_e5cab300",
       "e_9635ade1",
-      "e_457dbc9a",
-      "e_993930e3"
+      "e_16b4aa29",
+      "e_457dbc9a"
     ],
     "status": "draft",
     "audience": "premier-league-2026-27-draft",
@@ -408,6 +406,7 @@
     "clubId": "manchester-united",
     "crestVersionId": "c_323616b2",
     "revealOrder": [
+      "e_905a2d34",
       "e_cea920d1",
       "e_a3ed1d2e",
       "e_37f838a2"
@@ -416,7 +415,7 @@
     "audience": "premier-league-2026-27-draft",
     "familiarity": "uncalibrated",
     "difficultyStatus": "uncalibrated",
-    "editorialNotes": "Assistant-written draft order, unreviewed, untested. only three clean pieces remain after exclusions.",
+    "editorialNotes": "Assistant-written draft order, unreviewed, untested. opens on the two footballs (small but readable).",
     "reviewedBy": null,
     "reviewedAt": null,
     "scoringVersion": "scoring-v1"
@@ -590,6 +589,7 @@
     "crestVersionId": "c_314080f1",
     "revealOrder": [
       "e_99cd549e",
+      "e_3894e9a8",
       "e_93bff5b5",
       "e_23649f35",
       "e_8fe00677"

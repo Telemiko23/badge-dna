@@ -131,3 +131,36 @@ describe('fixtures are unaffected by candidate support', () => {
     expect(repo.playablePuzzles()).toHaveLength(repo.publishedPuzzles().length)
   })
 })
+
+describe('owner rule: a letter clue is never the first letter of the club name', () => {
+  const codesOf = (raw: RawContent) => validateContent(raw, { kind: 'real', assetExists: () => true }).map((i) => i.code)
+  const clubName = (id: unknown) =>
+    (candidateRaw.clubs as { id: string; displayName: { en: string } }[]).find((c) => c.id === id)!.displayName.en
+
+  it('no draft uses such a letter', () => {
+    expect(codesOf(candidateRaw)).not.toContain('letter-is-initial')
+  })
+
+  it('the validator rejects one if it is added', () => {
+    const raw = structuredClone(candidateRaw)
+    const elements = raw.elements as { id: string; crestVersionId: string; letter?: string }[]
+    const crests = raw.crests as { id: string; clubId: string }[]
+    const bad = elements.find((e) => e.letter && e.letter === clubName(crests.find((c) => c.id === e.crestVersionId)!.clubId)[0].toUpperCase())!
+    expect(bad).toBeDefined()
+    const puzzle = (raw.puzzles as { crestVersionId: string; revealOrder: string[] }[]).find((p) => p.crestVersionId === bad.crestVersionId)!
+    puzzle.revealOrder = [...puzzle.revealOrder.slice(0, 2), bad.id]
+    expect(codesOf(raw)).toContain('letter-is-initial')
+  })
+
+  it('the three clubs whose supplied letter is their initial are Brighton, Everton and Ipswich', () => {
+    const elements = candidateRaw.elements as { crestVersionId: string; letter?: string }[]
+    const crests = candidateRaw.crests as { id: string; clubId: string }[]
+    const initials = elements
+      .filter((e) => e.letter)
+      .map((e) => ({ club: crests.find((c) => c.id === e.crestVersionId)!.clubId, letter: e.letter! }))
+      .filter((x) => x.letter === clubName(x.club)[0].toUpperCase())
+      .map((x) => x.club)
+      .sort()
+    expect(initials).toEqual(['brighton', 'everton', 'ipswich-town'])
+  })
+})

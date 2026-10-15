@@ -11,6 +11,9 @@ I am an AI assistant, not a lawyer; this is a working note for the owner, not le
   - rights holders may ask for removal; a contact address is shown only once `LEGAL.contactEmail` in `src/legal.ts` is filled in (empty on purpose).
 - Texts live in `src/i18n/he.ts` and `en.ts` (`legal.*`). Change the wording there.
 
+## Owner decision on the basis (2026-10-15)
+The owner decided to run Badge DNA as a fan quiz that shows crests only to identify clubs inside puzzles (some cropped, split or adjusted for the puzzles), with a disclaimer in the same spirit as futbolle.com's footer, and accepts the risk. No licence or permission exists. The in-app wording is our own, not copied. Behind a link in the footer, as the owner asked; if the owner prefers the two short sentences visible in the footer like on that site, it is a one-line change in `src/App.tsx`.
+
 ## What the notice does NOT do
 - It does **not** give a licence. A disclaimer ("not affiliated", "trademarks belong to their owners") reduces confusion about endorsement; it does not by itself make using a crest lawful.
 - It does not change any content status. Every real crest stays `rightsStatus: review_required` until you record a real basis in `rightsEvidence` (written permission, a licence, an official press/asset kit, or a documented legal assessment) and set `approved_for_project` yourself. The validator blocks publishing otherwise.

@@ -24,6 +24,7 @@ editor approval or usage rights have been given; none have (see `docs/content-st
 ## Content rules
 - Never invent crests, reviewers, rights evidence, difficulty ratings or player data. `rightsStatus`, `fidelityReviewed`, `visualReviewed`, `reviewedBy/At` are set by a human, never by a script or by AI.
 - Synthetic fixtures (`content/fixtures`) use invented clubs only, are excluded from production builds (`__INCLUDE_FIXTURES__`), and must never enter the published pool or a daily schedule.
+- A single-letter clue must never be the first letter of the club's name (owner rule; validator `letter-is-initial`).
 - Published puzzle revisions are immutable; change a puzzle by adding a new `revision`.
 - After editing `content/`, run `npm run validate:content`.
 

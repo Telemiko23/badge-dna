@@ -16,13 +16,12 @@ Package: `Badge-DNA-PNG-v2` — 20 Premier League 2026/27 clubs, 20 full logos, 
 - The dev build shows them in a new "candidate" mode (banner + "unapproved draft" badge). Production builds contain neither the code nor the files. `?content=fixture` forces the invented test puzzles.
 - Tile backdrop adapts to the artwork: light pieces on a dark tile, dark pieces on a light tile, others on a mid tile (`tileTone`, computed from luminance; can be overridden per element).
 
-## Things that need the owner's decision
-1. **Rights.** The manifests point to `assets.footylogos.com` SVGs. Nothing in the package states a usage basis. Not downloaded or checked by the assistant.
-2. **Rules in `EXTRACTION-RULES.md` that differ from the original spec** (treated as the owner's later decision, recorded here):
-   - Completing the colour under removed text/animals is allowed (spec §4.2 said not to complete hidden parts by guesswork).
-   - A single original letter may be a clue (spec §4.4 said not to cut words into letters). 18 of 20 clubs have one; Manchester United's N is rotated as in the original arched text.
-   - Splitting figures (bee, tiger, Liverpool bird, Spurs cockerel and ball) is allowed for the listed clubs.
-3. **Thin or scattered pieces** are legible only at full size, not on a ~140 px card. Left out of the drafts but kept in the library: Man City year, Brentford year, Chelsea roses and footballs, Man United footballs / ornament group / curled scrolls, Everton laurels, Crystal Palace year. After exclusions Manchester United has only 3 clean pieces (ship, N, devil), so one 3-reveal draft.
-4. **Liverpool torso and Tottenham body** touch the top edge of their canvas (possible clipping). Looks intentional (shapes cut at the split) but worth a glance in the source.
-5. **Very thin outlines** (rings, outlines, white bands) say little on their own; they are used mid-sequence in the drafts, not as the opener.
-6. Reveal orders and difficulty: the package deliberately has none. The drafts above are only a starting point.
+## Owner decisions (2026-10-15, in chat)
+1. **Rights basis:** the game is a fan quiz that uses crests only to identify clubs inside puzzles, with a disclaimer worded in the same spirit as the footer of futbolle.com (independent fan project, no affiliation, names and badges used solely to identify within the puzzles). No licence or permission has been obtained; the owner accepts the risk. This is a recorded decision, not a licence. Each crest's `rightsStatus` is set when its puzzle is promoted, with this text as `rightsEvidence`.
+2. **Rules that differ from the original spec:** completing the colour under removed text, and splitting figures, are accepted. **Single letters are accepted only if the letter is not the first letter of the club's name** (validator rule `letter-is-initial`). The package supplies initials for **Brighton (B), Everton (E) and Ipswich (I)**: those three letter pieces are kept out of every puzzle until the owner provides different letters. Hull's C is the initial of "City", not of "Hull", and was kept.
+3. **Pieces cut at the canvas edge** (Liverpool torso, Tottenham body) are intentional, to make the clues harder. Nothing to fix.
+4. **Tiny, scattered pieces:** still open; see below.
+
+## Still open: tiny pieces
+Some pieces are made of small parts far apart, so on a phone card they shrink to specks (picture sent in chat). Left out of the drafts: Manchester City year, Brentford year, Chelsea roses, Chelsea footballs, Manchester United ornament group, Manchester United curled scrolls. Judged readable and kept: Manchester United footballs, Everton laurels, Crystal Palace 1905.
+Options: leave them out (current), or re-export each as one larger, closer-together piece.

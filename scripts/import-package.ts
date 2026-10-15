@@ -75,6 +75,12 @@ function semanticType(name: string): string {
 }
 
 /** Light artwork gets a dark tile, dark artwork a light one; mixed/coloured artwork the mid tile. */
+function letterOf(group: string): string {
+  const m = /^letter-([a-z])$/.exec(group)
+  if (!m) throw new Error(`cannot read the letter from "${group}"`)
+  return m[1].toUpperCase()
+}
+
 function toneOf(png: InstanceType<typeof PNG>): 'light' | 'mid' | 'dark' {
   let sum = 0, weight = 0
   for (let i = 0; i < png.data.length; i += 4) {
@@ -163,6 +169,7 @@ for (const club of manifest.clubs) {
       fidelityReviewed: false, visualReviewed: false, extractionMethod: 'manual',
       sourceMapping: { package: manifest.version, packageSha256: o.sha256, packageObjectId: o.id },
       tileTone: toneOf(cropped),
+      ...(o.singleLetter ? { letter: letterOf(name) } : {}),
       autoSelectable: o.eligibleForAutomaticSelection,
     })
     provenance.push({

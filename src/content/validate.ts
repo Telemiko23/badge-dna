@@ -127,6 +127,9 @@ export function validateContent(raw: RawContent, options: ValidateOptions): Vali
       if (element.crestVersionId !== puzzle.crestVersionId) {
         error('crest-mismatch', `${label}: element ${id} comes from a different crest version`)
       }
+      if (element.letter && club && element.letter.toUpperCase() === club.displayName.en.trim()[0]?.toUpperCase()) {
+        error('letter-is-initial', `${label}: letter ${element.letter} is the first letter of the club's name`)
+      }
       if (element.autoSelectable === false) {
         error('element-not-selectable', `${label}: element ${id} is flagged as incomplete in its source and cannot be a clue`)
       }

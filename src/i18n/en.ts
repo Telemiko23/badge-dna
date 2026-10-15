@@ -136,11 +136,11 @@ export const en: Record<MessageKey, string> = {
   'legal.link': 'Legal notice',
   'legal.title': 'Legal notice',
   'legal.independent':
-    'Badge DNA is an independent fan-made game. It is not affiliated with, endorsed, approved or sponsored by any football club, league or competition.',
+    'Badge DNA is an independent project made by fans, with no affiliation to any league, football federation or club, and no support or approval from any of them.',
   'legal.trademarks':
-    'Club names, crests and logos are trademarks and protected works of their respective owners, who reserve all rights in them. They are shown in the game for identification purposes only.',
+    'Club names and their crests belong to their owners, who keep all their rights. They appear here solely to identify the clubs within the puzzles.',
   'legal.assets':
-    'Crests and their parts are shown as they are, with their colours unchanged. Showing them is not a statement of partnership or sponsorship.',
+    'Some crests and parts of crests are cropped, split or otherwise adjusted for the purposes of the puzzles. Showing them is not a statement of partnership or sponsorship.',
   'legal.privacy': 'The game collects no personal data and sends nothing to any server. Your progress is stored only in your browser.',
   'legal.takedown': 'Rights holders who want a crest removed or a reference corrected are welcome to contact us.',
 

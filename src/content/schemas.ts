@@ -51,6 +51,8 @@ export const ElementSchema = z.strictObject({
   sourceMapping: z.record(z.string(), z.unknown()).optional(),
   /** Backdrop tone for the clue tile: light artwork sits on a dark tile, dark artwork on a light one. */
   tileTone: z.enum(['light', 'mid', 'dark']).optional(),
+  /** For single-letter pieces: the letter shown. It must not be the first letter of the club's name. */
+  letter: z.string().length(1).optional(),
   /** false = the source flagged this piece as incomplete; it must not be used as a clue until fixed. */
   autoSelectable: z.boolean().optional(),
 })
