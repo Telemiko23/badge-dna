@@ -35,7 +35,7 @@ describe('shipped content', () => {
 
   it('fixtures cover 3, 4 and 5 reveals, plus a sub-element', () => {
     const repo = buildRepository('fixture', fixtureRaw, (p) => fixtureAssetUrls[p])
-    const sizes = repo.publishedPuzzles().map((p) => p.revealOrder.length).sort()
+    const sizes = [...new Set(repo.publishedPuzzles().map((p) => p.revealOrder.length))].sort()
     expect(sizes).toEqual([3, 4, 5])
     expect(fixtureRaw.elements.some((e) => (e as { parentElementId: string | null }).parentElementId)).toBe(true)
   })
@@ -102,7 +102,7 @@ describe('validator catches bad content', () => {
 
   it('the same club twice in one daily challenge, or an unpublished puzzle', () => {
     const raw = clone(fixtureRaw)
-    ;(raw.puzzles[2] as { status: string }).status = 'draft'
+    ;(raw.puzzles.find((x) => (x as { id: string }).id === 'fx-p-c') as { status: string }).status = 'draft'
     raw.daily.push({
       id: 'd-1',
       dateUtc: '2026-10-15',

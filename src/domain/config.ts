@@ -28,5 +28,7 @@ export const GAME_CONFIG = {
   },
 } as const
 
-export type Lang = 'he' | 'en'
+/** Supported UI languages, in dropdown order. Add a language here and in src/i18n. */
+export const LANGS = ['he', 'en'] as const
+export type Lang = (typeof LANGS)[number]
 export const DEFAULT_LANG: Lang = 'he'

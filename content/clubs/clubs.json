@@ -1,35 +1,536 @@
 [
-  { "id": "arsenal", "displayName": { "he": "ארסנל", "en": "Arsenal" }, "aliases": ["Arsenal FC"], "countryCode": "GB", "active": true },
-  { "id": "liverpool", "displayName": { "he": "ליברפול", "en": "Liverpool" }, "aliases": ["Liverpool FC"], "countryCode": "GB", "active": true },
-  { "id": "manchester-united", "displayName": { "he": "מנצ׳סטר יונייטד", "en": "Manchester United" }, "aliases": ["Man United", "Man Utd"], "countryCode": "GB", "active": true },
-  { "id": "chelsea", "displayName": { "he": "צ׳לסי", "en": "Chelsea" }, "aliases": ["Chelsea FC"], "countryCode": "GB", "active": true },
-  { "id": "manchester-city", "displayName": { "he": "מנצ׳סטר סיטי", "en": "Manchester City" }, "aliases": ["Man City"], "countryCode": "GB", "active": true },
-  { "id": "tottenham", "displayName": { "he": "טוטנהאם", "en": "Tottenham Hotspur" }, "aliases": ["Tottenham", "Spurs"], "countryCode": "GB", "active": true },
-  { "id": "newcastle-united", "displayName": { "he": "ניוקאסל יונייטד", "en": "Newcastle United" }, "aliases": ["Newcastle"], "countryCode": "GB", "active": true },
-  { "id": "aston-villa", "displayName": { "he": "אסטון וילה", "en": "Aston Villa" }, "aliases": [], "countryCode": "GB", "active": true },
-  { "id": "west-ham-united", "displayName": { "he": "ווסטהאם יונייטד", "en": "West Ham United" }, "aliases": ["West Ham"], "countryCode": "GB", "active": true },
-  { "id": "celtic", "displayName": { "he": "סלטיק", "en": "Celtic" }, "aliases": ["Celtic FC"], "countryCode": "GB", "active": true },
-  { "id": "real-madrid", "displayName": { "he": "ריאל מדריד", "en": "Real Madrid" }, "aliases": ["Real Madrid CF"], "countryCode": "ES", "active": true },
-  { "id": "barcelona", "displayName": { "he": "ברצלונה", "en": "Barcelona" }, "aliases": ["FC Barcelona", "Barca", "Barça"], "countryCode": "ES", "active": true },
-  { "id": "atletico-madrid", "displayName": { "he": "אתלטיקו מדריד", "en": "Atlético Madrid" }, "aliases": ["Atletico Madrid", "Atletico"], "countryCode": "ES", "active": true },
-  { "id": "valencia", "displayName": { "he": "ולנסיה", "en": "Valencia" }, "aliases": ["Valencia CF"], "countryCode": "ES", "active": true },
-  { "id": "sevilla", "displayName": { "he": "סביליה", "en": "Sevilla" }, "aliases": ["Sevilla FC"], "countryCode": "ES", "active": true },
-  { "id": "benfica", "displayName": { "he": "בנפיקה", "en": "Benfica" }, "aliases": ["SL Benfica"], "countryCode": "PT", "active": true },
-  { "id": "porto", "displayName": { "he": "פורטו", "en": "Porto" }, "aliases": ["FC Porto"], "countryCode": "PT", "active": true },
-  { "id": "sporting-cp", "displayName": { "he": "ספורטינג ליסבון", "en": "Sporting CP" }, "aliases": ["Sporting Lisbon", "Sporting"], "countryCode": "PT", "active": true },
-  { "id": "roma", "displayName": { "he": "רומא", "en": "Roma" }, "aliases": ["AS Roma"], "countryCode": "IT", "active": true },
-  { "id": "juventus", "displayName": { "he": "יובנטוס", "en": "Juventus" }, "aliases": ["Juve"], "countryCode": "IT", "active": true },
-  { "id": "inter", "displayName": { "he": "אינטר", "en": "Inter" }, "aliases": ["Inter Milan", "Internazionale"], "countryCode": "IT", "active": true },
-  { "id": "ac-milan", "displayName": { "he": "מילאן", "en": "AC Milan" }, "aliases": ["Milan"], "countryCode": "IT", "active": true },
-  { "id": "napoli", "displayName": { "he": "נאפולי", "en": "Napoli" }, "aliases": ["SSC Napoli"], "countryCode": "IT", "active": true },
-  { "id": "borussia-dortmund", "displayName": { "he": "בורוסיה דורטמונד", "en": "Borussia Dortmund" }, "aliases": ["Dortmund", "BVB"], "countryCode": "DE", "active": true },
-  { "id": "bayern-munich", "displayName": { "he": "באיירן מינכן", "en": "Bayern Munich" }, "aliases": ["Bayern", "FC Bayern"], "countryCode": "DE", "active": true },
-  { "id": "bayer-leverkusen", "displayName": { "he": "באייר לברקוזן", "en": "Bayer Leverkusen" }, "aliases": ["Leverkusen"], "countryCode": "DE", "active": true },
-  { "id": "paris-saint-germain", "displayName": { "he": "פריז סן ז׳רמן", "en": "Paris Saint-Germain" }, "aliases": ["PSG"], "countryCode": "FR", "active": true },
-  { "id": "ajax", "displayName": { "he": "אייאקס", "en": "Ajax" }, "aliases": ["AFC Ajax"], "countryCode": "NL", "active": true },
-  { "id": "maccabi-tel-aviv", "displayName": { "he": "מכבי תל אביב", "en": "Maccabi Tel Aviv" }, "aliases": [], "countryCode": "IL", "active": true },
-  { "id": "maccabi-haifa", "displayName": { "he": "מכבי חיפה", "en": "Maccabi Haifa" }, "aliases": [], "countryCode": "IL", "active": true },
-  { "id": "hapoel-tel-aviv", "displayName": { "he": "הפועל תל אביב", "en": "Hapoel Tel Aviv" }, "aliases": [], "countryCode": "IL", "active": true },
-  { "id": "hapoel-beer-sheva", "displayName": { "he": "הפועל באר שבע", "en": "Hapoel Be'er Sheva" }, "aliases": ["Hapoel Beer Sheva"], "countryCode": "IL", "active": true },
-  { "id": "beitar-jerusalem", "displayName": { "he": "בית״ר ירושלים", "en": "Beitar Jerusalem" }, "aliases": ["Beitar"], "countryCode": "IL", "active": true }
+  {
+    "id": "arsenal",
+    "displayName": {
+      "he": "ארסנל",
+      "en": "Arsenal"
+    },
+    "aliases": [
+      "Arsenal FC"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "liverpool",
+    "displayName": {
+      "he": "ליברפול",
+      "en": "Liverpool"
+    },
+    "aliases": [
+      "Liverpool FC"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "manchester-united",
+    "displayName": {
+      "he": "מנצ׳סטר יונייטד",
+      "en": "Manchester United"
+    },
+    "aliases": [
+      "Man United",
+      "Man Utd"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "chelsea",
+    "displayName": {
+      "he": "צ׳לסי",
+      "en": "Chelsea"
+    },
+    "aliases": [
+      "Chelsea FC"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "manchester-city",
+    "displayName": {
+      "he": "מנצ׳סטר סיטי",
+      "en": "Manchester City"
+    },
+    "aliases": [
+      "Man City"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "tottenham",
+    "displayName": {
+      "he": "טוטנהאם",
+      "en": "Tottenham Hotspur"
+    },
+    "aliases": [
+      "Tottenham",
+      "Spurs"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "newcastle-united",
+    "displayName": {
+      "he": "ניוקאסל יונייטד",
+      "en": "Newcastle United"
+    },
+    "aliases": [
+      "Newcastle"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "aston-villa",
+    "displayName": {
+      "he": "אסטון וילה",
+      "en": "Aston Villa"
+    },
+    "aliases": [],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "west-ham-united",
+    "displayName": {
+      "he": "ווסטהאם יונייטד",
+      "en": "West Ham United"
+    },
+    "aliases": [
+      "West Ham"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "celtic",
+    "displayName": {
+      "he": "סלטיק",
+      "en": "Celtic"
+    },
+    "aliases": [
+      "Celtic FC"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "real-madrid",
+    "displayName": {
+      "he": "ריאל מדריד",
+      "en": "Real Madrid"
+    },
+    "aliases": [
+      "Real Madrid CF"
+    ],
+    "countryCode": "ES",
+    "active": true
+  },
+  {
+    "id": "barcelona",
+    "displayName": {
+      "he": "ברצלונה",
+      "en": "Barcelona"
+    },
+    "aliases": [
+      "FC Barcelona",
+      "Barca",
+      "Barça"
+    ],
+    "countryCode": "ES",
+    "active": true
+  },
+  {
+    "id": "atletico-madrid",
+    "displayName": {
+      "he": "אתלטיקו מדריד",
+      "en": "Atlético Madrid"
+    },
+    "aliases": [
+      "Atletico Madrid",
+      "Atletico"
+    ],
+    "countryCode": "ES",
+    "active": true
+  },
+  {
+    "id": "valencia",
+    "displayName": {
+      "he": "ולנסיה",
+      "en": "Valencia"
+    },
+    "aliases": [
+      "Valencia CF"
+    ],
+    "countryCode": "ES",
+    "active": true
+  },
+  {
+    "id": "sevilla",
+    "displayName": {
+      "he": "סביליה",
+      "en": "Sevilla"
+    },
+    "aliases": [
+      "Sevilla FC"
+    ],
+    "countryCode": "ES",
+    "active": true
+  },
+  {
+    "id": "benfica",
+    "displayName": {
+      "he": "בנפיקה",
+      "en": "Benfica"
+    },
+    "aliases": [
+      "SL Benfica"
+    ],
+    "countryCode": "PT",
+    "active": true
+  },
+  {
+    "id": "porto",
+    "displayName": {
+      "he": "פורטו",
+      "en": "Porto"
+    },
+    "aliases": [
+      "FC Porto"
+    ],
+    "countryCode": "PT",
+    "active": true
+  },
+  {
+    "id": "sporting-cp",
+    "displayName": {
+      "he": "ספורטינג ליסבון",
+      "en": "Sporting CP"
+    },
+    "aliases": [
+      "Sporting Lisbon",
+      "Sporting"
+    ],
+    "countryCode": "PT",
+    "active": true
+  },
+  {
+    "id": "roma",
+    "displayName": {
+      "he": "רומא",
+      "en": "Roma"
+    },
+    "aliases": [
+      "AS Roma"
+    ],
+    "countryCode": "IT",
+    "active": true
+  },
+  {
+    "id": "juventus",
+    "displayName": {
+      "he": "יובנטוס",
+      "en": "Juventus"
+    },
+    "aliases": [
+      "Juve"
+    ],
+    "countryCode": "IT",
+    "active": true
+  },
+  {
+    "id": "inter",
+    "displayName": {
+      "he": "אינטר",
+      "en": "Inter"
+    },
+    "aliases": [
+      "Inter Milan",
+      "Internazionale"
+    ],
+    "countryCode": "IT",
+    "active": true
+  },
+  {
+    "id": "ac-milan",
+    "displayName": {
+      "he": "מילאן",
+      "en": "AC Milan"
+    },
+    "aliases": [
+      "Milan"
+    ],
+    "countryCode": "IT",
+    "active": true
+  },
+  {
+    "id": "napoli",
+    "displayName": {
+      "he": "נאפולי",
+      "en": "Napoli"
+    },
+    "aliases": [
+      "SSC Napoli"
+    ],
+    "countryCode": "IT",
+    "active": true
+  },
+  {
+    "id": "borussia-dortmund",
+    "displayName": {
+      "he": "בורוסיה דורטמונד",
+      "en": "Borussia Dortmund"
+    },
+    "aliases": [
+      "Dortmund",
+      "BVB"
+    ],
+    "countryCode": "DE",
+    "active": true
+  },
+  {
+    "id": "bayern-munich",
+    "displayName": {
+      "he": "באיירן מינכן",
+      "en": "Bayern Munich"
+    },
+    "aliases": [
+      "Bayern",
+      "FC Bayern"
+    ],
+    "countryCode": "DE",
+    "active": true
+  },
+  {
+    "id": "bayer-leverkusen",
+    "displayName": {
+      "he": "באייר לברקוזן",
+      "en": "Bayer Leverkusen"
+    },
+    "aliases": [
+      "Leverkusen"
+    ],
+    "countryCode": "DE",
+    "active": true
+  },
+  {
+    "id": "paris-saint-germain",
+    "displayName": {
+      "he": "פריז סן ז׳רמן",
+      "en": "Paris Saint-Germain"
+    },
+    "aliases": [
+      "PSG"
+    ],
+    "countryCode": "FR",
+    "active": true
+  },
+  {
+    "id": "ajax",
+    "displayName": {
+      "he": "אייאקס",
+      "en": "Ajax"
+    },
+    "aliases": [
+      "AFC Ajax"
+    ],
+    "countryCode": "NL",
+    "active": true
+  },
+  {
+    "id": "maccabi-tel-aviv",
+    "displayName": {
+      "he": "מכבי תל אביב",
+      "en": "Maccabi Tel Aviv"
+    },
+    "aliases": [],
+    "countryCode": "IL",
+    "active": true
+  },
+  {
+    "id": "maccabi-haifa",
+    "displayName": {
+      "he": "מכבי חיפה",
+      "en": "Maccabi Haifa"
+    },
+    "aliases": [],
+    "countryCode": "IL",
+    "active": true
+  },
+  {
+    "id": "hapoel-tel-aviv",
+    "displayName": {
+      "he": "הפועל תל אביב",
+      "en": "Hapoel Tel Aviv"
+    },
+    "aliases": [],
+    "countryCode": "IL",
+    "active": true
+  },
+  {
+    "id": "hapoel-beer-sheva",
+    "displayName": {
+      "he": "הפועל באר שבע",
+      "en": "Hapoel Be'er Sheva"
+    },
+    "aliases": [
+      "Hapoel Beer Sheva"
+    ],
+    "countryCode": "IL",
+    "active": true
+  },
+  {
+    "id": "beitar-jerusalem",
+    "displayName": {
+      "he": "בית״ר ירושלים",
+      "en": "Beitar Jerusalem"
+    },
+    "aliases": [
+      "Beitar"
+    ],
+    "countryCode": "IL",
+    "active": true
+  },
+  {
+    "id": "bournemouth",
+    "displayName": {
+      "he": "בורנמות׳",
+      "en": "Bournemouth"
+    },
+    "aliases": [
+      "AFC Bournemouth"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "brentford",
+    "displayName": {
+      "he": "ברנטפורד",
+      "en": "Brentford"
+    },
+    "aliases": [],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "brighton",
+    "displayName": {
+      "he": "ברייטון",
+      "en": "Brighton & Hove Albion"
+    },
+    "aliases": [
+      "Brighton"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "coventry-city",
+    "displayName": {
+      "he": "קובנטרי סיטי",
+      "en": "Coventry City"
+    },
+    "aliases": [
+      "Coventry"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "crystal-palace",
+    "displayName": {
+      "he": "קריסטל פאלאס",
+      "en": "Crystal Palace"
+    },
+    "aliases": [
+      "Palace"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "everton",
+    "displayName": {
+      "he": "אברטון",
+      "en": "Everton"
+    },
+    "aliases": [],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "fulham",
+    "displayName": {
+      "he": "פולהאם",
+      "en": "Fulham"
+    },
+    "aliases": [],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "hull-city",
+    "displayName": {
+      "he": "האל סיטי",
+      "en": "Hull City"
+    },
+    "aliases": [
+      "Hull"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "ipswich-town",
+    "displayName": {
+      "he": "איפסוויץ׳ טאון",
+      "en": "Ipswich Town"
+    },
+    "aliases": [
+      "Ipswich"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "leeds-united",
+    "displayName": {
+      "he": "לידס יונייטד",
+      "en": "Leeds United"
+    },
+    "aliases": [
+      "Leeds"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "nottingham-forest",
+    "displayName": {
+      "he": "נוטינגהאם פורסט",
+      "en": "Nottingham Forest"
+    },
+    "aliases": [
+      "Nott'm Forest",
+      "Forest"
+    ],
+    "countryCode": "GB",
+    "active": true
+  },
+  {
+    "id": "sunderland",
+    "displayName": {
+      "he": "סנדרלנד",
+      "en": "Sunderland"
+    },
+    "aliases": [],
+    "countryCode": "GB",
+    "active": true
+  }
 ]

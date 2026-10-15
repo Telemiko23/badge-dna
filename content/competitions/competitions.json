@@ -1,0 +1,35 @@
+[
+  {
+    "id": "premier-league-2026-27",
+    "kind": "league",
+    "season": "2026-27",
+    "countryCode": "GB",
+    "name": {
+      "he": "פרמיירליג 2026/27",
+      "en": "Premier League 2026/27"
+    },
+    "clubIds": [
+      "arsenal",
+      "aston-villa",
+      "bournemouth",
+      "brentford",
+      "brighton",
+      "chelsea",
+      "coventry-city",
+      "crystal-palace",
+      "everton",
+      "fulham",
+      "hull-city",
+      "ipswich-town",
+      "leeds-united",
+      "liverpool",
+      "manchester-city",
+      "manchester-united",
+      "newcastle-united",
+      "nottingham-forest",
+      "sunderland",
+      "tottenham"
+    ],
+    "sourceNote": "Club list: 2025-26 members minus West Ham, Burnley and Wolves (relegated), plus Coventry City, Ipswich Town and Hull City (promoted). Taken from a news article; confirm against premierleague.com."
+  }
+]

@@ -19,6 +19,25 @@
     "scoringVersion": "scoring-v1"
   },
   {
+    "id": "fx-p-a2",
+    "revision": 1,
+    "clubId": "fx-club-a",
+    "crestVersionId": "fx-crest-a",
+    "revealOrder": [
+      "fx-e-a3",
+      "fx-e-a1",
+      "fx-e-a2"
+    ],
+    "status": "published",
+    "audience": "fixture",
+    "familiarity": "uncalibrated",
+    "difficultyStatus": "uncalibrated",
+    "editorialNotes": "Fixture variant of fx-p-a with a different reveal order (frame, waves, anchor). Tests variant selection.",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "scoringVersion": "scoring-v1"
+  },
+  {
     "id": "fx-p-b",
     "revision": 1,
     "clubId": "fx-club-b",

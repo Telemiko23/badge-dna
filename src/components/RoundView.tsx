@@ -224,13 +224,17 @@ export function RoundView({
       </div>
 
       <div className="stats">
-        <p className="stat">
-          {round.status === 'active' && possible !== null ? t('round.possible', { score: possible }) : ' '}
-        </p>
-        <p className="stat">
-          {t('round.mistakes', { n: mistakes, max: GAME_CONFIG.maxMistakes })}{' '}
-          <MistakePips used={mistakes} max={GAME_CONFIG.maxMistakes} />
-        </p>
+        <div className="stat stat-score">
+          <span className="stat-label">{t('round.possibleLabel')}</span>
+          <span className="stat-value">{round.status === 'active' && possible !== null ? possible : '—'}</span>
+        </div>
+        <div className="stat stat-mistakes">
+          <span className="stat-label">{t('round.mistakesLabel')}</span>
+          <span className="stat-value">
+            <MistakePips used={mistakes} max={GAME_CONFIG.maxMistakes} />
+            <span className="sr-only">{t('round.mistakes', { n: mistakes, max: GAME_CONFIG.maxMistakes })}</span>
+          </span>
+        </div>
       </div>
 
       {finished && (

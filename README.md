@@ -46,4 +46,5 @@ tests/         vitest suites
 - `docs/decisions.md` — implementation decisions and assumptions
 - `docs/content-status.md` — what content exists, what blocks real puzzles
 - `docs/content-guide.md` — how to add a puzzle
+- `docs/roadmap.md` — what is done, next, and owner requests being designed
 - `docs/limitations.md` — known gaps

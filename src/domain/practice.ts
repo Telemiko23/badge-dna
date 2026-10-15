@@ -5,6 +5,8 @@ export interface PuzzleRef {
 
 export interface PracticeCandidate extends PuzzleRef {
   clubId: string
+  /** The puzzle's reveal order. Used to prefer variants showing elements the player hasn't seen. */
+  elementIds?: readonly string[]
 }
 
 /** Small deterministic PRNG so a session's shuffled order can be stored as a seed. */
@@ -28,15 +30,24 @@ function shuffle<T>(items: readonly T[], rand: () => number): T[] {
   return out
 }
 
+/** How much of a variant is new to the player; early positions count more (1, 1/2, 1/3, ...). */
+export function noveltyScore(elementIds: readonly string[] | undefined, seen: ReadonlySet<string>): number {
+  if (!elementIds) return 0
+  return elementIds.reduce((sum, id, position) => sum + (seen.has(id) ? 0 : 1 / (position + 1)), 0)
+}
+
 /**
- * One cycle of practice puzzles: at most one puzzle per club (so a club never
- * repeats until the pool is exhausted), shuffled once. When a new cycle
- * starts, the first puzzle avoids the club that ended the previous cycle.
+ * One cycle of practice puzzles: at most one puzzle per club (so a club never repeats until
+ * the pool is exhausted), shuffled once. When a club has several approved variants (separate,
+ * individually reviewed puzzles with different reveal orders), the one with the highest
+ * novelty for this player wins; ties are random. When a new cycle starts, the first puzzle
+ * avoids the club that ended the previous cycle.
  */
 export function buildPracticeOrder(
   candidates: readonly PracticeCandidate[],
   seed: number,
   lastClubId: string | null = null,
+  seenElementIds: ReadonlySet<string> = new Set(),
 ): PuzzleRef[] {
   const rand = mulberry32(seed)
   const byClub = new Map<string, PracticeCandidate[]>()
@@ -51,7 +62,10 @@ export function buildPracticeOrder(
     const options = [...byClub.get(clubId)!].sort(
       (a, b) => a.id.localeCompare(b.id) || a.revision - b.revision,
     )
-    return options[Math.floor(rand() * options.length)]
+    const scores = options.map((o) => noveltyScore(o.elementIds, seenElementIds))
+    const best = Math.max(...scores)
+    const top = options.filter((_, i) => scores[i] === best)
+    return top[Math.floor(rand() * top.length)]
   })
   const order = shuffle(picks, rand)
   if (lastClubId && order.length > 1 && order[0].clubId === lastClubId) {

@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import type { ActiveContent } from '../content/load.ts'
+import { IconCalendar, IconGear, IconHelp, IconPlay } from '../components/icons.tsx'
 import { DAILY_MAX_SCORE } from '../domain/daily.ts'
 import { useNow } from '../hooks/useNow.ts'
 import { useI18n } from '../i18n/I18nContext.ts'
@@ -22,7 +23,10 @@ export function HomeScreen({ content, go }: Props) {
 
   return (
     <section className="home">
-      <h2 className="tagline">{t('home.tagline')}</h2>
+      <div className="hero">
+        <h2 className="tagline">{t('home.tagline')}</h2>
+        <p className="muted">{t('home.sub')}</p>
+      </div>
 
       {!hasPuzzles && (
         <p className="notice" role="status">
@@ -36,6 +40,7 @@ export function HomeScreen({ content, go }: Props) {
         onClick={() => go({ name: 'practice' })}
         disabled={!hasPuzzles}
       >
+        <IconPlay />
         {t('home.practice')}
       </button>
 
@@ -57,11 +62,13 @@ export function HomeScreen({ content, go }: Props) {
 
       <DailyCard state={status.today} go={go} />
 
-      <nav className="link-row" aria-label={t('app.name')}>
-        <button type="button" className="btn btn-link" onClick={() => go({ name: 'how-to' })}>
+      <nav className="tile-row" aria-label={t('app.name')}>
+        <button type="button" className="tile" onClick={() => go({ name: 'how-to' })}>
+          <IconHelp />
           {t('home.howTo')}
         </button>
-        <button type="button" className="btn btn-link" onClick={() => go({ name: 'settings' })}>
+        <button type="button" className="tile" onClick={() => go({ name: 'settings' })}>
+          <IconGear />
           {t('home.settings')}
         </button>
       </nav>
@@ -74,7 +81,10 @@ function DailyCard({ state, go }: { state: DailyCardState; go: (route: Route) =>
   const open = (date: string) => go({ name: 'daily', date })
   return (
     <div className="panel daily-card" aria-labelledby="daily-title">
-      <h3 id="daily-title">{t('daily.title')}</h3>
+      <h3 id="daily-title">
+        <IconCalendar />
+        {t('daily.title')}
+      </h3>
       {state.kind === 'storage-unavailable' && <p className="muted">{t('daily.card.needsStorage')}</p>}
       {state.kind === 'unavailable' && <p className="muted">{t('home.daily.unavailable')}</p>}
       {state.kind === 'problem' && <p className="muted">{t('daily.card.problem', { date: state.date })}</p>}

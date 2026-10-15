@@ -18,6 +18,7 @@ const realCrests = import.meta.glob('../../content/crests/*.json', { eager: true
 const realElements = import.meta.glob('../../content/elements/*.json', { eager: true, import: 'default' })
 const realPuzzles = import.meta.glob('../../content/puzzles/*.json', { eager: true, import: 'default' })
 const realDaily = import.meta.glob('../../content/daily/*.json', { eager: true, import: 'default' })
+const realCompetitions = import.meta.glob('../../content/competitions/*.json', { eager: true, import: 'default' })
 const realMeta = import.meta.glob('../../content/meta.json', { eager: true, import: 'default' })
 
 export function realRawContent(): RawContent {
@@ -29,6 +30,7 @@ export function realRawContent(): RawContent {
     elements: collect(realElements),
     puzzles: collect(realPuzzles),
     daily: collect(realDaily),
+    competitions: collect(realCompetitions),
   }
 }
 

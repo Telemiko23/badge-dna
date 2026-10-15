@@ -69,6 +69,17 @@ export const PuzzleSchema = z.strictObject({
   scoringVersion: z.string().min(1),
 })
 
+/** A grouping of clubs for browsing/progression: a league season, a cup, a national-team set. */
+export const CompetitionSchema = z.strictObject({
+  id: Id,
+  kind: z.enum(['league', 'cup', 'national']),
+  season: z.string().nullable(),
+  countryCode: z.string().regex(/^[A-Z]{2}$/).nullable(),
+  name: LocalizedName,
+  clubIds: z.array(Id).min(1),
+  sourceNote: z.string(),
+})
+
 export const DailyChallengeSchema = z.strictObject({
   id: Id,
   dateUtc: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
@@ -84,6 +95,7 @@ export type CrestVersion = z.infer<typeof CrestVersionSchema>
 export type Element = z.infer<typeof ElementSchema>
 export type Puzzle = z.infer<typeof PuzzleSchema>
 export type DailyChallenge = z.infer<typeof DailyChallengeSchema>
+export type Competition = z.infer<typeof CompetitionSchema>
 
 /** Raw, not yet validated content as read from the JSON files. */
 export interface RawContent {
@@ -93,6 +105,7 @@ export interface RawContent {
   elements: unknown[]
   puzzles: unknown[]
   daily: unknown[]
+  competitions: unknown[]
 }
 
 export interface ParsedContent {
@@ -102,6 +115,7 @@ export interface ParsedContent {
   elements: Element[]
   puzzles: Puzzle[]
   daily: DailyChallenge[]
+  competitions: Competition[]
 }
 
 export interface SchemaIssue {
@@ -140,6 +154,7 @@ export function parseRawContent(raw: RawContent): { content: ParsedContent; issu
       elements: parseAll('elements', ElementSchema, raw.elements),
       puzzles: parseAll('puzzles', PuzzleSchema, raw.puzzles),
       daily: parseAll('daily', DailyChallengeSchema, raw.daily),
+      competitions: parseAll('competitions', CompetitionSchema, raw.competitions),
     },
   }
 }

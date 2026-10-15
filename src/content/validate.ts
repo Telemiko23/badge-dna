@@ -56,6 +56,16 @@ export function validateContent(raw: RawContent, options: ValidateOptions): Vali
   const elements = new Map(content.elements.map((e) => [e.id, e]))
   const puzzles = new Map(content.puzzles.map((p) => [`${p.id}@${p.revision}`, p]))
 
+  for (const id of dupes(content.competitions.map((c) => c.id))) error('duplicate-id', `competition ${id}`)
+  for (const competition of content.competitions) {
+    for (const clubId of competition.clubIds) {
+      if (!clubs.has(clubId)) error('missing-ref', `competition ${competition.id} -> club ${clubId}`)
+    }
+    if (new Set(competition.clubIds).size !== competition.clubIds.length) {
+      error('competition-duplicate', `competition ${competition.id} lists a club twice`)
+    }
+  }
+
   for (const club of content.clubs) {
     const names = [club.displayName.he, club.displayName.en, ...club.aliases].map((n) => n.trim())
     if (names.some((n) => n.length === 0)) error('club-name', `club ${club.id} has an empty name`)

@@ -3,7 +3,13 @@ import { RoundView } from '../components/RoundView.tsx'
 import type { ActiveContent } from '../content/load.ts'
 import { useI18n } from '../i18n/I18nContext.ts'
 import { restoreRound, type RoundState } from '../domain/round.ts'
-import { archivePractice, loadPractice, savePractice } from '../storage/stores.ts'
+import {
+  archivePractice,
+  loadPractice,
+  loadSeenElements,
+  rememberSeenElements,
+  savePractice,
+} from '../storage/stores.ts'
 import { getStorage } from '../storage/safeStorage.ts'
 import type { PracticeProgress } from '../storage/schemas.ts'
 import {
@@ -31,7 +37,7 @@ function initialise(content: ActiveContent): Init {
     return { kind: 'restore-problem' }
   }
   if (stored.kind === 'corrupt') return { kind: 'restore-problem' }
-  const session = newSession(content.repo, now)
+  const session = newSession(content.repo, now, undefined, loadSeenElements())
   return session ? { kind: 'ready', session } : { kind: 'empty' }
 }
 
@@ -61,7 +67,7 @@ export function PracticeScreen({ content, onHome }: { content: ActiveContent; on
           className="btn btn-primary"
           onClick={() => {
             archivePractice()
-            const session = newSession(content.repo, new Date().toISOString())
+            const session = newSession(content.repo, new Date().toISOString(), undefined, loadSeenElements())
             setInit(session ? { kind: 'ready', session } : { kind: 'empty' })
           }}
         >
@@ -105,6 +111,10 @@ function PracticeSession({
       const puzzle = current.order[current.position]
       const club = puzzle ? repo.getPuzzle(puzzle)?.clubId : undefined
       if (!club) return
+      if (current.activeRound && next.revealedCount > current.activeRound.revealedCount) {
+        const shown = repo.getPlayablePuzzle(puzzle)?.elements.slice(0, next.revealedCount) ?? []
+        rememberSeenElements(shown.map((e) => e.id))
+      }
       commit(applyRoundUpdate(current, next, club))
     },
     [repo, commit],
@@ -132,7 +142,7 @@ function PracticeSession({
               type="button"
               className="btn btn-primary"
               onClick={() => {
-                const next = startNewCycle(session, repo, new Date().toISOString())
+                const next = startNewCycle(session, repo, new Date().toISOString(), loadSeenElements())
                 if (next) commit(next)
               }}
             >

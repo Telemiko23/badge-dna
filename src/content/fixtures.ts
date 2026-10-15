@@ -33,6 +33,7 @@ export const fixtureRaw: RawContent = {
   elements: collect(elements),
   puzzles: collect(puzzles),
   daily: [],
+  competitions: [],
 }
 
 /**

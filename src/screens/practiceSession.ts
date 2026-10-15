@@ -15,7 +15,12 @@ export function randomSeed(): number {
 }
 
 function candidates(repo: ContentRepository) {
-  return repo.publishedPuzzles().map((p) => ({ id: p.id, revision: p.revision, clubId: p.clubId }))
+  return repo.publishedPuzzles().map((p) => ({
+    id: p.id,
+    revision: p.revision,
+    clubId: p.clubId,
+    elementIds: p.revealOrder,
+  }))
 }
 
 export function createRoundFor(
@@ -41,8 +46,13 @@ export function createRoundFor(
 }
 
 /** A fresh session, or null when the pool is empty. */
-export function newSession(repo: ContentRepository, now: string, seed = randomSeed()): PracticeProgress | null {
-  const order = buildPracticeOrder(candidates(repo), seed)
+export function newSession(
+  repo: ContentRepository,
+  now: string,
+  seed = randomSeed(),
+  seen: ReadonlySet<string> = new Set(),
+): PracticeProgress | null {
+  const order = buildPracticeOrder(candidates(repo), seed, null, seen)
   if (order.length === 0) return null
   const session: PracticeProgress = {
     schemaVersion: GAME_CONFIG.storage.schemaVersion,
@@ -95,10 +105,15 @@ export function advance(session: PracticeProgress, repo: ContentRepository, now:
 }
 
 /** After exhausting the pool: new shuffled cycle; the first puzzle avoids the last club played. */
-export function startNewCycle(session: PracticeProgress, repo: ContentRepository, now: string): PracticeProgress | null {
+export function startNewCycle(
+  session: PracticeProgress,
+  repo: ContentRepository,
+  now: string,
+  seen: ReadonlySet<string> = new Set(),
+): PracticeProgress | null {
   const lastClubId = session.results.at(-1)?.clubId ?? null
   const seed = randomSeed()
-  const order = buildPracticeOrder(candidates(repo), seed, lastClubId)
+  const order = buildPracticeOrder(candidates(repo), seed, lastClubId, seen)
   if (order.length === 0) return null
   const next = { ...session, seed, order, position: 0 }
   return { ...next, activeRound: createRoundFor(next, repo, order[0], now) }

@@ -1,3 +1,4 @@
+import { z } from 'zod'
 import { DEFAULT_LANG, GAME_CONFIG, type Lang } from '../domain/config.ts'
 import { archiveRaw, listNames, readJson, readRaw, removeKey, writeJson, type ReadResult } from './safeStorage.ts'
 import {
@@ -40,6 +41,27 @@ export function saveDaily(progress: DailyProgress): boolean {
 /** Dates (YYYY-MM-DD) that have a stored daily record, oldest first. */
 export function listDailyDates(): string[] {
   return listNames(DAILY_PREFIX).map((name) => name.slice(DAILY_PREFIX.length))
+}
+
+const SEEN = 'seen-elements'
+const MAX_SEEN = 5000
+
+/** Element ids the player has already had revealed, across sessions (used to vary what is shown next). */
+export function loadSeenElements(): Set<string> {
+  const result = readJson(SEEN, z.array(z.string()))
+  return new Set(result.kind === 'ok' ? result.value : [])
+}
+
+export function rememberSeenElements(ids: readonly string[]): void {
+  const seen = loadSeenElements()
+  let changed = false
+  for (const id of ids) {
+    if (!seen.has(id)) {
+      seen.add(id)
+      changed = true
+    }
+  }
+  if (changed) writeJson(SEEN, [...seen].slice(-MAX_SEEN))
 }
 
 export function loadLang(): Lang {

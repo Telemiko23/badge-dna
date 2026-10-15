@@ -44,5 +44,13 @@ Decisions made while building milestones 1–2. None change the core mechanic. "
 - Share text carries only date, counts, score and clue ratios (a test asserts no club names or puzzle ids). If copying fails, a selectable text box appears.
 - Dev-only `?now=<ISO time>` overrides the app clock (production builds ignore it), used to test the rollover.
 
+## Owner feedback round 1 (2026-10-15)
+- **Visual direction:** dark theme (no bright full-screen backgrounds). Clue artwork sits on a mid-tone tile so both white and very dark elements remain visible; interface colours never recolour the artwork.
+- **Press feedback:** every button has hover (pointer devices only), pressed (scale + brightness) and keyboard focus states; motion respects `prefers-reduced-motion`.
+- **Language:** a dropdown (native `<select>`), not buttons. Rows of controls (header, stats, guess row, button rows, dialog actions) are laid out in a fixed physical order (`direction: ltr` container, text direction restored on children), so nothing jumps when Hebrew ⇄ English changes direction. Verified by measuring element positions in both languages.
+- **Home navigation:** a home icon in the header replaces the "← back" text button (its position and glyph don't depend on direction).
+- **Variants:** see roadmap C. This relaxes the original "one fixed order per club" wording; each variant is still one fixed, reviewed order.
+- **Logos folder:** `logos/` is git-ignored; the Premier League 2026/27 list was verified against a news article (3 promoted: Coventry City, Ipswich Town, Hull City; 3 relegated: West Ham, Burnley, Wolves) and should be confirmed against the league's site.
+
 ## Not built yet (by design)
 Review/preview screen for content, Playwright end-to-end suite, 360/390/768/1440 visual QA pass — see `docs/limitations.md`.

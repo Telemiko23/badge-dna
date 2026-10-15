@@ -1,0 +1,182 @@
+[
+  {
+    "clubId": "arsenal",
+    "file": "logos/Arsenal.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "ba273b85e8fe0043c3dad252bf5f782e67e1f2b43c8339f6393e4020cb4b7123",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "aston-villa",
+    "file": "logos/Aston_Villa.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "15f20ce5969bfbd5092053b0226a2fbd8bfaaa7fad468338dec0197ef4e73f31",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "bournemouth",
+    "file": "logos/Bournemouth.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "e668d998ce23dc34648ce4c7f19d289d0fbb567383bf06b0263761c7c16afb6d",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "brentford",
+    "file": "logos/Brentford.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "69278a7461b24c3b245ee99477a81ab5f6b979e3dc82d39ba4770d3f53ec18d5",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "brighton",
+    "file": "logos/Brighton.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "d9b536ef13f9edd1cb77b0fa716738a7f375df733544ce872be8a7478ef19aa0",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "chelsea",
+    "file": "logos/Chelsea.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "a4353df0d45673ae0685be75ad1345ad25b4786d92775932761d45bd21175e47",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "coventry-city",
+    "file": "logos/Coventry.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "3064f92b849ddff90d1ddca45e62ec198dd8596cb137f7a0296a9378a79078ad",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "crystal-palace",
+    "file": "logos/Crystal_Palace.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "3a5b60eb010b7050d5b622165ff70468e9ddf5a5af48e1141d239b81e7570149",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "everton",
+    "file": "logos/Everton.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "7d798d13ebff5244e99e72736e80fb8e3ef272842d4bb7586fe259588b76f35e",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "fulham",
+    "file": "logos/Fulham.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "3735bd31a6c7cabcb3ed9307583d4b1e8525709a440fac95397996e339ec16ae",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "hull-city",
+    "file": "logos/Hull_City.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "e5825be5ee171e9a84fccec0b64e5f49b7a7ad3f188b880eb915500ea463667b",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "ipswich-town",
+    "file": "logos/Ipswich.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "1362c589ddf705e428984f8c6d4816ca5bd690377411f371dabbfb3ea6273d2f",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "leeds-united",
+    "file": "logos/Leeds.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "9f58f9f706d4adab425001292d9d0554fed85a3263dc4c1c667985c106c5a571",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "liverpool",
+    "file": "logos/Liverpool.png",
+    "width": 78,
+    "height": 150,
+    "format": "png",
+    "sha256": "c3b13021c1abfb8231f1feb277501dfcf6649047e84e16c98e4b50cd77350330",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "manchester-city",
+    "file": "logos/Manchester_City.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "090f6609ab46ca56313d8ddf62ef2185fed4846b2271b77f5f5f95af5cda24dc",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "manchester-united",
+    "file": "logos/Manchester_United.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "6dff7e1a3d7d7a3748edf8ca55fefa00aa169a47f1933b62eb42d2f9cfcf3b2e",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "newcastle-united",
+    "file": "logos/Newcastle.png",
+    "width": 149,
+    "height": 150,
+    "format": "png",
+    "sha256": "2cdfd5d4d0e6d97f3b452a10e648a1bbdc6d3ca34c8609457d25ef732eb029b1",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "nottingham-forest",
+    "file": "logos/Nottingham_Forest.png",
+    "width": 150,
+    "height": 150,
+    "format": "png",
+    "sha256": "9c96cd68509bba022adb3f5c20f1cda097de98a25053e151eb1964f6a6fbdb40",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "sunderland",
+    "file": "logos/Sunderland.png",
+    "width": 180,
+    "height": 150,
+    "format": "png",
+    "sha256": "4ebea02c35734d78ac44b5d4421778169c334d3296c65207d1e3deec76fda5c8",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  },
+  {
+    "clubId": "tottenham",
+    "file": "logos/Tottenham.png",
+    "width": 82,
+    "height": 150,
+    "format": "png",
+    "sha256": "ce51d50ba9dbf5fa1d22a3229f7b59cd775a184bd06321c683c7c30c15d6c862",
+    "provenance": "provided by the project owner in the logos/ folder; origin and usage rights not documented"
+  }
+]

@@ -15,6 +15,7 @@ export const en: Record<MessageKey, string> = {
   'dev.testPuzzle': 'Test puzzle',
 
   'home.tagline': 'Name the club from the pieces of its badge',
+  'home.sub': 'One piece at a time. The fewer reveals, the more points.',
   'home.practice': 'Free practice',
   'home.daily.title': 'Daily challenge',
   'home.daily.unavailable': "Today's challenge isn't available yet",
@@ -40,7 +41,8 @@ export const en: Record<MessageKey, string> = {
   'storage.unavailable': "Local storage isn't available. You can play, but progress won't be saved.",
   'storage.saveFailed': 'Saving failed. Your progress may be lost.',
 
-  'round.possible': 'Possible score: {score}',
+  'round.possibleLabel': 'Possible score',
+  'round.mistakesLabel': 'Mistakes',
   'round.mistakes': 'Mistakes: {n} of {max}',
   'round.cluesTitle': 'Clues',
   'round.loadFailed.title': "We couldn't load this puzzle",

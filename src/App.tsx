@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { IconHome, LogoMark } from './components/icons.tsx'
 import { LanguageSwitch } from './components/LanguageSwitch.tsx'
 import { loadContent, selectActiveContent, type ActiveContent } from './content/load.ts'
 import { ContentError } from './content/repository.ts'
@@ -64,21 +65,29 @@ export default function App() {
           {t('dev.banner')}
         </p>
       )}
+      {/* Fixed physical layout (see .app-header): nothing here moves when the language flips direction. */}
       <header className="app-header">
-        <h1>
-          <a href="#/" className="brand">
-            {t('app.name')}
+        <LanguageSwitch />
+        <h1 className="brand">
+          <a href="#/" aria-label={t('nav.home')}>
+            <LogoMark />
+            <span>{t('app.name')}</span>
           </a>
         </h1>
-        <LanguageSwitch />
+        <button
+          type="button"
+          className="icon-btn"
+          onClick={home}
+          aria-label={t('nav.home')}
+          title={t('nav.home')}
+          hidden={route.name === 'home'}
+        >
+          <IconHome />
+        </button>
+        {route.name === 'home' && <span className="header-spacer" aria-hidden="true" />}
       </header>
 
       <main className="app-main">
-        {route.name !== 'home' && (
-          <button type="button" className="btn btn-link back" onClick={home}>
-            ← {t('nav.back')}
-          </button>
-        )}
         {state.kind === 'loading' && (
           <p className="muted" role="status">
             {t('clue.loading')}

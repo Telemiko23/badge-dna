@@ -45,3 +45,36 @@ describe('buildPracticeOrder', () => {
     expect(buildPracticeOrder([], 1)).toEqual([])
   })
 })
+
+describe('variants and novelty', () => {
+  const variants: PracticeCandidate[] = [
+    { id: 'a-v1', revision: 1, clubId: 'a', elementIds: ['frame', 'wheel', 'cannon'] },
+    { id: 'a-v2', revision: 1, clubId: 'a', elementIds: ['cannon', 'wheel', 'frame'] },
+    { id: 'b-v1', revision: 1, clubId: 'b', elementIds: ['b1', 'b2', 'b3'] },
+  ]
+  const pickedForA = (seen: string[], seed: number) =>
+    buildPracticeOrder(variants, seed, null, new Set(seen)).find((r) => r.id.startsWith('a-'))!.id
+
+  it('prefers the variant whose opening elements the player has not seen', () => {
+    for (let seed = 0; seed < 30; seed++) {
+      expect(pickedForA(['frame', 'wheel'], seed)).toBe('a-v2') // saw v1's opening
+      expect(pickedForA(['cannon', 'wheel'], seed)).toBe('a-v1') // saw v2's opening
+    }
+  })
+
+  it('weights early positions more than late ones', () => {
+    // Saw the last element of v1 and the first of v2: v1 is still fresher at the start.
+    for (let seed = 0; seed < 30; seed++) expect(pickedForA(['cannon'], seed)).toBe('a-v1')
+  })
+
+  it('picks randomly (but only among equals) when nothing has been seen, and still one per club', () => {
+    const picks = new Set(Array.from({ length: 40 }, (_, seed) => pickedForA([], seed)))
+    expect(picks).toEqual(new Set(['a-v1', 'a-v2']))
+    expect(buildPracticeOrder(variants, 3)).toHaveLength(2)
+  })
+
+  it('still works when everything has been seen', () => {
+    const all = ['frame', 'wheel', 'cannon', 'b1', 'b2', 'b3']
+    expect(buildPracticeOrder(variants, 5, null, new Set(all))).toHaveLength(2)
+  })
+})

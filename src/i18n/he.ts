@@ -14,6 +14,7 @@ export const he = {
   'dev.testPuzzle': 'חידת בדיקה',
 
   'home.tagline': 'מזהים את הקבוצה לפי החלקים של הסמל',
+  'home.sub': 'חלק אחד בכל פעם. כמה שפחות חשיפות, כך יותר נקודות.',
   'home.practice': 'אימון חופשי',
   'home.daily.title': 'אתגר יומי',
   'home.daily.unavailable': 'האתגר היומי עדיין לא זמין',
@@ -39,7 +40,8 @@ export const he = {
   'storage.unavailable': 'האחסון המקומי לא זמין. אפשר לשחק, אבל ההתקדמות לא תישמר.',
   'storage.saveFailed': 'השמירה נכשלה. ההתקדמות עלולה ללכת לאיבוד.',
 
-  'round.possible': 'ניקוד אפשרי: {score}',
+  'round.possibleLabel': 'ניקוד אפשרי',
+  'round.mistakesLabel': 'טעויות',
   'round.mistakes': 'טעויות: {n} מתוך {max}',
   'round.cluesTitle': 'הרמזים',
   'round.loadFailed.title': 'לא הצלחנו לטעון את החידה',

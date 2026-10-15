@@ -35,6 +35,7 @@ function load(dir: string): RawContent {
     elements: readCollection(join(dir, 'elements')),
     puzzles: readCollection(join(dir, 'puzzles')),
     daily: readCollection(join(dir, 'daily')),
+    competitions: readCollection(join(dir, 'competitions')),
   }
 }
 
@@ -45,7 +46,7 @@ function report(label: string, content: RawContent, kind: 'real' | 'fixture', as
   const errors = issues.filter((i) => i.severity === 'error')
   console.log(
     `${label}: ${content.clubs.length} clubs, ${content.crests.length} crests, ${content.elements.length} elements, ` +
-      `${content.puzzles.length} puzzles, ${content.daily.length} daily -> ${errors.length} errors, ${issues.length - errors.length} warnings`,
+      `${content.puzzles.length} puzzles, ${content.daily.length} daily, ${content.competitions.length} competitions -> ${errors.length} errors, ${issues.length - errors.length} warnings`,
   )
   for (const issue of issues) console.log(`  [${issue.severity}] ${issue.code}: ${issue.message}`)
   if (errors.length > 0) failed = true
